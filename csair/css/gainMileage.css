@@ -1,0 +1,25 @@
+.mileageContent{
+	padding:25px 5px;
+	border:#97b5e9 1px solid;
+	min-height: 600px;
+}
+.mileageContent  ul .syqk{
+    display: inline-block;
+    float: left;
+    border-bottom: #ccc solid 1px;
+    width: 300px;
+    height: 150px;
+    line-height: 260px;
+    margin: 0px 10px;
+    font-size: 24px;
+}
+.mileageContent  ul .syqk a{
+    color:#0e5ed7;
+}
+.mileageContent  ul .current{
+	background-color: #1478b4;
+}
+.mileageContent  ul .current a{
+	color:#fff;
+}
+

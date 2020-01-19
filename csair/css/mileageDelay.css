@@ -1,0 +1,37 @@
+.mileageContent{
+	padding:25px 5px;
+	border:#97b5e9 1px solid;
+}
+.mileageContent  ul .syqk{
+	display:inline-block;
+	float: left;
+	border-bottom: #ccc solid 1px;
+	width:180px;
+}
+.mileageContent  ul .current{
+	background-color: #1478b4;
+}
+.mileageContent  ul .current a{
+	color:#fff;
+}
+.mknr{
+	text-align: left;
+	margin: 65px 0px;
+}
+
+.mknr .nntable table{
+    border-top: 1px solid #cacaca;
+    margin: 10px 0px;
+   
+}
+.mknr .nntable table th{
+	padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+.mknr .nntable table td{
+	padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+

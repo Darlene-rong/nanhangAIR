@@ -1,0 +1,162 @@
+.loser{
+	height:50px;
+	background: url(../img/loser.png) no-repeat left;
+}
+
+.loser span{
+	font-family: 16px;
+	font-weight: 900;
+	margin-left: 50px;
+	line-height: 50px;
+}
+
+
+.btn{
+	padding: 40px 0 60px;
+	text-align: center;
+}
+.btn button{
+	display: inline-block;
+	width: 206px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	margin-right: 20px;
+	background: #FF0000;
+}
+
+.blkt{
+	text-align: center;
+	padding-left: 80px;
+}
+.infos_inputs{
+	text-align: left;
+	font-size: 16px;
+	/*height: 30px;*/
+	line-height: 30px;
+	padding: 5px 0;
+}
+
+.infos_inputs label{
+	display: inline-block;
+	width: 130px;
+	text-align: right;
+}
+.infos_inputs input,.infos_inputs select{
+	display: inline-block;
+	border: 1px solid #c1c1c1;
+	padding-left:5px;
+}
+.infos_inputs input{
+	height: 28px;
+	line-height: 28px;
+	width: 233px;
+}
+.infos_inputs select{
+	padding:5px 0\0;
+	height: 28px;
+	width: 240px;
+}
+.infos_inputs select option{
+	height: 28px;
+	line-height: 28px;
+}
+
+.redbtn{
+	background: #ff0000;
+	color: #fff;
+}
+
+button.codebtn{
+	width: 95px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #2298ef;
+	color:#fff;
+}
+.readonly{
+	background-color: #ccc;
+}
+
+.yuEContent{
+	width:950px;
+	text-align: left;
+}
+.yuEContent .yuE_accountID{
+	padding:10px 0px;
+}
+.yuEContent .yuE  div{
+	padding:15px 0px;
+}
+.yuEContent .yuE_accountID div{
+	display:inline-block;
+}
+
+.yuEContent .yuE_accountID #status{
+	margin-left: 50px;
+}
+.yuEContent .yuE_accountID #czBtn{
+	margin-left: 50px;
+}
+
+.yuEContent .yuE_accountID #status #greenFont{
+	color:#ff0000;
+}
+
+.bigPrice span{
+	font-size: 28px;
+	color:#FF6600;
+}
+#chongzhiContent{
+	margin: 50px;
+}
+.chongzhi_infos_inputs{
+	text-align: left;
+	font-size: 16px;
+	/*height: 30px;*/
+	line-height: 30px;
+	padding: 10px 0;
+}
+
+.chongzhi_infos_inputs label{
+	display: inline-block;
+	width: 130px;
+	text-align: right;
+}
+.chongzhi_infos_inputs input,.infos_inputs select{
+	display: inline-block;
+	border: 1px solid #c1c1c1;
+	padding-left:5px;
+}
+.chongzhi_infos_inputs input{
+	height: 28px;
+	line-height: 28px;
+	width: 233px;
+}
+.chongzhi_infos_inputs select{
+	padding:5px 0\0;
+	height: 28px;
+	width: 240px;
+}
+.chongzhi_infos_inputs select option{
+	height: 28px;
+	line-height: 28px;
+}
+
+.chongzhi_infos_inputs .icon-radio{
+	width:14px;
+	height:14px;
+}
+
+.chongzhi_infos_inputs ul{
+	margin-left: 120px;
+	width:700px;
+}
+
+.chongzhi_infos_inputs ul li{
+	display:inline-block;
+	height:50px;
+	width:200px;
+}
+

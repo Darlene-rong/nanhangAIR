@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+.send .info3,
+.arrive .info3,
+.send .info2,
+.arrive .info2,
+.send .name,
+.arrive .name {
+  display: none;
+}
+
+li.send,
+li.arrive {
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+li.send:hover,
+li.arrive:hover {
+  background-color: #dddddd;
+  color: #5599ff;
+}
+
+.citieslist ul li {
+  margin: 3px;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: inline;
+  float: left;
+}
+
+.current {
+  background-color: #dddddd;
+  color: #5599ff;
+}
+
+#sendlist {
+  margin: 0px;
+  width: 280px;
+  min-height: 35px;
+  max-height: 250px;
+  position: absolute;
+  left: 65px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1040;
+  background-color: #ffffff;
+  border: #99bbff 1px solid;
+}
+
+#arrivelist {
+  margin: 0px;
+  width: 280px;
+  min-height: 35px;
+  max-height: 250px;
+  position: absolute;
+  left: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1040;
+  background-color: #ffffff;
+  border: #99bbff 1px solid;
+}
+
+#kpxx {
+  background-color: #fff;
+  width: 500px;
+  border: #99bbff 4px solid;
+  font-size: 12px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2050;
+}
+#lcxx {
+  background-color: #fff;
+  width: 250px;
+  border: #99bbff 4px solid;
+  font-size: 12px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2050;
+}
+#xlxx {
+  background-color: #fff;
+  width: 380px;
+  border: #99bbff 4px solid;
+  font-size: 12px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2050;
+}
+
+#kpxx .ticket-box tr {
+  line-height: 40px;
+}
+#lcxx .ticket-box .tsxx,
+#xlxx .ticket-box .tsxx {
+  line-height: 40px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+}
+#kpxx .ticket-box .grey,
+#lcxx .ticket-box .grey {
+  color: #888888;
+  text-align: left;
+  margin-left: 10px;
+}
+#kpxx .ticket-box .grey .red {
+  color: #ff0000;
+}
+
+/*登陆*/
+#loginModal.page_mask_div
+  .page_mask_con
+  .no_login_ticket
+  .no_login_ticket_con_left
+  .no_login_ticket_con_left_login {
+  border: 0;
+}
+#loginModal.page_mask_div
+  .page_mask_con
+  .no_login_ticket
+  .no_login_ticket_con_left,
+.page_mask_div .page_mask_con .no_login_ticket .no_login_ticket_con_right {
+  height: auto;
+}
+#loginModal .nav_box {
+  height: 50px;
+  line-height: 50px;
+  font-size: 0;
+  text-align: center;
+}
+
+#loginModal .nav_box .full {
+  width: 50%;
+  display: inline-block;
+  float: none;
+  padding: 0;
+  color: inherit;
+  font-size: 18px;
+  color: #666;
+}
+
+#loginModal .nav_box .full.action {
+  color: #2298ef;
+  border-bottom: 2px solid #2298ef;
+}
+#loginModal .hq_input {
+  display: inline-block;
+  width: 150px;
+  margin: 0;
+}
+#loginModal .hq {
+  display: inline-block;
+  width: 123px;
+  margin: 0;
+  padding: 0 15px;
+}
+#loginModal .hq.disabled {
+  color: #fff;
+  cursor: not-allowed;
+  background: #ccc;
+}
+
+/*往返*/
+#flightInfo {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#flightInfo .sh-summary-detail {
+  position: relative;
+  margin-right: 240px;
+  overflow: visible;
+  border-right: 1px dashed #ccc;
+}
+
+#flightInfo .sh-summary-detail .detail-price {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0 0 0 5px;
+  width: 240px;
+  z-index: 0;
+}
+
+#flightInfo .sm-slice .j-modify {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 80px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -10px;
+  font-size: 12px;
+}
+
+#flightInfo .final-price {
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 26px;
+  color: #0093d0;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #ffe;
+}
+
+#flightInfo .final-price strong {
+  font-weight: 400;
+}
+.sm-trip .info {
+  padding-left: 15px;
+}
+.sm-trip-prefix {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 70px;
+  color: #fff;
+  background: #008acd;
+  margin: auto;
+  bottom: 0;
+  z-index: 1;
+  padding: 13px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.sm-trip.trip-idx-0 {
+  border-top: 0 none;
+  position: relative;
+}
+
+.sm-trip {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-top: 1px dashed #ccc;
+}
+.sm-trip .info {
+  padding-left: 5px;
+}
+.sm-slice {
+  position: relative;
+}
+.sm-seg {
+  overflow: hidden;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px dashed #ccc;
+  font-size: 13px;
+  line-height: 20px;
+}
+.sm-seg:first-child {
+  border-top: 0 none;
+}
+.sm-seg:last-child {
+  border-bottom: 0 none;
+}
+
+.sm-seg strong {
+  display: block;
+  font-size: 18px;
+  color: #666;
+  font-weight: 400;
+  line-height: 30px;
+}
+.sm-endpoint .sm-ep-time {
+  font-size: 18px;
+}
+.sm-endpoint {
+  width: 36.5%;
+}
+.sm-seg > li {
+  position: relative;
+  float: left;
+  color: #666;
+  font-size: 14px;
+}
+.sm-flight {
+  width: 12%;
+  font-size: 12px;
+}
+.sm-slice .line {
+  border-top: 1px dotted #2298ef;
+  height: 0;
+  line-height: 20px;
+  margin: 18px 0 6px;
+  overflow: visible;
+  position: relative;
+}
+
+.ico-plane::before {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-left-color: #2298ef;
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+}
+.sm-cabin {
+  width: 15%;
+  line-height: 15px;
+  margin-top: 7px;
+}
+.sm-cabin strong {
+  font-size: 13px;
+  line-height: 20px;
+  height: 20px;
+}
+.sm-seg-hint {
+  padding-left: 50px;
+  position: relative;
+  font-size: 13px;
+  color: #666;
+  clear: both;
+  text-align: left;
+}
+.sm-seg-hint .ico-tips {
+  position: absolute;
+  left: 30px;
+  top: 3px;
+  background-color: #40b5e2;
+  font-size: 12px;
+  font-family: fantasy;
+  font-style: normal;
+}
+.ico-tips {
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  background-color: #0e99d0;
+  border-radius: 10px;
+  _background-position: -1px -15px;
+  color: #fff;
+  font-size: 14px;
+}
+.sh-sm-table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: center;
+  line-height: 14px;
+}
+.sh-sm-table th {
+  border-bottom: 1px dashed #ccc;
+  color: #0093d0;
+  padding: 4px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+.sh-sm-table td {
+  padding: 4px 0;
+  color: #666;
+  font-size: 13px;
+}

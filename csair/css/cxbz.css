@@ -1,0 +1,1209 @@
+@charset "utf-8";
+/*******************1***********************/
+.mileageContent{
+	padding:25px 10px;
+	border:#97b5e9 1px solid;
+}
+
+.mileageContent  ul .syqk{
+	display:inline-block;
+	float: left;
+	border-bottom: #ccc solid 1px;
+	width:180px;
+}
+.mileageContent  ul .current{
+	background-color: #1478b4;
+}
+.mileageContent  ul .current a{
+	color:#fff;
+}
+.second-right {
+    width: 100%;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.second-con-title {
+    color: #0193cf;
+    padding-left: 15px;
+    padding-top: 25px;
+    font-size: 24px;
+    height: 55px;
+    position: relative;
+}
+.second-form-box {
+    border: none;
+    padding: 15px 0 15px 30px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.form-con-list div.show {
+    display: block;
+}
+
+.form-con-list table td {
+    line-height: 45px;
+}
+
+.oldHtmlpage {
+    color: #484848;
+    font-size: 14px;
+    line-height: 2;
+}
+.oldHtmlpage p {
+    margin: 10px 0;
+}
+.oldHtmlpage a {
+    color: #00a0e9;
+}
+
+/******************2************************/
+
+.oldList {
+    padding: 30px 0;
+}
+table.check-in-list {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2em;
+}
+table.check-in-list .current {
+    background: white;
+}
+table.check-in-list td {
+    border: 1px solid #7cb7e9;
+    width: 50%;
+    font-weight: bold;
+    background: #7cb7e9;
+}
+table.check-in-list .current a {
+    color: #7cb7e9;
+}
+table.check-in-list a {
+    color: #fff;
+    display: block;
+}
+.oldList .tabContent {
+    padding: 10px 15px;
+}
+.question {
+    margin-bottom: 2px;
+}
+.q-title {
+    background: #f3f0f0;
+    font-size: 12px;
+    line-height: 2em;
+    padding-left: 1em;
+    position: relative;
+}
+.q-body {
+    padding: 10px 20px;
+    line-height: 1.5em;
+}
+.oldHtmlpage .dcampusTable {
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+.dcampusTable {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.oldHtmlpage .dcampusTable td {
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    padding-left: 5px;
+    line-height: 22px;
+    color: #727272;
+}
+/******************3************************/
+.second-form-box div.form-title ul {
+    width: 60%;
+    border-bottom: 1px solid #e1e1e1;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.second-form-box div.form-title ul li.current {
+    background-color: #0093d0;
+    color: #fff;
+}
+.second-form-box div.form-title ul li {
+    float: left;
+    padding: 0 20px;
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.oldHtmlpage .nt {
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    margin-top: 10px;
+}
+.nt tr td {
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 5px;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+#result table {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+#result table td {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    text-align: center;
+}
+/******************4************************/
+.main_layout {
+    display: inline;
+    float: left;
+    height: 260px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    padding: 0 8px;
+    position: relative;
+    width: 220px;
+}
+.main_layout h2 {
+    color: #333;
+    font-size: 12px;
+}
+.main_layout div {
+    border-left: 1px solid #ccc;
+    clear: both;
+    float: left;
+    margin-top: 8px;
+    padding-left: 8px;
+    width: 90%;
+}
+.main_layout div a {
+    color: #308297;
+    line-height: 23px;
+}
+.cb {
+    clear: both;
+    width: 100%;
+}
+.destination .current-city {
+    color: #0093d0;
+    margin: 0 0 20px;
+}
+.destination img {
+    max-width: 100%;
+}
+.second-form-box div.city-tab ul {
+    width: 60%;
+    border-bottom: 1px solid #e1e1e1;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.second-form-box div.city-tab ul li.current {
+    background-color: #0093d0;
+    color: #fff;
+}
+.second-form-box div.city-tab ul li {
+    float: left;
+    padding: 0 20px;
+    line-height: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+.city-item-list li {
+    margin-right: 3px;
+    text-align: center;
+    padding: 20px;
+}
+.destination .city-info p {
+    padding-top: 10px;
+    line-height: 20px;
+    margin-bottom: 9px;
+    color: #484848;
+    font-size: 14px;
+}
+/************************5********************/
+.oldHtmlpage .uinfo {
+    border: 1px solid #bfd6e8;
+    margin-bottom: 10px;
+    background: none repeat scroll 0 0 #FFF;
+}
+.oldHtmlpage .ua-table {
+    position: relative;
+}
+.form-con-list .oldHtmlpage table {
+    margin: 0;
+}
+
+.oldHtmlpage .ua-table table {
+    border-spacing: 0;
+}
+.oldHtmlpage .ua-table table th {
+    height: 34px;
+    font-weight: normal;
+    text-align: center;
+    color: #484848;
+   	border-bottom:  #7bb7e9 solid 1px;
+}
+
+.oldHtmlpage .ua-table table td.bordye {
+    border-right: 1px solid #7bb7e9;
+}
+.oldHtmlpage .ua-table table td {
+    text-align: center;
+    border-bottom: 1px solid #bcd3e5;
+    color: #484848;
+    height: 40px;
+}
+/**************6********************/
+
+.imgNav{text-align:center;overflow:hidden;width:800px;margin:50px auto;}
+.in-box{display:block;float:left;vertical-align:middel;cursor:pointer;}
+.in-box img{width:55px;height:55px;padding:0 20px;}
+.in-descript{display:block;}
+.in-next{float:left;display:block;}
+.in-next img{height:25px;padding-top:15px;}
+
+
+.ddrnt {
+    line-height: 22px;
+    padding: 15px;
+}
+.oldHtmlpage .cblutx {
+    border: 1px solid #bcd3e5;
+    background: #ecf2f7;
+    color: #8d8d8d;
+}
+
+#current_city {
+    font-size: 14px;
+    line-height: 50px;
+    color: #088fd2;
+    font-weight: bold;
+}
+#city_list {
+    width: 530px;
+    margin: 10px 0;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#city_list td {
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+#city_options {
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+table.ccc{
+    border-collapse:collapse;
+}
+table.ccc td, table.ccc th{
+    border:1px solid #ccc;
+}
+/*******************7**********************/
+.piccenter {
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.mainbr {
+    float: right;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.oldHtmlpage .flex-container {
+    left: 0;
+    margin: 0 auto;
+    width: 735px;
+    height: 400px;
+}
+
+.flex-container {
+    margin-top: 10px;
+}
+.oldHtmlpage .flexslider {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.oldHtmlpage .flexslider {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.oldHtmlpage .flexslider .slides {
+    zoom: 1;
+}
+html[xmlns] .slides {
+    display: block;
+}
+.oldHtmlpage .slides, .flex-control-nav, .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.oldHtmlpage .flexslider .slides>li {
+    position: relative;
+}
+.flexslider .slides img {
+    max-width: 100%;
+    display: block;
+    background: #fff;
+}
+.mainbr img {
+    width: 735px;
+    height: 400px;
+}
+.piccenter img {
+    max-width: 100%;
+}
+.oldHtmlpage .flex-direction-nav .flex-prev {
+    left: 0;
+    cursor: url(http://www.csair.com/cn/images/bg_direction_pre.cur),auto;
+    background: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.oldHtmlpage .flex-direction-nav li a {
+    width: 120px;
+    height: 300px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    text-indent: -9999px;
+    z-index: 100;
+}
+.oldHtmlpage .flex-direction-nav .flex-next {
+    right: 0;
+    cursor: url(http://www.csair.com/cn/images/bg_direction_next.cur),auto;
+    background: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.oldHtmlpage .flex-control-nav {
+    position: absolute;
+    display: block !important;
+    right: auto;
+    bottom: 15px;
+    text-align: center;
+    z-index: 100;
+    width: 100%;
+}
+.oldHtmlpage .flex-control-nav li:first-child {
+    margin: 0;
+}
+.oldHtmlpage .flex-control-nav li {
+    margin: 0 0 0 5px;
+    display: inline-block;
+    zoom: 1;
+}
+.flex-control-nav li a {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: url(http://www.csair.com/cn/images/icon.png) no-repeat 1px -400px;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+.oldHtmlpage .flex-control-nav li a {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(http://www.csair.com/cn/images/bg_control_nav.png) no-repeat -3px 5px;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+.oldHtmlpage .flex-control-nav li a.flex-active {
+    background-position: -3px -17px;
+    cursor: default;
+}
+/*************************8***********************/
+.dc_left {
+    width: 900px;
+    min-height: 350px;
+    _height: 350px;
+    padding: 15px 30px;
+}
+.openall {
+	display: none;
+    font: 14px/20px \5B8B\4F53;
+    padding: 10px 20px 10px 30px;
+    border-top: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+.closeall {
+    display: none;
+    background: url(/cn/tourguide/faq/images/dc_add.gif) no-repeat 9px -38px;
+    font: 14px/20px \5B8B\4F53;
+    padding: 10px 20px 10px 30px;
+    border-top: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+
+.dc_qa {
+    padding: 10px 20px 20px 30px;
+    line-height: 20px;
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.dc_q_on .dc_qa_b {
+    display: block;
+    height: 8px;
+    overflow: hidden;
+}
+.dc_qt{
+	font-size: 16px;
+	color:#0193cf;
+	font-weight: bold;
+}
+
+/*************************9*****************************/
+  .boardingflow .oneboard {
+  position:relative;
+  float: left;
+  margin: 10px 0;
+  width: 62px;
+}
+  .boardingflow .oneboard .helppro {
+  background: url("http://www.csair.com/cn/tourguide/faq/images/dengjibg.jpg") no-repeat scroll 0 0;
+  color: #ffffff;
+  display: block;
+  float: left;
+  height: 26px;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  text-indent: 0;
+  width: 62px;
+}
+  .helppro {
+    background: url("http://www.csair.com/cn/tourguide/faq//images/air-common-ico.gif") repeat scroll 0 -79px;
+    display: block;
+    float: left;
+    height: 14px;
+    margin-left: 5px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -100em;
+    width: 14px;
+}
+  .thisDetailed {
+  display: none;
+}
+  .boardingflow .oneboard:hover .thisDetailed{
+    padding:14px 11px;
+    background-color:white;
+    border:4px solid #929EB4;
+    top:30px;
+    position:absolute;
+    width:250px;
+    display:block;
+  }
+
+  /*************************10****************************/
+.oldHtmlpage .contact {
+    text-align: left;
+}
+.oldHtmlpage .contact .sbox {
+    width: 400px;
+    height: 210px;
+    margin-left: 6px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+.oldHtmlpage h4 {
+    margin: 10px 0;
+}
+.oldHtmlpage .contact .sbox ul {
+    width: auto;
+    float: none;
+}
+.oldHtmlpage .sbox li {
+    height: 25px;
+    line-height: 25px;
+}
+
+/*************************11****************************/
+
+.oldList .tabs {
+    position: relative;
+    top: 1px;
+    overflow: hidden;
+    zoom: 1;
+    background: url(http://www.csair.com/cn/images/biaoqian.png) no-repeat left top;
+}
+.oldList .tabs li.active {
+    font-weight: bold;
+}
+.oldList a {
+    color: #008dd3;
+}
+.oldList .tabs li {
+    float: left;
+    width: 105px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.oldList .tabContent {
+    padding: 10px 15px;
+}
+.oldList .tabContent ul li {
+    padding: 3px 0;
+    line-height: 2em;
+    font-size: 14px;
+}
+.pagesBar {
+    text-align: right;
+}
+.pagesBar .current {
+    color: white;
+    background: #008ac9;
+    border-color: #008ac9;
+}
+.pagesBar span {
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: #f2f2f2;
+    border: 1px solid;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.oldList #yearslist ul {
+    list-style: none;
+}
+.oldList #yearslist ul li {
+    float: right;
+    margin: 15px 5px 0 5px;
+}
+
+
+/*************************12***************************/
+.oldHtmlpage .ua-table table th {
+    background: url(http://www.csair.com/cn/images/air_bg001.gif) repeat-x 0 -472px;
+    height: 34px;
+    font-weight: normal;
+    text-align: center;
+    color: #484848;
+}
+.oldHtmlpage .ua-table table td.bordye {
+    border-right: 1px solid #7bb7e9;
+}
+.investment-team {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+.investment-team ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.investment-team .box-01 {
+    padding: 10px 0 10px 0;
+}
+.col-sm-4 {
+    width: 33.33333333%;
+    display:inline-block;
+}
+.investment-team ul li .item-button {
+    color: #8b8b8b;
+    border-bottom: solid #c7c7c7 1px;
+    min-height: 90px;
+    margin-right: 30px;
+}
+.investment-team ul li .item-button h4>a {
+    color: #555;
+    font-size: 12px;
+}
+.investment-team ul li .popup-box {
+    display: none;
+    max-width: 400px;
+    width: 100%;
+}
+.clearfix {
+    display: block;
+}
+
+.x-container {
+    padding: 15px;
+}
+.row {
+    /* height: 100%; */
+    overflow: hidden;
+}
+.col-sm-12 {
+    width: 100%;
+    display:inline-block;
+}
+.x-container h5 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: #575757;
+}
+.investment-team ul li .details {
+    margin-top: 10px;
+}
+/*************************13***************************/
+.hidden {
+    display: none !important;
+}
+.text-right {
+    text-align: right;
+}
+.chosen-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    zoom: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-align: left;
+    outline: 0;
+}
+.chosen-container-single .chosen-single {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    height: 25px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0,0,0,.1);
+    color: #444;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 24px;
+    outline: 0;
+}
+.chosen-container-single .chosen-single span {
+    display: block;
+    overflow: hidden;
+    margin-right: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #888;
+    padding: 4px;
+    box-sizing: border-box;
+    line-height: 17px;
+    outline: 0;
+}
+.chosen-container-active.chosen-with-drop .chosen-single div {
+    border-left: 0;
+    background: transparent;
+}
+.chosen-container-single .chosen-single div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 18px;
+    height: 100%;
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -18px 2px;
+}
+.chosen-container-single .chosen-single div b {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(http://www.csair.com/cn/images/chosen-sprite.png) no-repeat 0 2px;
+}
+.chosen-container .chosen-drop {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: -9999px;
+    z-index: 1010;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-top: 0;
+    background: #fff;
+    box-shadow: 0 4px 5px rgba(0,0,0,.15);
+    margin-top: -1px;
+    border-radius: 0 0 4px 4px;
+    background-clip: padding-box;
+}
+.chosen-container-single .chosen-search {
+    position: relative;
+    z-index: 1010;
+    margin: 0;
+    padding: 3px 4px;
+    white-space: nowrap;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+    box-sizing: border-box;
+    margin: 1px 0;
+    padding: 4px 20px 4px 5px;
+    width: 100%;
+    height: auto;
+    outline: 0;
+    border: 1px solid #aaa;
+    background: url(http://www.csair.com/cn/images/chosen-sprite.png) no-repeat 100% -20px;
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: normal;
+    border-radius: 0;
+}
+.chosen-container .chosen-results {
+    color: #444;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 4px 4px 0;
+    padding: 0 0 0 4px;
+    max-height: 240px;
+    -webkit-overflow-scrolling: touch;
+}
+.chosen-container .chosen-results li.active-result {
+    display: list-item;
+    cursor: pointer;
+}
+.chosen-container .chosen-results li {
+    display: none;
+    margin: 0;
+    list-style: none;
+    line-height: 15px;
+    word-wrap: break-word;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+}
+.chosen-container .chosen-results li a {
+    color: #444;
+    padding: 5px 6px;
+    display: block;
+}
+.oldList ul .news-item {
+    overflow: hidden;
+    zoom: 1;
+    padding-bottom: 10px;
+}
+.oldList .news-date {
+    display:inline-block;
+    width: 15.6666667%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    color: #565656;
+}
+.oldList .news-title {
+    display:inline-block;
+    width: 82.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+.page_zys {
+    padding: 0 15px;
+    height: 34px;
+    background: #dce9f2;
+    font-size: 12px;
+    line-height: 34px;
+    font-family: \5B8B\4F53;
+    color: #5f5f5f;
+    border: 1px solid #0093d0;
+    border-top: 1px solid #bfd6e6;
+    margin-top: -1px;
+}
+.page_zys a {
+    font-size: 12px;
+    line-height: 34px;
+    font-family: \5B8B\4F53;
+    color: #5f5f5f;
+    text-decoration: none;
+    margin: 0 4px;
+}
+.page_zys .pageL_zys {
+    float: left;
+}
+.page_zys .pageL_zys {
+    text-align: left;
+}
+.page_zys .pageR_zys {
+    text-align: right;
+}
+/*************************13***************************/
+#investor-email .msg-list {
+    padding: 30px 40px 15px;
+}
+#investor-email .msg-list .msg-left {
+    text-align: right;
+    font-size: 14px;
+    color: #4d4c4f;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#investor-email .msg-list .msg-right {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+#investor-email .msg-list .msg-right input {
+    border: 1px solid #b5b5b5;
+    width: 300px;
+    padding: 8px 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+#investor-email .msg-list .msg-right select {
+    border: 1px solid #b5b5b5;
+    width: 300px;
+    padding: 8px 5px;
+    margin-right: 10px;
+}
+#investor-email .msg-list .msg-right span {
+    color: red;
+    line-height: 22px;
+    font-size: 14px;
+    display: inline-block;
+}
+#investor-email .btn-list {
+    padding-left: 150px;
+    padding-bottom: 10px;
+}
+#investor-email .btn-list input {
+    margin-right: 15px;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #0093d1;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+/*****************************14********************************/
+#financial-overview .nav-tabs {
+    overflow: hidden;
+}
+.nav {
+    clear: both;
+}
+#financial-overview .nav-tabs>li {
+    width: auto;
+}
+.nav li {
+    width: 14.2%;
+    float: left;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+}
+#financial-overview .nav-tabs>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border-radius: 4px 4px 0 0;
+    color: #337ab7;
+    background: 0;
+    background-color: #f1f1f1;
+    font-size: 12px;
+}
+.nav li:first-child a {
+    background: 0;
+    padding-right: 0;
+}
+.nav li a {
+    color: #0093d0;
+    padding-right: 18px;
+    background: url(http://www.csair.com/cn/images/common_a.png) right -475px no-repeat;
+}
+#financial-overview .nav-tabs li.active a {
+    border: 1px solid #ddd;
+    padding-top: 5px;
+    border-top: 5px solid #0393d0;
+    background-color: #fff;
+    border-bottom-color: transparent;
+    color: #555;
+}
+#financial-overview .financial-carousel {
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    overflow: hidden;
+    margin-top: 5px;
+}
+#financial-overview .financial-carousel .leftArrow {
+    float: left;
+}
+#financial-overview .financial-carousel .rightArrow {
+    float: right;
+}
+#financial-overview .financial-carousel .arrow {
+    margin: 5px;
+    width: 25px;
+    height: 55px;
+    background: #fff;
+    border: 1px solid #0093d0;
+    color: #0093d0;
+    text-decoration: none;
+    text-align: center;
+    line-height: 55px;
+    cursor: pointer;
+}
+#financial-overview .financial-carousel .center-carousel {
+    width: 850px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#financial-overview .financial-carousel .center-carousel ul {
+    transition: margin-left 1s;
+    -moz-transition: margin-left 1s;
+    -webkit-transition: margin-left 1s;
+    -o-transition: margin-left 1s;
+    overflow: hidden;
+}
+#financial-overview .financial-carousel .center-carousel ul li.current {
+    background-color: #0093d0;
+    color: #fff;
+}
+#financial-overview .financial-carousel .center-carousel ul li {
+    display: inline-block;
+    width: 195px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #0093d0;
+    border: 1px solid #0093d0;
+    margin: 5px;
+    font-size: 14px;
+    transition: background .5s;
+    -moz-transition: background .5s;
+    -webkit-transition: background .5s;
+    -o-transition: background .5s;
+    _position: relative;
+}
+#diagram table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+}
+#diagram tr {
+    border: 1px solid black;
+    height: 31px;
+}
+#diagram th {
+    background: #3e92cb;
+    color: white;
+    text-align: center;
+}
+#diagram td:first-child {
+    text-align: left;
+    padding-left: 15px;
+}
+#diagram td {
+    text-align: center;
+}
+
+/*****************************15******************************/
+
+.report-list .tab-buttons {
+    padding-left: 40px;
+}
+.report-list .tab-buttons>li, .report-list .tab-buttons li {
+    float: initial;
+    display: inline-block;
+    min-width: 70px;
+}
+.report-list .tab-buttons>li a, .report-list .tab-buttons li a, .report-list .tab-buttons>li a:focus, .report-list .tab-buttons li a:focus {
+    border: 0;
+    background-color: #fff;
+    padding: 0 10px;
+    display: inherit;
+}
+.report-list .tab-buttons li.current a, .report-list .tab-buttons li.active a {
+    color: #23527c;
+    border-bottom: 5px solid #0393d0;
+}
+.report-list .year-table {
+    margin-bottom: 31px;
+}
+.report-list ul {
+    overflow: hidden;
+}
+
+.report-list li.row {
+    width: 49.9%;
+    display: none;
+    margin-bottom: 20px;
+    height: 254px;
+    margin-left: -4px;
+    border-bottom: solid 1px #d7d7d7;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.report-list li.row .img-container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 47%;
+}
+.col-sm-6 {
+    float: left;
+}
+.report-list li.row .img-container img {
+    border: solid 1px #d7d7d7;
+    width: 160px;
+    height: 226px;
+}
+.report-list li.row .title {
+    padding-left: 3px;
+    width: 53%;
+    display: table;
+    height: 225px;
+    box-sizing: border-box;
+}
+.report-list li.row .title .xtitle {
+    display: table-cell;
+    vertical-align: middle;
+    color: #565656;
+}
+/*************************userFeedback****************************/
+.boxContent {
+    padding: 10px;
+}
+.mileageContent .boxContent li {
+    font-size: 14px;
+    background: url(http://feedback.csair.com/guestbook/images/common_a.png) -356px -980px no-repeat;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.item {
+    padding-bottom: 10px;
+}
+.formLeft {
+    display:inline-block;
+    text-align: right;
+    width: 16%;
+    padding-right: 2%;
+    font-size: 14px;
+    color: #909090;
+    line-height: 28px;
+}
+.must {
+    color: red;
+}
+.formRight {
+    display:inline-block;
+    text-align: left;
+    width: 80%;
+}
+.boxWrap {
+    display: inline-block;
+    width: 95px;
+}
+.chosen {
+    border: 1px solid #1387D3;
+    background: url(http://feedback.csair.com/guestbook/images/chosen.png) no-repeat bottom right #E4F7F9;
+}
+.chooseBox {
+    display: inline-block;
+    border: 1px solid #8F8989;
+    padding: 2px 6px;
+    margin-top: 3px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.inputText {
+    width: 90%;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px;
+}
+.inputTextarea {
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+    display: block;
+}
+.inputText50 {
+    width: 40%;
+}
+.inputMcode {
+    margin-left: 10px;
+}
+.inputText15 {
+    width: 13%;
+}
+.buttontforMcode {
+    background-color: #dae0e2;
+    border: 1px solid #dae0e2;
+    color: #fff;
+    margin-left: 10px;
+}
+.inputSubmit {
+    cursor: pointer;
+}
+.inputSubmit {
+    font-size: 16px;
+    color: #fff;
+    background-color: #ee1b2f;
+    border: 0;
+    line-height: 36px;
+    padding: 0 20px;
+}
+.formButtonBox a {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #0093d0;
+    text-decoration: underline !important;
+}
+.tipsTitle {
+    color: #0093d0;
+    background: url(http://feedback.csair.com/guestbook/images/common_a.png) -314px -597px no-repeat;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    margin: 10px 225px;
+}
+.tipsContent {
+    background-color: #f1f1f1;
+    padding: 15px 15px 15px 0;
+    text-align: left;
+    margin: 0px 220px 35px;
+}
+.tipsContent li {
+    line-height: 22px;
+    background: url(http://feedback.csair.com/guestbook/images/common_a.png) -356px -978px no-repeat;
+    padding-left: 20px;
+}

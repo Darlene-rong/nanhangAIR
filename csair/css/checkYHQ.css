@@ -1,0 +1,43 @@
+.YHQorder{
+	margin:0 0 20px 0;
+}
+.flight_infoMX table{
+	width:100%;
+	border: 1px solid #bbd2e3;
+}
+.flight_infoMX table th{
+	background-color:  #e7f1ff;
+	border:none;
+	line-height: 40px;
+}
+.flight_infoMX table td{
+	background-color:  #fff;
+	line-height: 40px;
+}
+#YHQsy ul{
+	width:940px;
+}
+#YHQsy ul .syqk{
+	display:inline-block;
+	width:180px;
+}
+#YHQsy ul .checkOrBingding{
+	display:inline-block;
+	width:380px;
+}
+.qtipdiv-wallt{
+	position:absolute;
+	top:43px;
+	left:-170px;
+	width:480px;
+	background-color:#fff;
+	border:#3399FF solid 2px;
+	padding:5px;
+	font-size:12px;
+	text-align: left;
+	z-index: 999;
+}
+
+.qtipdiv-wallt *{
+	line-height: 20px;
+}

@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+*{
+	margin:0;
+}
+#year {
+	width: 80px;
+	float: left;
+	margin-left: 11px;
+}
+
+#month,
+#day {
+	width: 60px;
+	float: left;
+	margin-left: 10px;
+}
+
+#year2 {
+	width: 80px;
+	float: left;
+	margin-left: 11px;
+}
+
+#month2,
+#day2 {
+	width: 60px;
+	float: left;
+	margin-left: 10px;
+}

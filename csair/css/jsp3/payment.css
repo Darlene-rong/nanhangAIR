@@ -1,0 +1,177 @@
+.redC {
+  color: red !important;
+}
+
+.redbg {
+  background-color: #fa4545 !important;
+}
+
+.pybtn {
+  width: 150px;
+  margin: 10px auto;
+  background-color: #fa4545;
+  color: #FFF;
+  font-size: 24px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  cursor: pointer;
+}
+
+.pay_header {
+  margin: 30px 0px;
+  padding-left: 15px;
+}
+
+.pay_header span:first-child {
+  color: #0093d0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.pay_header span:last-child {
+  color: #000;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.pay_header span:last-child b {
+  padding: 0px 5px;
+}
+
+.pytitle {
+  height: 50px;
+  line-height: 50px;
+  background-color: #0093d0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.pylist ul {
+  margin: 15px 30px;
+}
+
+.pylist ul li {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #666;
+}
+
+.pylist ul li span {
+  font-weight: bolder;
+  color: #000;
+  font-size: 20px;
+}
+
+.paythird {
+  height: 50px;
+  display: inline-block;
+  width: 200px;
+  line-height: 50px;
+  border: rgba(223, 222, 222, 0.76) 1px solid;
+  margin: 20px;
+  padding: 10px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.paythird a {
+  display: inline-block;
+}
+
+.paythird input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+.paythird img {
+  width: 158px;
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+.py_from {
+  margin: 20px auto;
+  padding: 20px;
+  width: 600px;
+}
+
+.py_input {
+  margin: 15px auto;
+}
+
+.py_input label {
+  display: inline-block;
+  width: 180px;
+  text-align: right;
+  font-size: 16px;
+  color: #4e4e4e;
+  padding: 0 10px;
+}
+
+.py_input input {
+  width: 220px;
+  margin-left: 10px;
+}
+
+.py_input select {
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.py_input_inline input[type="radio"] {
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+}
+
+.py_paytype {
+  height: 700px;
+  padding: 20px;
+  border: rgba(1, 117, 152, 0.43) 1px solid;
+}
+
+.pyty_erweima {
+  width: 488px;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  top: 64px
+}
+
+.pyty_erweima_img {
+  height: 300px;
+  width: 300px;
+}
+
+.pyty_list {
+  display: inline-block;
+  height: 300px;
+  width: 404px;
+}
+
+.py_third_btn {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.py_third_btn button {
+  background-color: #0093d0;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px;
+}

@@ -1,0 +1,70 @@
+.basic_infos_wrap .basic_infos {
+    padding: 85px 0 20px 125px;
+}
+.addCommPassenger_infos_divs{
+	text-align: left;
+    font-size: 16px;
+    /* height: 30px; */
+    line-height: 30px;
+    padding: 20px 0;
+}
+.addCommPassenger_infos_divs .commPassenger_infos{
+	 display: inline-block;
+}
+.addCommPassenger_infos_divs .commPassenger_infos label {
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+    margin:20px 0px;
+}
+
+.addCommPassenger_infos_divs .commPassenger_infos input {
+    height: 28px;
+    line-height: 28px;
+    width: 220px;
+}
+.addCommPassenger_infos_divs .commPassenger_infos #cardNum {
+    height: 28px;
+    line-height: 28px;
+    width: 135px;
+}
+.addCommPassenger_infos_divs .commPassenger_infos .selectDiv {
+	display:inline-block;
+    height: 30px;
+    line-height: 28px;
+    min-width: 80px;
+}
+.addCommPassenger_infos_divs .commPassenger_infos .selectDiv #year{
+	display:inline-block;
+    height: 30px;
+    line-height: 28px;
+    min-width: 95px;
+}
+.addCommPassenger_infos_divs .selectDiv #month,#day{
+	display:inline-block;
+    height: 30px;
+    line-height: 28px;
+    min-width: 60px;
+}
+.addCommPassenger_infos_divs .commPassenger_infos .selectDiv  #cardTyep {
+	display:inline-block;
+    height: 30px;
+    line-height: 28px;
+    width: 80px;
+}
+
+.content {
+    min-height: 400px;
+}
+.psgTypeContent{
+	margin:20px 0px;
+}
+.psgTypeContent .psgType{
+	font-size: 16px;
+	text-align: left;
+}
+.psgTypeContent .psgType label{
+	display: inline-block;
+    width: 130px;
+    text-align: right;
+}

@@ -1,0 +1,213 @@
+@CHARSET "UTF-8";
+
+.send .info3,.arrive .info3 ,.send .info2,.arrive .info2 ,.send .name,.arrive .name{
+	display: none;
+}
+
+li.send,li.arrive{
+	color:#000;
+	font-size: 14px;
+	font-weight:300;
+}
+
+li.send:hover,li.arrive:hover{
+	background-color:#DDDDDD;
+	color:#5599FF;
+}
+
+
+
+.current{
+	background-color:#DDDDDD;
+	color:#5599FF;
+}
+
+#sendlist{
+	margin:0px;
+	width:280px;
+	min-height:35px;
+	max-height:250px;
+	position:absolute;
+	left: 65px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	z-index:1040;
+	background-color: #ffffff;
+	border: #99BBFF 1px solid;
+}
+
+#arrivelist{
+	margin:0px;
+	width:280px;
+	min-height:35px;
+	max-height:250px;
+	position:absolute;
+	left: 350px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	z-index:1040;
+	background-color: #ffffff;
+	border: #99BBFF 1px solid;
+}
+
+#kpxx{
+	background-color:#fff;
+	width:500px;
+	border: #99BBFF 4px solid; 
+	font-size: 12px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	z-index:2050;
+}
+#lcxx{
+	background-color:#fff;
+	width:250px;
+	border: #99BBFF 4px solid; 
+	font-size: 12px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	z-index:2050;
+}
+#xlxx{
+	background-color:#fff;
+	width:380px;
+	border: #99BBFF 4px solid; 
+	font-size: 12px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	z-index:2050;
+}
+
+#kpxx .ticket-box tr{
+	line-height: 40px;
+}
+#lcxx .ticket-box .tsxx , #xlxx .ticket-box .tsxx{
+	line-height: 40px;
+	font-size:14px;
+	text-align: left;
+	margin-left: 10px;
+}
+#kpxx .ticket-box .grey, #lcxx .ticket-box .grey{
+	color: 	#888888;
+	text-align: left;
+	margin-left: 10px;
+}
+#kpxx .ticket-box .grey .red{
+	color: #FF0000  ;
+}
+#cfcs, #ddcs {
+	width: 130px;
+}
+#year{
+	width: 70px;
+}
+#month,#day{
+	width: 50px;
+}
+#year2{
+	width: 70px;
+}
+#month2,#day2{
+	width: 50px;
+}
+#search_div_btn{
+	margin-left:0px;
+}
+
+
+
+.select_wrap .ap_flight_info,.select_wrap .ap_all_price,.select_wrap .add_pas,.select_wrap .ap_contacts_info{
+	/*border: 1px solid #bbd2e3;*/
+	/*border-top: none;*/
+	border-left: 1px solid #bbd2e3;
+    border-right: 1px solid #bbd2e3;
+}
+.ap_flight_info{
+	/*height: 155px;*/
+	background-color: #fafafa;
+}
+.ap_flight_info div.ap_flight_info_flight,.ap_flight_info div.ap_price_con{
+	float: left;
+	background: #fafafa;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight{
+	width: 570px;
+	border-right: 1px solid #bbd2e3;
+	padding: 35px 0 22px;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul{
+	height: 98px;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li{
+	float: left;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li.ap_flight_travel{
+	padding: 12px 10px 0 10px;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li.ap_flight_travel div{
+	height: 60px;
+	width: 25px;
+	color: #fff;
+	background: #ff5a00;
+	line-height: 27px;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li div.place{
+	width:70px;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li div.place,.select_wrap .ap_flight_info .ap_flight_info_flight ul li div.ap_datetime{
+	float: left;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li.ap_flight_dep{
+	width:300px;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li.ap_flight_dep div.ap_datetime{
+	background: url(../img/split_destination_short.png) 155px center no-repeat;
+	padding-right:75px;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li div.ap_datetime{
+	padding: 0 0 0 0px;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li div.place,.select_wrap .ap_flight_info .ap_flight_info_flight ul li.ap_flight_class div{
+	height: 85px;
+	line-height: 85px;
+	font-size: 14px;
+	color: #111111;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li div.ap_time{
+	padding-top: 26px;
+	background: url(../img/order_infos_time.png) top center no-repeat;
+	font-size: 14px;
+	color: #111111;
+}
+.select_wrap .ap_flight_info .ap_flight_info_flight ul li div.ap_date{
+	font-size: 14px;
+	color: #908f8f;
+	height:24px;
+	width:139px;
+}
+.select_wrap .ap_price_con{
+    /*height: 155px;*/
+    width: 386px;
+    padding: 0 10px;
+}
+.select_wrap .ap_price_con table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.select_wrap .ap_price_con table tr{
+	line-height: 34px;
+	/*border-bottom: 1px dashed #C1C1C1;*/
+}
+.select_wrap .ap_price_con table th{
+	color: #0e5ed7;
+}
+.select_wrap .ap_all_price{
+	/*border: 1px solid #bbd2e3;*/
+	padding: 20px;
+	border-top: 1px solid #bbd2e3;
+	font-size: 18px;
+ /*  text-align: right;*/
+}
+.select_wrap .ap_all_price .flight_price{
+	font-size: 26px;
+}

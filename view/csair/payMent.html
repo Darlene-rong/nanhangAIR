@@ -1,0 +1,151 @@
+<script src="../../view/jquery.js"></script>
+<script src="../../csair/js/js3/payMent.js"></script>
+<div class="container m-b">
+  <div class="pay_main text-l">
+    <div class="pay_header">
+      <span id="js_pay_tip">您已下单成功！</span>
+      <span id="js_pay_min"></span>
+    </div>
+    <div class="pay_cont js_th_radio">
+      <div class="pytitle">
+        <span>订单信息</span>
+        <span class="fr">订单号：<span id="js_pay_nid">GO1912230068226</span></span>
+      </div>
+      <div class="pylist">
+        <ul>
+          <li>收款方：<span>中国南方航空股份有限公司</span></li>
+          <li>商品信息：<span>充值卡</span></li>
+          <li>订单金额：<span class="redC">￥10</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pybtn js_py_overtime" style="display: none;"><a type="button" class="btnRed" title="重新下单">重新下单</a></div>
+    <div id="pay_cell" class="js_th_radio">
+      <ul class="cs_tab_cell js_pay_cell">
+        <li class="item  active" data-item='0'><a href="javascript:;">第三方支付</a></li>
+        <li class="item " data-item='1'><a href="javascript:;">快捷支付</a></li>
+      </ul>
+      <div class="cs_tab_content js_pcell_con">
+        <!-- 第三方支付 -->
+        <div class="tab_con show" data-item="0">
+          <div class="paythird " title="选择微信支付">
+            <label>
+              <input type="radio" class="js_rad_type" name="paytype1" value="weixin" title="微信支付"/>
+              <img src="https://upp.csair.com/upp_payment/pay/common/images/bank/WXPM.GIF" title="微信支付图片" alt="" />
+            </label>
+          </div>
+          <div class="paythird" title="选择支付宝支付">
+            <label>
+              <input type="radio"  class="js_rad_type" name="paytype2" value="zhifubao" title="支付宝支付"/>
+              <img src="https://upp.csair.com/upp_payment/pay/common/images/bank/ALIF.png" title="支付宝支付图片" alt="" />
+            </label>
+          </div>
+          <button type="button" class="pybtn" title="立即支付" id="js_py_ljzf">立即支付</button>
+        </div>
+        <!-- 快捷支付 -->
+        <div class="tab_con z_input" data-item="1">
+          <form action="" id="js_pay_from" class="py_from">
+            <div class="py_input " id="js_py_radio">
+              <label>卡类型：</label>
+              <label class="py_input_inline z_input_radio m-r" style="width: 78px;">
+                <input type="radio" class="js_cmdtype" name="cmdType1" id="raCredit" value="UOPF" checked="checked" title="信用卡，左右键切换"
+                  onchange="window.payMent._changCard(this)" onkeydown="window.payMent._changCard(this)" />
+                <span>信用卡</span>
+              </label>
+              <label class="py_input_inline z_input_radio m-r" style="width: 78px;">
+                <input type="radio" class="js_cmdtype" name="cmdType2" id="borrowCard" value="EposDebitSaleNew" title="借记卡，左右键切换"
+                  onchange="window.payMent._changCard(this)" onkeydown="window.payMent._changCard(this)" />
+                <span>借记卡</span>
+              </label>
+            </div>
+            <div class="py_input">
+              <label for="ACCOUNTNO"><span class="redC">*</span>卡号：</label>
+              <input type="text" value="" id="ACCOUNTNO" name="ACCOUNTNO" title="卡号输入" placeholder="请输入卡号"
+                onkeyup="this.value=this.value.replace(/\D/g,'')"
+                onafterpaste="this.value=this.value.replace(/\D/g,'')" />
+            </div>
+            <div class="py_input js_py_card">
+              <label for=""><span class="redC">*</span>有效期：</label>
+              <select name="pymonth" id="pymonth" title="请选择您的信用卡有效期的月份">
+                <option value="" title="月份">月份</option>
+              </select>
+              <select name="pyyear" id="pyyear" title="请选择您的信用卡有效期的年份">
+                <option value="">年份</option>
+              </select>
+            </div>
+            <div class="py_input js_py_card">
+              <label for=""><span class="redC">*</span>CVV2：</label>
+              <input type="password" id="CVV" name="CVV" title="信用卡背后3位CVV2码"
+                onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"
+                placeholder="信用卡背后3位CVV2码" maxlength="3" autocomplete='off' />
+            </div>
+            <div class="py_input">
+              <label for=""><span class="redC">*</span>持卡人姓名：</label>
+              <input type="text" id="BUYERNAME" name="BUYERNAME" title="持卡人姓名" placeholder="请输入持卡人姓名" />
+            </div>
+            <div class="py_input">
+              <label for=""><span class="redC">*</span>持卡人证件类型：</label>
+              <select id="IDTYPE" name="IDTYPE" style="width:215px;color:#666;" title="持卡人证件类型">
+                <option value="IDCARD" date-lang="身份证">身份证</option>
+                <option value="PASSPORT" date-lang="护照">护照</option>
+                <option value="OFFICERPASS" date-lang="军官证">军官证</option>
+                <option value="HM_VISITORPASS" date-lang="港澳居民来往内地通行证">港澳居民来往内地通行证</option>
+                <option value="T_VISITORPASS" date-lang="台湾居民来往大陆通行证">台湾居民来往大陆通行证</option>
+                <option value="OTHER" date-lang="其他">其他</option>
+              </select>
+            </div>
+            <div class="py_input">
+              <label for=""><span class="redC">*</span>持卡人证件号：</label>
+              <input type="text" id="IDCARD" name="IDCARD" title="持卡人证件号" placeholder="请输入持卡人证件号" />
+            </div>
+            <div class="py_input">
+              <label for=""><span class="redC">*</span>银行卡预留手机号：</label>
+              <input type="text" id="MOBILE" name="MOBILE" title="银行卡预留手机号"
+                onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"
+                placeholder="预留手机号" maxlength="11" />
+            </div>
+            <div class="py_input">
+              <label for=""><span class="redC">*</span>验证码：</label>
+              <input type="text" style="width:100px" title="手机验证码" maxlength="6" id="CODENAME" name="CODENAME"
+                onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" onafterpaste="value=value.replace(/[^\w\.\/]/ig,'')" />
+              <button type="button" class="gtYZM " id="js_pygetYZM" onclick="window.payMent._getYZM(this)"
+                title="获取手机验证码">获取验证码</button>
+            </div>
+            <div class="messageBox text-c m-t m-b js_py_tip" style="font-size: 16px;"></div>
+            <button type="button" class="btnRed" onclick="window.payMent._pySubForm(this)" title="立即支付">立即支付</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 微信支付 -->
+    <div class="py_paytype js_th_weixin">
+      <div class="pytitle">
+        <span>微信支付</span>
+      </div>
+      <div class="pyty_erweima">
+        <img class="pyty_erweima_img js_pay_wximg" title="微信支付二维码"
+          src=""
+          alt="">
+      </div>
+      <div class="pylist pyty_list">
+        <ul>
+          <li>金额：<span class="redC" style="font-size:30px">10</span></li>
+          <li>收款方：<span>中国南方航空股份有限公司</span></li>
+          <li>交易单号：<span>GO1912250026680</span></li>
+          <li>创建时间：<span>2019-12-25 09:59:54</span></li>
+        </ul>
+      </div>
+      <div class="py_third_btn">
+        <button type="button" id="js_py_done" onclick="window.payMent._pydone(this)">已完成支付</button>
+        <button type="button" id="js_py_cxzf" onclick="window.payMent._pyresetPY(this)" class="redbg">重新支付</button>
+      </div>
+    </div>
+    <div class="py_zhifubao js_th_zhifubao">
+      <iframe id="iframe" width="100%" height="600px" name="ifra" src="https://mapi.alipay.com/gateway.do?_input_charset=utf-8"></iframe>
+      <div class="py_third_btn">
+        <button type="button" onclick="window.payMent._pydone(this)">已完成支付</button>
+        <button type="button" onclick="window.payMent._pyresetPY(this)" class="redbg">重新支付</button>
+      </div>
+    </div>
+  </div>
+</div>

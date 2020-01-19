@@ -1,0 +1,83 @@
+<script type="text/javascript" src="../../csair/js/editCommPassengerPage.js"> </script>
+<div class="container">
+  <div class="basic_infos_wrap select_wrap">
+    <div class="page_title">
+      <h2>修改常用旅客</h2>
+      <div class="clearboth"></div>
+    </div>
+    <div class="basic_infos content" id="content" >
+      <div class="psgTypeContent">
+        <div class="psgType">
+          <label for="commPassengerType">常用旅客类型：</label>
+          <input type="radio" name="commPassengerType" checked="checked" value="国内旅客" title="常用旅客类型为国内旅客">
+          <span>国内旅客</span>
+        </div>
+      </div>
+      <div class="psgTypeContent">
+        <div class="psgType">
+          <label for="psgType">旅客类型：</label>
+          <input type="radio" name="radioType" id="adult" value="成人" checked="checked" onclick="checkAdult()" onkeyup="adultKeyup(event)" title="旅客类型为成人">
+          <span>成人</span>
+          <input type="radio" name="radioType" id="child" value="儿童" onkeyup="childKeyup(event)" title="旅客类型为儿童">
+          <span>儿童</span>
+          <input type="radio" name="radioType" id="infant" value="婴儿" onkeyup="infantKeyup(event)"  title="旅客类型为婴儿">
+          <span>婴儿</span>
+        </div>
+      </div>
+      <div class="addCommPassenger_infos_divs">
+        <div class="commPassenger_infos" id="psgNameDiv">
+          <label class="" for="psgName">旅客姓名：</label>
+          <input type="text"  class="infos_inputs_static" id="psgName" title="旅客姓名">
+        </div>
+        <div class="commPassenger_infos" id="psgFPNODiv">
+          <label class="" for="psgFPNO">明珠卡号：</label>
+          <input type="text"  class="infos_inputs_static" id="psgFPNO"  title="明珠卡号">
+        </div>
+        <div class="commPassenger_infos" id="cardTyepDiv">
+          <label class="" for="cardTyep">证件类型：</label>
+          <div class="selectDiv">
+            <select id="cardTyep">
+            <c:if test="${'身份证'  eq  cardType }">
+              <option selected="selected" value="NI">身份证</option>
+              <option value="PP">护照</option>
+              <option value="ID">其他</option>
+            </c:if>
+            <c:if test="${'护照'  eq  cardType }">
+              <option value="NI">身份证</option>
+              <option selected="selected" value="PP">护照</option>
+              <option value="ID">其他</option>
+            </c:if>
+            <c:if test="${'其他'  eq  cardType }">
+              <option value="NI">身份证</option>
+              <option value="PP">护照</option>
+              <option selected="selected" value="ID">其他</option>
+            </c:if>
+              
+            </select>
+          </div>
+          <input type="text"  class="infos_inputs_static" id="cardNum"  title="证件号" value="${cardNum }">
+        </div>
+        <div class="commPassenger_infos" id="birthdayDiv" style="display:none;">
+          <label class="" for="birthday">出生日期：</label>
+          <div class="selectDiv">
+            <select id="year" title="出发日期选择年份"></select> <select id="month" title="选择月份"></select> <select id="day" title="选择日期"></select>
+          </div>
+        </div>
+        <div class="commPassenger_infos" id="phoneNumDiv">
+          <label class="" for="phoneNum">手机号：</label>
+          <input type="text"  class="infos_inputs_static" id="phoneNum" title="手机号" value="${phoneNum }">
+        </div>
+        <div class="commPassenger_infos" id="emailDiv">
+          <label class="" for="email">E-mail：</label>
+          <input type="text"  class="infos_inputs_static" id="email" title="电子邮箱" value="${email }">
+        </div>
+      </div>
+      
+      <div class="infos_btns">
+        <button type="button" class="bluebtn" style="margin-right: 210px"  title="保存"  onclick="saveEditCommPassenger()">保存</button>
+        <button type="button" class="bluebtn" style="margin-left: -160px"  title="返回"  onclick="back()">返回</button>
+      </div>
+    </div>
+  </div>
+</div>
+

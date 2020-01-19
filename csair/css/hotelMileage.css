@@ -1,0 +1,52 @@
+.nr-hotel{
+	margin: 10px 0px;
+}
+.nr-hotel .hotel-tit {
+    clear: both;
+    overflow: hidden;
+ 	width: 960px;
+    height: auto;
+    line-height: 50px;
+    padding: 8px 8px 10px 8px;
+    border-top: 1px solid #e0e0e0;
+    border: #eee 1px solid;
+}
+.nr-hotel .hotel-tit .logo {
+    float: left;
+    width: 122px;
+}
+.nr-hotel .hotel-tit .center {
+    float: left;
+    width: 205px;
+    height: auto;
+    margin-left: 80px;
+}
+.nr-hotel .hotel-tit .right {
+    float: right;
+    width: 320px;
+    padding: 0 10px 0 0;
+    line-height: 50px;
+    color: #494949;
+    text-align: left;
+}
+.hotel-info {
+    padding: 13px;
+    background: #eee;
+    margin-right: 2px;
+    text-align: left;
+}
+.hotel-info h3 {
+    color: #835830;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 5px;
+    text-align: left;
+}
+.hotel-info p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.membercontext .hotel-info ul {
+    margin-bottom: 10px;
+}

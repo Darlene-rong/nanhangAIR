@@ -1,0 +1,21 @@
+
+.acblt {
+    height: 55px;
+    font-size: 14px;
+    color: #484848;
+    text-align: right;
+    padding-right: 30px;
+    line-height: 55px;
+    background: #FFF;
+    border-bottom: 1px solid #bbd2e3;
+    border-left: 1px solid #bbd2e3;
+    border-right: 1px solid #bbd2e3;
+}
+
+.nextbtn{
+	color: #fff;
+    background: #ff5a00;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+}

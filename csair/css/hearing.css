@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+@CHARSET "UTF-8";
+@CHARSET "UTF-8";
+body{
+	font-family:"微软雅黑";
+	margin:0px;
+}
+.head{
+	padding:10px;
+	margin:0px;
+	width:100%;
+	height:85px;
+	background-color: #ffffff;
+}
+#blue{
+	position:relative;
+	padding-top:10px;
+	width:100%;
+	height:30px;
+	margin:0px;
+	font-size: 16px;
+	background-color: #0066FF ;
+	color:#ffffff;
+}
+#blue span{
+	position:absolute;
+	left:20px;
+	overflow: hidden;
+}
+.second div{
+	margin: 30px;
+}
+h2{
+	color:	#0044BB;
+}
+
+.form-con-list{
+	padding-top:20px;
+	font-size: 14px;
+}
+.form-con-list a{
+	color:#0066FF;
+	text-decoration: none;
+}

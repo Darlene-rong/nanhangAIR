@@ -1,0 +1,803 @@
+<script src="../../view/jquery.js"></script>
+<script src="../../csair/js/soundmanager2.js"></script>
+<script src="../../csair/js/jquery.blockUI.min.js"></script>
+<script src="../../csair/js/public.js"></script>
+<script src="../../csair/js/citiesData.js"></script>
+<script src="../../csair/js/ticketFrom.js"></script>
+<script src="../../csair/js/navBlock.js"></script>
+<script src="../../csair/js/jquery.cookie.js"></script>
+<script src="../../csair/js/cookie.js"></script>
+
+<script src="../../csair/js/js3/flightQueryNLahem.js"></script>
+<style>
+  #cfcs,
+  #ddcs {
+    width: 150px;
+    height: 30px;
+  }
+
+  #year,
+  #year2 {
+    width: 70px;
+    height: 30px;
+  }
+
+  #month,
+  #day,
+  #month2,
+  #day2 {
+    width: 50px;
+    height: 30px;
+  }
+
+  .flight_choosen_search .choose {
+    display: inline-block;
+    line-height: 30px;
+  }
+
+  .flight_choosen_search .choose label {
+    font-size: 14px;
+    padding-right: 3px;
+  }
+
+  .flight_choosen_search .choose input {
+    width: inherit;
+    display: inline-block;
+    float: none;
+    vertical-align: sub;
+  }
+</style>
+<div class="container">
+  <!--  -->
+  <div class="flight_sel select_wrap">
+    <!-- 筛选条件 -->
+    <div class="flight_choosen_search">
+      <div>
+        <a href="javascript:;" id="dancheng" onclick="dancheng(this)" class="m-btn min active"
+          title="单程购票按钮确定请按回车键，选择往返请按Tab键">单程</a>
+        <a href="javascript:;" id="fancheng" onclick="fancheng(this)" class="m-btn min"
+          title="往返购票按钮确定请按回车键，选择单程请按shift+Tab键">往返</a>
+      </div>
+      <div>
+        <label for="cfcs">出发城市：</label>
+        <div class="choose">
+          <label title="国内城市">
+            <input type="radio" name="departure" onchange="chooseChange(this)" checked="checked" data-id="cfcs"
+              value="国内" />国内
+          </label>
+          <label title="国内城市">
+            <input type="radio" name="departure" onchange="chooseChange(this)" data-id="cfcs" value="国际" />国际
+          </label>
+        </div>
+        <select id="cfcs" title="现在是航班查询页面如果您不想更改行程请忽略此条提示,如果您想更改行程请在此处操作,出发城市">
+          <option>支持首字母简拼</option>
+        </select>
+        <a id="chang_cf_dd" class="chang_dest" href="javascript:void(0);" onclick="fromMain.chang_cf_dd();"
+          title="点击转换出发城市和到达城市"></a>
+
+        <label for="ddcs">到达城市：</label>
+        <div class="choose">
+          <label title="国内城市">
+            <input type="radio" name="arrive" onchange="chooseChange(this)" checked="checked" data-id="ddcs"
+              value="国内" />国内
+          </label>
+          <label title="国内城市">
+            <input type="radio" name="arrive" onchange="chooseChange(this)" data-id="ddcs" value="国际" />国际
+          </label>
+        </div>
+        <select id="ddcs" title="航班查询页面,如果您不想更改行程请忽略此条提示,如果您想更改行程请在此处操作,到达城市">
+          <option>支持首字母简拼</option>
+        </select>
+      </div>
+      <label>出发日期：</label>
+      <select id="year" title="如果您不想更改行程请忽略此条提示,如果您想更改行程请在此处操作,出发日期选择年份"></select>
+      <select id="month" title="选择月份"></select>
+      <select id="day" title="选择日期"></select>
+      <label class="fancheng" style="display:none;">返程日期：</label>
+      <select class="fancheng" style="display:none;" id="year2"
+        title="如果您不想更改行程请忽略此条提示,如果您想更改行程请在此处操作,返程日期选择年份"></select>
+      <select style="display:none;" class="fancheng" id="month2" title="选择月份"></select>
+      <select style="display:none;" class="fancheng" id="day2" title="选择日期"></select>
+      <button type="button" id="search_div" onclick="main.serach()">
+        立即查询
+      </button>
+    </div>
+    <!-- 头部 -->
+    <div class="flight_choosen lahem_con flight_choosen js_lahem_header">
+      <div class="flight_choosen_info lahem_con-title">
+        <div class="flight_choosen_destination">去程：广州-伊斯兰堡</div>
+        <div class="flight_choosen_date">2020年01月17日</div>
+        <div class="flight_choosen_passengers">
+          旅客人数： <span class="flight_choosen_passengers_adult" id="js_lahem_adult">成人 x 1</span>
+          <span class="flight_choosen_passengers_child" id="js_lahem_achild">儿童 x 0</span>
+          <span class="flight_choosen_passengers_baby" id="js_lahem_ababy">婴儿 x 0</span>
+        </div>
+        <div class="clearboth"></div>
+      </div>
+    </div>
+    <!-- 内容 -->
+    <div class="lahem_result">
+      <div class="la_border">
+        <div class="lahem_bao lahem_li"><a href="javascript:;">价格保障 买贵全赔</a></div>
+        <ul class="lahem_result-title" title="此处为舱位表头,分别是：头等/公务舱、明珠经济舱、经济舱，点击ctrl加下按钮查看航班列表">
+          <li class="lahem_li"><a href="javascript:;">头等舱</a></li>
+          <li class="lahem_li"><a href="javascript:;">明珠经济舱</a></li class="lahem_li">
+       </ul>
+      </div>
+      <div class="clearboth"></div>
+      <!-- 单程 -->
+      <!-- <ul class="lahem_ul">
+        <li class="lahem_ul-li">
+          <div class="inline-block lahem_ul-con">
+           
+            <div class="lahem_li-left inline-block ">
+              <a href="javascript:;" class="conimg" title="此航线起飞时间:13:40到达时间:23:20,继续按tab键选择该航班舱位">
+                <img src="/csair/img/question.png" alt="">
+              </a>
+              <div class="lahem_li-left-con  inline-block">
+                <div class="con con1 inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">广州白云国际机场 T2</div>
+                </div>
+                <div class="con con2 inline-block ">
+                  <div class="caption">中转1次</div>
+                  <img src="/csair/img/split_destination.png" alt="">
+                  <div> 18小时45分钟</div>
+                </div>
+                <div class="con con3  inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">伊斯兰堡国际机场</div>
+                </div>
+              </div>
+            </div>
+            
+            <ul class="lahem_li-right inline-block lahem_result-title" id="js_lahem_lowest">
+              <li class="active">
+                <a href="javascript: void(0);" class="" title="公务舱,票价¥ 8468元，点击购票">
+                  <div class="lahem_li-right-a">
+                    <strong class="price">¥7178</strong>
+                    <br>全程含税价<br>
+                    <div class="addimg"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript: void(0);" class="lahem_li-right-a" title="此航班经济舱售罄">
+                    <strong class="price-null">售罄</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="lahem_li-detail">
+            <ul class="lehem-dep dep-0">
+              <li class="hem-dot">
+                <strong>起飞：</strong>
+                <span class="hem-dot-part">16:35</span>
+                <span class="hem-dot-part">2020-01-17</span>
+                <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+              </li>
+              <li class="hem-part">
+                <span>提供餐饮</span> |
+                <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                  <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                  CZ6007
+                </a> |
+                <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                  波音737
+                </a>| 
+                <span title="飞行时间">3小时10分钟</span>
+              </li>
+              <div class="clearboth"></div>
+              <li class="hem-dot">
+                <strong>到达：</strong>
+                <span class="hem-dot-part">16:35</span>
+                <span class="hem-dot-part">2020-01-17</span>
+                <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+              </li>
+            </ul>
+            <div class="transfer">中转于<strong>乌鲁木齐</strong>停留时间&nbsp;10小时15分钟</div>
+            <ul class="lehem-dep dep-0">
+              <li class="hem-dot">
+                <strong>起飞：</strong>
+                <span class="hem-dot-part">16:35</span>
+                <span class="hem-dot-part">2020-01-17</span>
+                <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+              </li>
+              <li class="hem-part">
+                <span>提供餐饮</span> |
+                <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                  <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                  CZ6007
+                </a> |
+                <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                  波音737
+                </a>| 
+                <span title="飞行时间">3小时10分钟</span>
+              </li>
+              <div class="clearboth"></div>
+              <li class="hem-dot">
+                <strong>到达：</strong>
+                <span class="hem-dot-part">16:35</span>
+                <span class="hem-dot-part">2020-01-17</span>
+                <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+              </li>
+            </ul>
+            <div class="sh-notice">
+              <span>出发时间和到达时间均为当地时间</span>
+              <button class="fr">登录</button>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+        </li>
+      </ul>  -->
+      
+      <!-- 往返 -->
+      <ul class="lahem_ul wflahem_ul">
+        <li class="lahem_ul-li">
+          <div class=" wflahem_list inline-block lahem_ul-con">
+            <div class="lahem_li-left lahem_wf-li">
+              <div class="goto go">去</div>
+              <a href="javascript:;" class="conimg" title="此航线起飞时间:13:40到达时间:23:20,继续按tab键选择该航班舱位">
+                <img src="/csair/img/question.png" alt="">
+              </a>
+              <div class="lahem_li-left-con  inline-block">
+                <div class="con con1 inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">广州白云国际机场 T2</div>
+                </div>
+                <div class="con con2 inline-block ">
+                  <div class="caption">中转1次</div>
+                  <img src="/csair/img/split_destination.png" alt="">
+                  <div> 18小时45分钟</div>
+                </div>
+                <div class="con con3  inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">伊斯兰堡国际机场</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class=" wflahem_list la_border" style="    height: 120px; margin-top: -5px;">
+            <div class="lahem_li-left inline-block lahem_wf-li">
+              <div class="goto back">回</div>
+              <a href="javascript:;" class="conimg" title="此航线起飞时间:13:40到达时间:23:20,继续按tab键选择该航班舱位">
+                <img src="/csair/img/question.png" alt="">
+              </a>
+              <div class="lahem_li-left-con  inline-block">
+                <div class="con con1 inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">广州白云国际机场 T2</div>
+                </div>
+                <div class="con con2 inline-block ">
+                  <div class="caption">中转1次</div>
+                  <img src="/csair/img/split_destination.png" alt="">
+                  <div> 18小时45分钟</div>
+                </div>
+                <div class="con con3  inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">伊斯兰堡国际机场</div>
+                </div>
+              </div>
+            </div>
+            <ul class="lahem_li-right inline-block lahem_result-title " id="js_lahem_lowest">
+              <li class="active">
+                <a href="javascript: void(0);" class="" title="公务舱,票价¥ 8468元，点击购票">
+                  <div class="lahem_li-right-a">
+                    <strong class="price">¥7178</strong>
+                    <br>全程含税价<br>
+                    <div class="addimg"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript: void(0);" class="lahem_li-right-a" title="此航班经济舱售罄">
+                    <strong class="price-null">售罄</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div  style="display: none;">
+            <div class="lahem_li-detail lahem_wf-li"  style="border-bottom: 4px solid #078cffc7;">
+              <div class="goto wfgoto">去</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="transfer">中转于<strong>乌鲁木齐</strong>停留时间&nbsp;10小时15分钟</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="sh-notice">
+                <span>出发时间和到达时间均为当地时间</span>
+              </div>
+            </div>
+            <div class="lahem_li-detail lahem_wf-li">
+              <div class="goto wfback wfgoto">回</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="transfer">中转于<strong>乌鲁木齐</strong>停留时间&nbsp;10小时15分钟</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="sh-notice">
+                <span>出发时间和到达时间均为当地时间</span>
+                <button class="fr">登录</button>
+                <div class="clearboth"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="lahem_ul-li wflahem_ul">
+          <div class="wflahem_list inline-block lahem_ul-con">
+            <div class="lahem_li-left lahem_wf-li">
+              <div class="goto go">去</div>
+              <a href="javascript:;" class="conimg" title="此航线起飞时间:13:40到达时间:23:20,继续按tab键选择该航班舱位">
+                <img src="/csair/img/question.png" alt="">
+              </a>
+              <div class="lahem_li-left-con  inline-block">
+                <div class="con con1 inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">广州白云国际机场 T2</div>
+                </div>
+                <div class="con con2 inline-block ">
+                  <div class="caption">中转1次</div>
+                  <img src="/csair/img/split_destination.png" alt="">
+                  <div> 18小时45分钟</div>
+                </div>
+                <div class="con con3  inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">伊斯兰堡国际机场</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" wflahem_list la_border"  style="    height: 120px; margin-top: -5px;">
+            <div class="lahem_li-left inline-block lahem_wf-li">
+              <div class="goto back">回</div>
+              <a href="javascript:;" class="conimg" title="此航线起飞时间:13:40到达时间:23:20,继续按tab键选择该航班舱位">
+                <img src="/csair/img/question.png" alt="">
+              </a>
+              <div class="lahem_li-left-con  inline-block">
+                <div class="con con1 inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">广州白云国际机场 T2</div>
+                </div>
+                <div class="con con2 inline-block ">
+                  <div class="caption">中转1次</div>
+                  <img src="/csair/img/split_destination.png" alt="">
+                  <div> 18小时45分钟</div>
+                </div>
+                <div class="con con3  inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">伊斯兰堡国际机场</div>
+                </div>
+              </div>
+            </div>
+            <ul class="lahem_li-right inline-block lahem_result-title " id="js_lahem_lowest">
+              <li class="active">
+                <a href="javascript: void(0);" class="" title="公务舱,票价¥ 8468元，点击购票">
+                  <div class="lahem_li-right-a">
+                    <strong class="price">¥7178</strong>
+                    <br>全程含税价<br>
+                    <div class="addimg"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript: void(0);" class="lahem_li-right-a" title="此航班经济舱售罄">
+                    <strong class="price-null">售罄</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div  style="display: none;">
+            <div class="lahem_li-detail lahem_wf-li"  style="border-bottom: 4px solid #078cffc7;">
+              <div class="goto wfgoto">去</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="transfer">中转于<strong>乌鲁木齐</strong>停留时间&nbsp;10小时15分钟</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="sh-notice">
+                <span>出发时间和到达时间均为当地时间</span>
+              </div>
+            </div>
+            <div class="lahem_li-detail lahem_wf-li">
+              <div class="goto wfback wfgoto">回</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="transfer">中转于<strong>乌鲁木齐</strong>停留时间&nbsp;10小时15分钟</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="sh-notice">
+                <span>出发时间和到达时间均为当地时间</span>
+                <button class="fr">登录</button>
+                <div class="clearboth"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="lahem_ul-li wflahem_ul">
+          <div class="wflahem_list inline-block lahem_ul-con">
+            <div class="lahem_li-left lahem_wf-li">
+              <div class="goto go">去</div>
+              <a href="javascript:;" class="conimg" title="此航线起飞时间:13:40到达时间:23:20,继续按tab键选择该航班舱位">
+                <img src="/csair/img/question.png" alt="">
+              </a>
+              <div class="lahem_li-left-con  inline-block">
+                <div class="con con1 inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">广州白云国际机场 T2</div>
+                </div>
+                <div class="con con2 inline-block ">
+                  <div class="caption">中转1次</div>
+                  <img src="/csair/img/split_destination.png" alt="">
+                  <div> 18小时45分钟</div>
+                </div>
+                <div class="con con3  inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">伊斯兰堡国际机场</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" wflahem_list la_border"  style="    height: 120px; margin-top: -5px;">
+            <div class="lahem_li-left inline-block lahem_wf-li">
+              <div class="goto back">回</div>
+              <a href="javascript:;" class="conimg" title="此航线起飞时间:13:40到达时间:23:20,继续按tab键选择该航班舱位">
+                <img src="/csair/img/question.png" alt="">
+              </a>
+              <div class="lahem_li-left-con  inline-block">
+                <div class="con con1 inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">广州白云国际机场 T2</div>
+                </div>
+                <div class="con con2 inline-block ">
+                  <div class="caption">中转1次</div>
+                  <img src="/csair/img/split_destination.png" alt="">
+                  <div> 18小时45分钟</div>
+                </div>
+                <div class="con con3  inline-block">
+                  <strong class="num">13:30分</strong>
+                  <div class="city">伊斯兰堡国际机场</div>
+                </div>
+              </div>
+            </div>
+            <ul class="lahem_li-right inline-block lahem_result-title " id="js_lahem_lowest">
+              <li class="active">
+                <a href="javascript: void(0);" class="" title="公务舱,票价¥ 8468元，点击购票">
+                  <div class="lahem_li-right-a">
+                    <strong class="price">¥7178</strong>
+                    <br>全程含税价<br>
+                    <div class="addimg"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript: void(0);" class="lahem_li-right-a" title="此航班经济舱售罄">
+                    <strong class="price-null">售罄</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div  style="display: none;">
+            <div class="lahem_li-detail lahem_wf-li"  style="border-bottom: 4px solid #078cffc7;">
+              <div class="goto wfgoto">去</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="transfer">中转于<strong>乌鲁木齐</strong>停留时间&nbsp;10小时15分钟</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="sh-notice">
+                <span>出发时间和到达时间均为当地时间</span>
+              </div>
+            </div>
+            <div class="lahem_li-detail lahem_wf-li">
+              <div class="goto wfback wfgoto">回</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="transfer">中转于<strong>乌鲁木齐</strong>停留时间&nbsp;10小时15分钟</div>
+              <ul class="lehem-dep dep-0">
+                <li class="hem-dot">
+                  <strong>起飞：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+                <li class="hem-part">
+                  <span>提供餐饮</span> |
+                  <a data-type="airline" class="blueC" href="javascript: void(0);" title="实际乘坐航班： 中国南方航空公司 CZ6007 ， 乘机手续请到 中国南方航空公司 值机柜台办理。">
+                    <img src="https://b2c.csair.com/ita/newIntl/static/images/minAirlines/CZ.png?v=2.20.0109" onerror="this.remove()">
+                    CZ6007
+                  </a> |
+                  <a href="#738" class="blueC" rel="vehicle" data-title="波音737" data-dir="2">
+                    波音737
+                  </a>| 
+                  <span title="飞行时间">3小时10分钟</span>
+                </li>
+                <div class="clearboth"></div>
+                <li class="hem-dot">
+                  <strong>到达：</strong>
+                  <span class="hem-dot-part">16:35</span>
+                  <span class="hem-dot-part">2020-01-17</span>
+                  <strong class="hem-dot-part">(广州) 广州白云国际机场 T2</strong>
+                </li>
+              </ul>
+              <div class="sh-notice">
+                <span>出发时间和到达时间均为当地时间</span>
+                <button class="fr">登录</button>
+                <div class="clearboth"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul> 
+    </div>
+  </div>
+  <span id="errorAlert" style="display: none;font-size: 18px; color: red;">
+    <b>您搜索的日期暂时没有可预订的航班，请换个日期试试或选择邻近机场出发/到达。${error}</b>
+  </span>
+
+</div>

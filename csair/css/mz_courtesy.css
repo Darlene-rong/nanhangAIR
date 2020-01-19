@@ -1,0 +1,316 @@
+@CHARSET "UTF-8";
+#Content{
+	border:#bbd2e3 solid 1px;
+}
+.qj {
+	text-align:left;
+    width: 850px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.scrolldoorFrame {
+    width: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.scrolldoorFrame .scrollUl {
+    float: left;
+    clear: both;
+    width: 840px;
+    height: 44px;
+    overflow: hidden;
+    border-bottom: 2px solid #048798;
+}
+.scrolldoorFrame .scrollUl li {
+    float: left;
+    list-style-type: none;
+}
+.scrolldoorFrame .st02 {
+    cursor: pointer;
+    height: 44px;
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #464646;
+    width: 100px;
+}
+.scrolldoorFrame .st01 {
+    cursor: pointer;
+    height: 44px;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 24px;
+    width: 100px;
+    height: 14px;
+}
+.scrolldoorFrame .st01 a p{
+	color: #048798;
+}
+.scrolldoorFrame01 {
+    width: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.scrolldoorFrame01 .scrollUl01 {
+    float: left;
+    clear: both;
+    width: 840px;
+    height: 44px;
+    overflow: hidden;
+}
+.scrolldoorFrame01 .scrollUl01 li {
+    float: left;
+    list-style-type: none;
+}
+.scrolldoorFrame01 .st0101 {
+    cursor: pointer;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    background-color:#048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame01 .st0101 a p{
+	color: #fff;
+}
+.scrolldoorFrame02 {
+    width: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.scrolldoorFrame02 .st0202 {
+    cursor: pointer;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame02 .scrollUl02 li {
+    float: left;
+    list-style-type: none;
+}
+.scrolldoorFrame02 .st0102 {
+    cursor: pointer;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    background-color:#048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame02 .st0102 a p{
+	color: #fff;
+}
+.title {
+    font-family: "微软雅黑";
+    color: #048798;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.imgs {
+    margin: 20px 0 10px 0;
+    width: 850px;
+    text-align: center;
+}
+.wz {
+    font-family: "微软雅黑";
+    color: #464646;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.pl {
+    width: 850px;
+}
+.table {
+    border: 1px solid #048798;
+    width: 70%;
+    margin: 10px auto;
+}
+.pl li {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #464646;
+    line-height: 25px;
+}
+.table tr:nth-child(1) {
+    background: #048798;
+}
+.table td {
+    height: 30px;
+    background: #51c4d4;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    font-weight: normal;
+    font-family: "微软雅黑";
+}
+.scrolldoorFrame022 {
+    width: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.scrolldoorFrame022 .scrollUl022 {
+    float: left;
+    clear: both;
+    width: 840px;
+    height: 44px;
+    overflow: hidden;
+}
+.scrolldoorFrame022 .scrollUl022 li {
+    float: left;
+    list-style-type: none;
+}
+.scrolldoorFrame022 .st0106 {
+    cursor: pointer;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 16px;
+  	background-color:#048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame022 .st0106 a p{
+	color: #fff;
+}
+.scrolldoorFrame03 {
+    width: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.scrolldoorFrame03 .scrollUl03 {
+    float: left;
+    clear: both;
+    width: 840px;
+    height: 44px;
+    overflow: hidden;
+}
+.scrolldoorFrame03 .scrollUl03 li {
+    float: left;
+    list-style-type: none;
+}
+.scrolldoorFrame03 .st0203 {
+    cursor: pointer;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame03 .st0103 {
+    cursor: pointer;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 16px;
+  	background-color:#048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame03 .st0103 a p{
+	color: #fff;
+}
+.scrolldoorFrame04 {
+    width: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.scrolldoorFrame04 .scrollUl04 {
+    float: left;
+    clear: both;
+    width: 840px;
+    height: 44px;
+    overflow: hidden;
+}
+.scrolldoorFrame04 .scrollUl04 li {
+    float: left;
+    list-style-type: none;
+}
+.scrolldoorFrame04 .st0204 {
+    cursor: pointer;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame04 .st0104 {
+    cursor: pointer;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 16px;
+   	background-color:#048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame04 .st0104 a p{
+	 color: #fff;
+}
+.scrolldoorFrame05 {
+    width: 840px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+.scrolldoorFrame05 .scrollUl05 {
+    float: left;
+    clear: both;
+    width: 840px;
+    height: 44px;
+    overflow: hidden;
+}
+.scrolldoorFrame05 .scrollUl05 li {
+    float: left;
+    list-style-type: none;
+}
+.scrolldoorFrame05 .st0205 {
+    cursor: pointer;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame05 .st0105 {
+    cursor: pointer;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 16px;
+  	background-color:#048798;
+    width: 70px;
+    height: 27px;
+    text-align: center;
+}
+.scrolldoorFrame05 .st0105 a p{
+	color: #fff;
+}
+.con1 {
+    height: auto;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 30px;
+    color: #646464;
+}
+.five {
+    clear: both;
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+.refund{
+	width: 966px;
+    border: 1px solid #bbd2e3;
+    text-align: left;
+    padding: 6px;
+    background-color: #e7f1ff;
+}
+#beizhu{
+	width:400px;
+}
+
+.nextbtn{
+	color: #fff;
+    background: #ff5a00;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+}

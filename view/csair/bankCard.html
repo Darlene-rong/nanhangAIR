@@ -1,0 +1,97 @@
+<script src="../../view/jquery.js"></script>
+<script src="/jquery.validate.js"></script>
+<script src="../../csair/js/js3/bankCard.js"></script>
+<div class="container">
+  <div class="order_infos_wrap select_wrap">
+    <div class="page_title">
+      <h2>银行卡</h2>
+    </div>
+    <div class="bank_contanit">
+      <div class="text_warp">
+        <h2>绑定银行卡</h2>
+        <div id="cardnew_list">
+          <div class="bank_card">
+            <ul id="cardul" class="clearfix">
+              <li class="cards_li ">
+                <img class="m-t-md" src="../../csair/img/test/gzcbank_big.gif" alt="">
+                <div class="fr m-t">
+                  <span class="end_number">**9797</span>
+                  <a class="acolor m-t-n-xxs block m-l" href="javascript:void(0)" title="解除银行卡绑定">解除</a>
+                </div>
+              </li>
+              <li class="addcard" id="bandbtn">
+                <button title="绑定银行卡" id="creat">绑定信用卡</button>
+              </li>
+            </ul>
+          </div>
+          <div class="bank_con">
+            <h3>功能介绍</h3>
+            <p>当成功绑定银联银行卡后，旅客购票时，只需输入短信验证码，点击“执行支付”即可完成购票。</p>
+            <p><a class="acolor" href="http://www.csair.com/cn/tourguide/faq/reserve/online-payment.shtml" title="了解绑定信用卡">了解绑定信用卡</a></p>
+            <h3>温馨提示:</h3>
+            <p>
+              1,由中国银联提供安全服务，保障您的资金安全。
+              </br>
+              2,支持绑定银联信用卡，即带有银联标志的信用卡。
+              </br>
+              3,如果会员姓名或身份证号码有缺失或不准确，请会员携带本人身份证原件到南航营业点柜台补充或修改。
+              </br>
+            </p>
+          </div>
+        </div>
+        <!-- banding -->
+        <div id="banding_card" class="m-t">
+            <div class="banding_card_title">
+              <span class="">新增绑定银行卡</span>
+              <span class="fr" id="closebanding" title="关闭新增银行卡页面"><a href="javascript:void(0)" class="acolor">关闭</a></span>
+            </div>
+            <div class="banding_card_form">
+              <form action=""  method="post" id="formdata" >
+                <div class="form_left">
+                  <label for="c_name" class="form_left_label">姓名</label>
+                  <input type="text" id="userName" name="userName" title="信用卡绑定的姓名" value="张三" disabled>
+                </div>
+                <div class="form_left">
+                  <label for="c_id" class="form_left_label">身份证号</label>
+                  <input type="text" id="idNumber" name="idNumber" title="信用卡绑定的姓名" value="102984829300585" disabled>
+                </div>
+                <div class="form_left">
+                  <label for="c_cardid" class="form_left_label">信用卡号</label>
+                  <input type="text" id="creditCardNumber" placeholder="请输入您的信用卡号" name="creditCardNumber" title="请输入您的信用卡号" autofocus>
+                </div>
+                <div class="form_left">
+                  <label  class="form_left_label">有效期</label>
+                  <select name="month" id="month" title="请选择您的信用卡有效期的月份" >
+                    <option value="" title="月份">月份</option>
+                  </select>
+                  <select name="year" id="year" title="请选择您的信用卡有效期的年份" >
+                    <option value="">年份</option>
+                  </select>
+                </div>
+                <div class="form_left">
+                  <label for="c_cardverify" class="form_left_label">卡验证码</label>
+                  <input type="text" id="cardVerificationCode" placeholder="请输入信用卡背面末三位数" name="cardVerificationCode" maxlength="3" title="请输入信用卡背面末三位数"> 
+                </div>
+                <div class="form_left">
+                  <label for="c_phone" class="form_left_label">手机号码</label>
+                  <input type="text" id="cellPhoneNumber" placeholder="请输入您的手机号码" name="cellPhoneNumber"title="手机号码">
+                </div>
+                <div class="form_left">
+                  <label for="c_verify" class="form_left_label">验证码</label>
+                  <input type="text" id="verificationCode" placeholder="请输入您手机收到的验证码" name="verificationCode" title="请输入您手机收到的验证码">
+                  <button class="form_left_btn" type="button" title="获取验证码">获取验证码</button>
+                </div>
+                <div class="form_btn">
+                  <div id="messageBox"></div>
+                  <button type="button" onclick="card.formValidate()"  class="js_banding" title="确认您的信用卡的绑定">绑定</button>
+                </div>
+              </form>
+            </div>
+            <div class="fr inline-block banding_card_img">
+              <a href="javascript:;" title="图片，有效期：月/年（如09/13）；卡验证码：卡背面末三位数字"><img src="../../csair/img/card_tip.png" alt=""></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- js -->
+  <script type="text/javascript"  src="./view/jquery.js"></script>
+  <script type="text/javascript" src="./csair/js/jquery.blockUI.min.js"></script>
+  <script type="text/javascript" src="./csair/js/cookie.js"></script>
+  <script type="text/javascript" src="./csair/js/soundmanager2.js"></script>
+  <script type="text/javascript" src="./csair/js/init.js"></script>
+
+  <script type="text/javascript" src="./csair/js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="./csair/js/js3/jquery.sPage.js"> </script>
+  <script type="text/javascript" src="./csair/js/page/tz-page.js"></script>
+  <script type="text/javascript" src="./csair/js/citiesData.js"></script>
+  <script type="text/javascript" src="./csair/js/js3/bankCard.js"></script>
+  <script type="text/javascript" src="./csair/js/public.js"></script>
+  <script type="text/javascript" src="./csair/js/js3/data-time.js"> </script>
+  <!-- css -->
+  <link rel="stylesheet" href="./csair/css/public.css">
+  <link rel="stylesheet" href="./csair/css/jsp3/bankCard.css">
+  <link rel="stylesheet" href="./csair/css/jsp3/recharge.css">
+  <link rel="stylesheet" href="./csair/js/page/tz-page.css">
+  <link rel="stylesheet" href="./csair/css/jsp3/jquery.sPage.css">
+  <link rel="stylesheet" href="./csair/css/jsp3/balanceManage.css">
+  <link rel="stylesheet" href="./csair/css/jsp3/payment.css">
+  <link rel="stylesheet" href="./csair/css/flightQuery2.css">
+  <link rel="stylesheet" href="./csair/css/flightQueryWF.css">
+  <link rel="stylesheet" href="./csair/css/jsp3/flightQueryNLahem.css" />
+
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <img id="logo" src="./csair/img/logo.jpg" alt="标志" />
+    </div>
+  </div>
+  <div class="head_nav" id="nav">
+		<div class="container">
+		    <c:if test="${sessionScope.userName==null}">
+		   	 	<div class="userName nologin" id="userinfo" >用户：二蛋</div>
+		    </c:if>
+			<div class="head_nav_right">
+				<a id="back_index_btn" href="index" title="返回首页"><span  id="fanhuishouye" >返回首页</span></a>
+				<ul>
+          <li><a href="./view/csair/bankCard.html" id="lcdh" title="里程兑换">余额</a></li>
+          <li><a href="queryOrder" id="queryOrder" title="查询订单">充值卡</a></li>
+          <li><a href="refundTicket" id="refundTicket" title="退改票">退改票</a></li>
+				</ul>
+			</div>
+			<div class="clearboth"></div>
+		</div>
+	</div>
+  <!--  请在<span id="count" style="font-weight: bold;color: red;"> 300 </span>秒内进行操作-->
+  <div class="load_page"></div>
+  <script>
+    $(function() {
+      $(".load_page").load('view/csair/flightQueryNLahem.html')
+    })
+  </script>
+</body>
+</html>

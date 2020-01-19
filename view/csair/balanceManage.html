@@ -1,0 +1,204 @@
+<script type="text/javascript" src="../../view/jquery.js"></script>
+<script type="text/javascript" src="../../csair/js/js3/balanceManage.js"></script>
+<script type="text/javascript" src="../../csair/js/js3/data-time.js"></script>
+<script type="text/javascript" src="./csair/js/js3/jquery.sPage.js"> </script>
+<script type="text/javascript" src="./csair/js/page/tz-page.js"></script>
+
+<div class="container">
+  <div class="order_infos_wrap select_wrap">
+    <div class="page_title">
+      <h2>余额</h2>
+    </div>
+    <div class="bank_contanit">
+      <div class="text_warp" class="js_bank_con">
+        <!-- 未开通余额支付 -->
+        <div class="no_banlance " id="js_no_banlance"> 
+          <h2><img class="nb_img" src="../../csair/img/loser.png" alt="">请开通余额支付</h2>
+          <div class="nb_pre js_nb_content" >
+            <p>
+                南航电子钱包是由南航打造的电子账户，集余额支付、白条、代金券、优惠券和银行卡等多种功能，适用于南航官网和移动端支付票款、管理优惠券和绑定银行卡等。
+            </p>
+            <p>
+              南航电子钱包资金由中国银联提供资金管理及安全服务，保障您的资金安全
+            </p>
+            <a href="#" title="了解更多关于南航钱包">了解更多关于南航钱包>>></a>
+          </div>
+          <button class="nb_btn js_nb_btn js_nb_content">立即开通</button>
+        </div>
+        <!-- 注册 -->
+
+        <!-- 已经开了余额支付！ -->
+        <div class="" id="js_register">
+          <h2 id="bm_title">充值卡信息</h2>
+          <div id="bm_cell">
+            <ul class="cs_tab_cell js_bm">
+              <li class="item js_bm_cell active" data-item='0'><a href="javascript:;">余额总概</a></li>
+              <li class="item js_bm_cell" data-item='1'><a href="javascript:;">代金券</a></li>
+              <li class="item js_bm_cell" data-item='2'><a href="javascript:;">支付密码</a></li>
+              <li class="item js_bm_cell" data-item='3'><a href="javascript:;">账户信息</a></li>
+              <li class="item js_bm_cell" data-item='4'><a href="javascript:;">交易记录</a></li>
+              <li class="item js_bm_cell" data-item='5'><a href="javascript:;">余额重置</a></li>
+            </ul>
+            <div class="cs_tab_content js_bm_content">
+              <!-- 余额总概 -->
+              <div class="tab_con js_tab_con show bm_one">
+                <h3 style="color:#666">余额总概</h3>
+                <div class="bm_one_tab">
+                  <div class="bm_flex">
+                    <div class="bm_flex_title">冻结金额</div>
+                    <div class="bm_flex_price flex_red" id="js_banlance_frozen">0.00元</div>
+                  </div>
+                  <div class="bm_flex">
+                    <div class="bm_flex_title">可用余额</div>
+                    <div class="bm_flex_price flex_gray" id="js_banlance_use">10.00元</div>
+                  </div>
+                  <div class="bm_flex">
+                    <div class="bm_flex_title">账户余额</div>
+                    <div class="bm_flex_price flex_orange" id="js_banlance_account">1111.00元</div>
+                  </div>
+                  <div class="bm_flex_btn">
+                    <a href="#" title="充值余额">充值</a>
+                  </div>
+                </div>
+                <h3 style="color:#666">最近交易记录<span class="fr bm_table_right"><a href="#" title="查看所有交易记录">查看所有交易记录</a></span></h3>
+                <!-- 表格 -->
+              </div>
+              <!-- 代金券 -->
+              <div class="tab_con js_tab_con bm_two">
+                <div>全部(<span id="js_bmt_all"></span>)</div>
+                <div class="nh-table">
+                  <table class="nh-table-content">
+                    <thead>
+                      <tr>
+                        <th>劵号</th>
+                        <th>状态</th>
+                        <th>面值</th>
+                        <th>剩余金额</th>
+                        <th>有效期</th>
+                        <th>备注</th>
+                      </tr>
+                    </thead>
+                    <tbody class="js_two_tab">
+                    </tbody>
+                  </table>
+                  <div id="js_tmyPage" class="text-r m-t-md"></div>
+                </div>
+              </div>
+              <!-- 支付密码 -->
+              <div class="tab_con js_tab_con bm_three tab_content_one">
+                <div class="bm_three_content">
+                  <div class="bmt_item">
+                    <span class="bm_three_title">姓名：</span>
+                    <span class="p-l-xs">二蛋</span>
+                  </div>
+                  <div class="bmt_item">
+                    <span class="bm_three_title">账号：</span>
+                    <span class="p-l-xs">318588949590</span>
+                  </div>
+                  <div id="js_bm_pre">
+                    <div class="bmt_item">
+                      <span class="bm_three_title">手机号码：</span>
+                      <span class="p-l-xs">185****9590</span>
+                    </div>
+                    <div class="bmt_item">
+                      <label for="threePWS" class="bm_three_title">验证码：</label>
+                      <input type="text" id="threePWS" name="threePWS" />
+                      <button class="form_left_btn" type="button" id="js_bm_getYZM" title="获取手机验证码">获取验证码</button>
+                    </div>
+                    <div class="text-c m-t"><span class="messageBox" id="js_bm_msg1"></span></div>
+                    <div class="rc_form_btn text-c">
+                      <input type="button" href="#" id="js_three_next" class="btn" value="下一步" title="下一步">
+                    </div>
+                  </div>
+                  <div id="js_bm_next">
+                    <form action="" id="bmNextForm">
+                      <div class="bmt_item">
+                        <label for="contact" class="bm_three_title"><span class="redColor">*</span>新密码：</label>
+                        <input type="password" name="bmPWS" id="bmPWS" title="请输入新密码" />
+                      </div>
+                      <div class="bmt_item">
+                        <label for="phone" class="bm_three_title"><span class="redColor">*</span>重新输入新密码：</label>
+                        <input type="password" name="bmPWSagain" id="bmPWSagain" title="请重新输入新密码" />
+                      </div>
+                      <div class="text-c m-t"><span class="messageBox" id="js_bm_msg2"></span></div>
+                      <div class="rc_form_btn" style="margin-left: 153px;">
+                        <input type="button" href="#" id="js_next_submit" class="btn" value="提交" title="提交">
+                        <a class="btn " title="重置" id="js_next_reset">重置</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- 账户信息 -->
+              <div class="tab_con js_tab_con tab_content_one js_bm_four" ></div>
+              <!-- 交易记录 -->
+              <div class="tab_con js_tab_con bm_five">
+                <!-- 与充值卡类似  需要时间选择 和表格 -->
+                <div class="bm_five_top tab_content_one">
+                  <div class="bm_five_form">
+                    <div class="inline-block">
+                      <label class="m-r">出发日期</label>
+                      <select name="cfYear" id="cfYear"></select>
+                      <select name="cfMonth" id="cfMonth"></select>
+                      <select name="cfDay" id="cfDay"></select>
+                    </div>
+                    <div class="inline-block m-l-lg">
+                      <label for="" class="m-r">结束日期</label>
+                      <select name="endYear" id="endYear"></select>
+                      <select name="endMonth" id="endMonth"></select>
+                      <select name="endDay" id="endDay"></select>
+                    </div>
+                  </div>
+                  <div class="bm_five_form">
+                    <div class="inline-block">
+                      <label for="" class="m-r">交易类型</label>
+                      <select class="com" id="tradeType">
+                        <option value="">请选择……</option>
+                        <option value="1">充值</option>
+                        <option value="2">消费</option>
+                        <option value="3">退款</option>
+                      </select>
+                    </div>
+                    <div class="inline-block">
+                      <a href="#" title="查询" class="btn_red">查询</a>
+                      <a href="#" title="查询" class="btn_grren">重置</a>
+                    </div>
+                  </div>
+                </div>
+                <h3>查询结果</h3>
+              </div>
+              <!-- 充值 -->
+              <div class="tab_con js_tab_con bm_seven tab_content_one">
+                <div class="bm_three_content">
+                    <div class="bmt_item">
+                      <label class="bm_three_title">充值方式：</label>
+                      <select class="com m-l-sm" id="paytype">
+                        <option value="2" selected="selected">充值卡充值</option>
+                      </select>
+                    </div>
+                    <div class="bmt_item">
+                      <label class="bm_three_title">姓名：</label>
+                      <input type="text" value="陈振亮" disabled="disabled" id="cardName" class="com-input w197">
+                    </div>
+                    <div class="bmt_item">
+                      <label class="bm_three_title">充值卡账号：</label>
+                      <input type="text" id="cardaccount" class="com-input w340">
+                    </div>
+                    <div class="bmt_item">
+                      <label class="bm_three_title">充值卡密码：</label>
+                      <input type="password" id="cardpassword" maxlength="6" class="com-input w340">
+                    </div>
+                    <div class="rc_form_btn" >
+                      <input type="button" href="#" id="" class="btn" value="提交" title="提交">
+                      <a class="btn " title="重置" id="">重置</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

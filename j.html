@@ -1,0 +1,256 @@
+<script>
+define(function(require,exports, module) {
+	var $        = require("jquery"),
+	headfoot = require("headfoot"),
+	app      = require("app"),
+	accountTPL = require("./tpl"),
+	accountHandle = require("./accountHandle"),
+	Req = require("paymentReq"),
+	bankDB = require("bankDB"),
+	Lang     = require("lang");
+	document.title = Lang.accountnew.dm0264;
+	accountHandle.loadStyleCSS();
+	var ordermanagerInfo = Lang.ordermanager;
+	
+	var login_user = null,
+	member_user = null,
+	cookieREG = $.cookie("isAccountnewREG"),
+	actnewLang = Lang.accountnew, //我的钱包公用语言
+	$cardsObj = $(".right-wrap"),//绑卡DOM
+	
+	initMain = function(){
+		accountHandle.changeLockScreenVal(actnewLang.at0013);
+		$("#loading").removeClass("hide");
+		accountHandle.initCreateLeftMenu(true,function(msg){
+			if(msg.isShowCZ){
+				$(".second-left").myCsairSidebar(2,4);
+			}else{
+				$(".second-left").myCsairSidebar(2,3);
+			}
+			var breakcrum =[
+				{
+					"url":"",
+					"name":ordermanagerInfo.breakcrumNav12
+				},
+				{
+					"url":"/B2C40/modules/ordernew/accountnew/cards.html",
+					"name":ordermanagerInfo.breakcrumNav17
+				}
+			];
+			$(".current-align").html(accountTPL.top_breakcrum({"breakcrum":breakcrum}));
+			showCardsBox();
+			accountHandle.hideLockScreen();//解屏
+			$(".confirm-window-lock").removeClass("hide");
+			Req("getCardInfo",{bankcode:"",cardnumber : ""},callCardInfo,true);//绑卡List
+			$(".confirm-window-lock").addClass("hide");
+			initPageListener();
+		});
+	},
+	showCardsList = function(data){
+		var $cardListObj = $("#cardlist"),
+		cards_list = accountTPL.cards_list({"bankinfos" : data});
+		//$cardListObj.empty();
+		$(cards_list).insertBefore($cardListObj.find(".addsub"));
+		
+		$(".del-bind").on('click', function(e) {
+			e.preventDefault();
+			delbind($(this));
+		});
+		
+	},
+	showCardsBox = function(){
+		var cards_box = accountTPL.cards_box();
+		$("<div class='confirm-window-lock hide'></div>").appendTo($("body"));
+		$cardsObj.html(cards_box);
+	},
+	initPageListener = function(){
+		$(".addsub").on("click",function(e){
+			e.preventDefault();
+			onbind();
+			//bindCardSuccess();
+		});
+		
+		$("#cardsColse").on("click",function(e){
+			e.preventDefault();
+			$(".graydivBox").css("display","none");
+			$(".graydiv").css("display","none");	
+		});
+		
+	},
+	delbind = function(obj){
+		var bankName = obj.prev("span").data("bankname");
+		var bankCode = obj.prev("span").data("bankcode");
+		if(bankName == undefined || bankName == "undefined" || bankName=="null" || bankName==""){
+			bankName="";
+		}
+		var bankFour=obj.prev("span").data("bankno"); 
+		var onepayboxH=$(".right-wrap").height();
+		
+		if(confirm(actnewLang.at0021+bankName+actnewLang.at0022+bankFour+actnewLang.at0023)){
+			$(".ubloading").css("height",(onepayboxH-46)+"px");
+			$(".ubloading").css("display","block");
+			
+			$.ajax({
+				url:"/B2C40/payBill/OnekeyPay/jaxb/unbindCard.ao",
+				type:"post",
+				data:{					
+					CARDNUMBER:bankFour,//银行卡号
+					BANKCODE:bankCode//银行代码
+				},
+		        dataType:"json",
+		        cache:false,
+		        success:function(data) {		        			        	
+		        	if(data.paymentinfo && data.paymentinfo.errorcode==00){		        		
+		        		obj.parent().remove();
+		        		alert("解绑成功!");		        		
+		        	}
+		        	$(".ubloading").css("display","none");
+		        }
+			});
+		}else{
+			return false;
+		}
+	},
+	onbind = function(){//绑卡
+		if (typeof(dcsPageTrack)=="function"){
+			dcsPageTrack("DCS.dcsuri","B2C40/modules/accountnew/cards.html/BindOnePay",false);
+		}
+		var oneClickUrl = "https://upp.csair.com/upp_payment/pay/oneClickBindCard.jsp";
+		if(window.location.href.indexOf("ec.test.csair.com")>-1||
+			window.location.href.indexOf("chenxf.csair.com")>-1||
+			window.location.href.indexOf("my.csair.com")>-1){
+			oneClickUrl = "http://58.248.41.144/upp_payment_pn/pay/oneClickBindCard.jsp";
+		}
+		var locale="zh_CN";
+		var userName = app.user.INFO.userName;
+		if(Lang.lang=="en"){
+			// userName = app.user.INFO.userEnName;
+			locale="en_US";
+		}
+		oneClickUrl+="?ffpNo="+app.user.INFO.userId+"&ffpName="+userName+"&card="+app.user.INFO.niid+"&locale="+locale;
+		$("#graydivBoxWin").html('<iframe style="width:100%;height:100%" id="graydivBox" name="graydivBox" src="'+oneClickUrl+'" frameBorder=0 scrolling="no"></iframe>');///B2C40/modules/order/onepay2.jsp?lang=en&version=1238
+		var itop = document.body.scrollTop || document.documentElement.scrollTop;
+		var indexH=$(document).height();
+		var indexW=$(document).width();
+		$(".graydiv").css("width",indexW+"px");
+		$(".graydiv").css("height",indexH+"px");											
+		$(".graydiv").css("display","block");
+		$(".graydivBox").css("display","block");
+		$(".graydivBoxClose").css("display","block");
+		$(".graydivBox").css("top",itop+70+"px");
+		$(".graydivBox").css("left",(indexW-749)/2+"px");	
+	},
+	bindCardSuccess = function(params){ //绑定信用卡回调接口
+		//嵌码
+		var $cardsListObj = $("#cardlist");
+		$("#cardlist .loadlist").css("display","inline");
+		
+		$("#cardlist .cards-li").each(function(index) {
+			_obj = $(this);
+			_obj.remove();
+		});
+		$(".confirm-window-lock").removeClass("hide");
+		setTimeout(Req("getCardInfo",{bankcode:"",cardnumber : ""},callCardInfo,false),2*1000);
+		$(".confirm-window-lock").addClass("hide");
+	},
+	sortCardsData = function(cardsData){ //按绑卡时间排序
+		var temp,token1,token2;
+		//console.log(cardsData);
+		for(var i=0;i<cardsData.length;i++){
+			for(var j=0;j<cardsData.length-i-1;j++){//比较次数
+	    		token1 = cardsData[j].tokenbegin ? cardsData[j].tokenbegin : "";
+		    	token2 = cardsData[j+1].tokenbegin ? cardsData[j+1].tokenbegin : "";
+				token1 = token1.replace(/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})$/,"$1-$2-$3 $4:$5:$6");
+				token2 = token2.replace(/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})$/,"$1-$2-$3 $4:$5:$6");
+				token1 = app.timestamp(token1);
+				token2 = app.timestamp(token2);
+		        if(token1<token2){
+		          temp=cardsData[j];
+		          cardsData[j]=cardsData[j+1];
+		          cardsData[j+1]=temp;
+		        }
+	    	}
+		}
+		//console.log(cardsData);
+		return cardsData;
+	},
+	callCardInfo = function(msg){
+		if(msg.error){//获取交易记录错误 
+			$(".loadlist").css("display","none");
+		}else{
+			if(msg.paymentinfo && msg.paymentinfo.errorcode == "0000" && msg.paymentinfo.bankinfos){
+				
+				var bankinfos = [];
+				$.each(msg.paymentinfo.bankinfos,function(key,items){
+					if(items.canuse === "true"){
+						bankData = {
+							"bankname" : (bankDB[items.bankcode] == null) ? "" : bankDB[items.bankcode].bankname,
+							"bankval"  : items.bankcode,
+							"bankcode" : items.bankcode,
+							"bankimg" : (bankDB[items.bankcode] == null) ? "" : bankDB[items.bankcode].bankicon,
+							"cardnumber" : items.cardnumber,
+							"tokenbegin" : items.tokenbegin,
+							"tokenend" : items.tokenend	
+						}
+						bankinfos.push(bankData);
+					}
+				})
+				//showCardsList(bankinfos.reverse());//反序
+				showCardsList(sortCardsData(bankinfos));
+			}
+			$(".loadlist").css("display","none");
+		}
+	},
+	callLogin = function(msg){ //回调登录
+		if(msg.error){//校验登录错误
+			accountHandle.hideLockScreen();//解屏
+			$("#login-dialog").removeClass("hide");
+		}else{
+			if(msg.success){
+				if((/6|7|8|9/.test(msg.data.loginType) && msg.data.userType === "1")|| msg.data.userType !== "1"){
+					$("#loading").addClass("hide");
+					bindDialogin(window.location.href);
+					$("#nmemBindDialog .close-window").unbind("click").bind("click",function(){
+						window.location.href="/B2C40/modules/ordernew/orderManagementFrame.html";
+						$("#nmemBindDialog").hide();
+					});
+					return false;
+				}
+				app.user.INFO = msg.data;
+				login_user = msg.data;
+				initMain();	
+			}else{
+				accountHandle.hideLockScreen();//解屏
+				app.login(Lang.flight.skyPsnurl,"");
+				$("#login-dialog").removeClass("hide");
+			}	
+		}
+	},
+	setLoginBox = function(){
+		app.login(Lang.flight.skyPsnurl,"",true,"",true);
+	};
+	module.exports = function() {
+		$.headfooter();//设置头部
+		$("#login-dialog").length > 0 || setLoginBox();
+		$("#loadding_frame").attr("src",Lang.flight.fl0105);
+		$(".my-csair").html(ordermanagerInfo.breakcrumNav04);
+		accountHandle.changeLockScreenVal(actnewLang.at0013);
+		Req("checkLogin","",callLogin,true);
+		$("body").unbind("userLogged").bind('userLogged', function() {
+			if(app.user.INFO){
+				$("#login-dialog").addClass("hide");
+				login_user = app.user.INFO;
+				$("#logined").show();
+				$("#login").hide();
+				$("#userinfo").show().html(app.user.INFO.userName);
+				accountHandle.showLockScreen();//解屏
+				initMain();	
+			}
+		});
+		
+		
+	};
+	
+});
+
+</script>

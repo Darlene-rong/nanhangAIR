@@ -1,0 +1,26 @@
+.change{
+	width: 966px;
+    border: 1px solid #bbd2e3;
+    text-align: left;
+    padding: 6px;
+    background-color: #e7f1ff;
+}
+
+.noxinf, .noxins {
+    border-right: #7cbaec 1px solid;
+}
+.noxinf div.shc {
+    padding: 10px;
+    width: 445px;
+    color: #484848;
+    line-height: 25px;
+    text-align: left;
+}
+
+.nextbtn{
+	color: #fff;
+    background: #ff5a00;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+}

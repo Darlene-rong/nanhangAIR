@@ -1,0 +1,26 @@
+.basic_infos_wrap .basic_infos {
+    padding: 85px 0 20px 125px;
+}
+.addCommContactor_infos_inputs{
+	text-align: left;
+    font-size: 16px;
+    /* height: 30px; */
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.addCommContactor_infos_inputs label {
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+}
+
+.addCommContactor_infos_inputs input {
+    height: 28px;
+    line-height: 28px;
+    width: 220px;
+}
+
+.content {
+    min-height: 400px;
+}

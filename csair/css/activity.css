@@ -1,0 +1,285 @@
+/*原本头部样式  和公用样式*/
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.clearboth {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width: 0;
+}
+#fanhuishouye {
+    color: yellow;
+    font-weight: bold;
+    font-size: 22px;
+}
+/*------------------------------------header---------------------------------------*/
+.header{
+	height: 65px;
+	padding-top: 25px;
+	background: #fff;
+  font-size: 14px;
+}
+.header #logo{
+	display: block;
+}
+.head_nav{
+	/*height: 42px;*/
+	background: #0e5ed7;
+	line-height: 42px;
+	color: #fff;
+}
+.head_nav .userName{
+	float: left;
+	padding: 0 0 0 35px;
+	background: url(../img/head_user_name.jpg) no-repeat left;
+}
+.head_nav .head_nav_right{
+	float: right;
+}
+.head_nav .head_nav_right ul,.head_nav .head_nav_right ul li{
+	float: left;
+	
+}
+.head_nav .head_nav_right ul li a{
+	color: #fff;
+	padding: 0 7px 0;
+	border-right: 1px solid #fff;
+}
+.head_nav .head_nav_right ul li.head_nav_right_li_last a{
+	border: none;
+}
+.head_nav .head_nav_right #back_index_btn{
+	float: left;
+	display: block;
+	height: 17px;
+	border: 1px solid #4882f9;
+	padding: 4px 8px 4px 30px;
+	background: url(../img/back_index.jpg) no-repeat 10px;
+	color: #fff;
+	line-height: 17px;
+	margin-top: 8px;
+}
+#toolbarCtrl{
+	/*
+	background: #6f86ca url(../img/esdtool_bg_btn.png) no-repeat 14px center;
+	padding:7px 10px 8px 45px;
+	color:#fff;
+	border:1px solid #d9e3ff;
+	*/
+}
+/*------------------------------------pop_box---------------------------------------*/
+
+.pop_box_div{
+	bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1050;
+    opacity: 1;
+    filter:Alpha(opacity=100);
+    display: none;
+}
+.pop_box_div .pop_box_con{
+	width: 645px;
+	margin: 100px auto 0;
+	min-height: 370px;
+}
+.pop_box_div .pop_box_con .pop_ticket{
+	border: 1px solid #bbd2e3;
+}
+.pop_box_div .pop_box_con .pop_ticket .pop_ticket_head{
+	height: 37px;
+	line-height: 37px;
+	border-bottom: 1px solid #c0d5e5;
+	background: #349fee;
+}
+.pop_box_div .pop_box_con .pop_ticket .pop_ticket_head  a.close_mask_btn{
+	display: block;
+	float: right;
+	margin: 7px 20px 0 0;
+	background: #349fee;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	width: 22px;
+	cursor: pointer;
+}
+.pop_box_div .pop_box_con .pop_ticket .pop_ticket_head .titleLeft{
+	display: block;
+	float: left;
+	margin: 7px 20px 0 0;
+	background: #349fee;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	width: 100px;
+	cursor: pointer;
+}
+.pop_box_div .pop_box_con  .pop_ticket_body{
+	display: block;
+	background:#fff;
+	color:#349fee;
+	text-align: left;
+	line-height: 60px;
+	padding-left: 30px;
+}
+.pop_box_div .pop_box_con  .pop_ticket_foot{
+	display: block;
+	background:#fff;
+	border-top: 1px solid #349fee;
+	height:60px;
+	padding-top: 30px;
+}
+.pop_box_div .pop_box_con  .pop_ticket_foot .successBtn{
+	background:#349fee;
+	color:#fff;
+	height:30px;
+	width:100px;
+}
+.pop_box_div .pop_box_con  .pop_ticket_foot .cancelBtn{
+	background:#349fee;
+	color:#fff;
+	height:30px;
+	width:100px;
+}
+/************************************加载时间*********************************************/
+#checkloadtime{
+	display:block;
+	width:100px;
+	height:25px;
+	border: 1px solid ;
+	background: orange;
+	color: #fff;
+	line-height: 25px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+#loadtime{
+	text-align:left;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+
+#fanhuishouye{
+	color:yellow;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
+/*修复原样式影响*/
+
+body>.header {
+    height: 65px;
+    padding-top: 25px;
+    background: #fff;
+}
+.header {
+    height: auto;
+    padding-top: initial;
+    background: initial;
+}
+
+/*业务修复*/
+a{
+  color: inherit;
+}
+.blockUI a{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.mytable a {
+  float: left;
+  background-color: #fff
+}
+
+.mytable a:hover {
+  background-color: #ffe4c9
+}
+
+.mytable a li {
+  float: left;
+  width: 175px;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #333;
+  border-bottom: 1px solid #ffe4c9
+}
+
+.mytable a li.lastLi {
+  width: 215px
+}
+
+.mytable1 a li {
+  width: 220px
+}
+
+.mytable1 a li.lastLi {
+  width: 278px
+}
+
+/*cookie协议*/
+.usercookieshow{
+  display: none!important;;
+}
+/*隐藏头部*/
+.zsl-header,header{
+  display: none!important;
+}
+/*中间的轮播*/
+.ul_con,
+.flight-item,
+.ticketList .scrollbox .listItem,
+.content .box-2 .box-two .list .scroller .item,
+#lundun1 ul{
+  margin: 40px 90px!important;
+  display: inline-block!important;
+  transform: scale(1.5)!important;
+  transform-origin: left!important;
+}
+/*表格类的轮播不需要放大*/
+.mixtable .ul_con{
+  transform: none!important;
+  margin: 0!important;
+}
+
+
+/*底部*/
+.zsl-footer,.copyright{
+  display: none!important;
+}
+
+/*按钮*/
+.m-btn{
+  line-height: 44px;
+  min-width: 130px;
+  padding: 0 8px;
+  border: 1px solid #c1c1c1;
+  margin-right: 5px;
+  box-sizing: content-box;
+  background-color: buttonface;
+  color: buttontext;
+  font-size: 12px;
+  display: inline-block;
+}
+.m-btn.active{
+  background: #008acd;
+  color: #fff;
+}
+.m-btn.min{
+ min-width: 44px;
+ height: 30px;
+ line-height: 30px;
+}
+
+
+

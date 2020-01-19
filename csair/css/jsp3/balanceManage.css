@@ -1,0 +1,218 @@
+/* 红色 */
+.flex_red{
+  color: #fa4545;
+}
+.flex_orange{
+  color: #ff9f22;
+}
+.flex_gray{
+  color: #4fb5af;
+}
+.btn_red{
+  background: #ee575a;
+}
+.btn_grren{
+  background: #4fb5af;
+}
+.no_banlance .nb_img{    
+  position: relative;
+  top: 13px;
+  right: 9px;
+}
+.no_banlance .nb_pre{
+  padding: 30px;
+}
+.no_banlance .nb_pre p{
+  font-size: 16px;
+  line-height: 30px;
+  padding: 20px 0;
+  color: #666;
+  text-indent: 2em;
+}
+.no_banlance .nb_pre a {
+  color: #0093d0;
+  padding-left: 28px;
+}
+.no_banlance .nb_btn{
+  width: 150px;
+  margin: 10px auto;
+  background-color: #fa4545;
+  color: #FFF;
+  font-size: 24px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  display: block;
+}
+.no_banlance .nb_btn:focus{
+  outline-color:transparent;
+}
+/* 注册 */
+.nb_re_input {
+  margin: 20px;
+}
+.nb_register h3 {
+  font-size: 16px;
+  border-bottom: 1px solid #eaeaea;
+  color: #0093d0;
+  margin: 5px 30px;
+  padding-bottom: 10px;
+}
+.nb_re_input input {
+  width: 250px;;
+}
+.nb_re_input label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  font-size: 16px;
+  color: #4e4e4e;
+  padding: 0 10px;
+}
+input:disabled, textarea:disabled {
+  color: rgb(84, 84, 84);
+  cursor: default;
+  background-color: rgb(235, 235, 228);
+}
+.form_left_btn {
+  border: none;
+  margin: 0px 5px 0px 5px;
+  padding: 0px 15px 0px 15px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #FFF;
+  background: #0193CF;
+  cursor: pointer;
+}
+.nb_re_read {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.nb_re_read input[type="checkbox"]{
+  margin-top: 0;
+  background: #fff;
+  border: rgb(218, 218, 218) solid 1px;
+  border-radius: 3px;
+  width: 20px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 15px;
+  position: relative;
+  top: 3px;
+}
+.nb_re_read a{
+  color: #0193CF;
+}
+.nb_re_btn {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.nb_re_btn input[type='button'] {
+  background: #fc2929 !important;
+  color: #ffffff !important;
+  border: none !important;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* 注册后 */
+.bm_one_tab {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 40px;
+  width: 800px;
+  align-items: center;
+  font-size: 18px;
+}
+.bm_flex {
+  border-right: 1px solid #eaeaea;
+  flex: 30%;
+}
+.bm_flex_title {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.bm_flex_price {
+  font-weight: bold;
+  text-align: center;
+}
+
+.bm_table_right {
+  font-size: 14px;
+}
+.bm_table_right a {
+  color: #0093d0;
+}
+.bm_flex_btn a{
+  text-align: center;
+  width: 100px;
+  height: 31px;
+  line-height: 31px;
+  border: 0;
+  font-size: 14px;
+  background: #0093d0;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 45px;
+  margin-left: 20px;
+}
+.bm_three_content {
+ width: 500px;
+ margin: 20px auto;
+ margin-bottom: 40px;
+}
+.bm_three_content .bmt_item{
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+.bm_three_title {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+}
+.bm_seven input {
+  width: 250px ;
+}
+.bm_seven select {
+  width: 150px ;
+}
+.bm_seven .rc_form_btn {
+  margin-left:153px;
+}
+.bm_four_left{
+  display: inline-block;
+  margin: 10px;
+}
+.bm_five_top{
+  padding: 20px;
+  height: 100px;
+  background-color: #f2f6f9;
+}
+.bm_five_form {
+  display: block;
+  margin: 20px;
+  margin-top: 0px;
+}
+.bm_five_form  select {
+  width: 100px;
+  margin-right: 10px;
+}
+.bm_five_form a {
+  text-align: center;
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  border: 0;
+  font-size: 14px;
+  color: #ffffff;
+  display: inline-block;
+  margin-left: 10px;
+}

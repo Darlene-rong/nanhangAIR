@@ -1,0 +1,118 @@
+@CHARSET "UTF-8";
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.head{
+	padding:10px;
+	margin:0px;
+	width:100%;
+	height:85px;
+	background-color: #ffffff;
+}
+
+#blue{
+	position:relative;
+	padding-top:10px;
+	width:100%;
+	height:30px;
+	margin:0px;
+	font-size: 16px;
+	background-color: #0066FF ;
+	color:#ffffff;
+}
+#blue ul #user{
+	position:absolute;
+	display:inline;
+	left:20px;
+	overflow: hidden;
+}
+#blue ul #password{
+	position:absolute;
+	display:inline;
+	left:280px;
+	overflow: hidden;
+}
+#blue ul #order{
+	position:absolute;
+	display:inline;
+	left:480px;
+	overflow: hidden;
+}
+#blue ul #help{
+	position:absolute;
+	display:inline;
+	left:680px;
+	overflow: hidden;
+}
+
+#blue ul{
+	margin:0px;
+}
+
+#blue ul li a{
+	color:#FFFFFF;
+}
+#blue ul li a:HOVER{
+	color:#FFFF00;
+}
+.second{
+	position: relative;
+}
+.maintitle{
+	margin:10px;
+	text-align:center;
+	height:80px;
+	padding-top: 10px;
+	border-bottom: #dddddd 1px solid;
+}
+h2{
+	position:absolute;
+	left:660px;
+	color: #1E90FF; 
+	font-size: 25px;
+	font-weight: bold;
+}
+.titles{
+	position:relative;
+	height:400px;
+	text-align: center;
+}
+.title{
+	position:absolute;
+	float: left;
+}
+
+.title li{
+	list-style-type: none;
+}
+#title1{
+	top:120px;
+	left:200px;
+}
+#title2{
+	top:120px;
+	left:630px;
+}
+#title3{
+	top:120px;
+	left:1060px;
+}
+.picture{
+	width:155px;
+	height:155px;
+	margin-bottom: 10px;
+	border:#87CEFA 4px solid;
+}
+.picture:HOVER {
+	border:#FFFF00 4px solid;
+}
+.title li a{
+	font-size: 14px;
+	color: black;
+}
+.title li a:HOVER{
+	color: #1E90FF ;
+}

@@ -1,0 +1,132 @@
+/* 银行卡绑定样式 */
+.bank_contanit {margin-bottom: 40px;text-align: left;}
+.acolor {color: #0e5ed7 !important;}
+/* card list */
+.bank_card {margin: 40px 50px;}
+.bank_card ul li{
+  position: relative;
+  margin: 0 10px 20px;
+  width: 180px;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 20px;
+  float: left;
+  overflow: hidden;
+}
+.bank_card .cards_li  {
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+.bank_card .addcard {
+  background: #0093d0;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  padding-left: 13px;
+  border-radius: 4px;
+}
+.bank_card .addcard button {
+  color: #fff;
+  background: transparent;
+  font-size: 30px;
+  padding-left: 11px;
+}
+/* describute */
+.bank_contanit .bank_con {
+  margin: 40px;
+  text-align: left;
+}
+.bank_contanit .bank_con  h3{
+  display: block;
+  margin-top: 60px;
+  font: bold 16px/25px "微软雅黑";
+  color: #666;
+}
+.bank_contanit .bank_con  p {
+  margin-top: 6px;
+  font: 14px/26px "微软雅黑";
+  color: #666;
+}
+/* banding card title  */
+#banding_card {
+  height: 480px;
+  position: relative;
+  margin: 20px 20px;
+}
+#banding_card .banding_card_title {
+  height: 40px;
+  line-height: 40px;
+  background: #E2F1F8;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+.banding_card_title span:nth-child(2) {
+  color: #0e5ed7;
+  cursor: pointer;
+}
+/* banding card form  */
+.banding_card_form {
+  width: 568px;
+  display: inline-block;
+  padding: 30px 20px;
+  font-size: 16px;
+  color: #666;
+}
+.banding_card_form .form_left {
+  height: 50px;
+  line-height: 50px;
+}
+.banding_card_form .form_left .form_left_label {
+  width: 70px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 20px;
+}
+.banding_card_form .form_left input {
+  height: 20px;
+  width: 250px;
+  padding: 3px;
+}
+.banding_card_form .form_left select {
+  height: 30px;
+  width: 100px;
+  padding: 3px;
+  margin-right: 10px;
+}
+.banding_card_form .form_left .form_left_btn {
+  border: none;
+  margin: 0px 5px 0px 5px;
+  padding: 0px 15px 0px 15px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #FFF;
+  background: #0193CF;
+  cursor: pointer;
+}
+.banding_card_form .form_btn {
+  text-align: center;
+}
+.banding_card_form .form_btn button {
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  background: #0e5ed7;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 4px;
+  margin-right: 73px;
+
+}
+/* banding card img */
+.banding_card_img {
+  position: relative;
+  top: 12px;
+}
+.banding_card_img  img {
+  height: 400px;
+  width: 300px;
+}
+/* 错误提示 */
+#messageBox{color: red;margin-top: 14px;margin-right: 64px;}

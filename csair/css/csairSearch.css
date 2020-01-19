@@ -1,0 +1,145 @@
+.mileageContent{
+	min-height: 600px;
+}
+.mileageContent  ul .syqk{
+    display: inline-block;
+    float: left;
+    border-bottom: #ccc solid 1px;
+    width: 300px;
+    height: 150px;
+    line-height: 260px;
+    margin: 0px 10px;
+    font-size: 24px;
+}
+.mileageContent  ul .syqk a{
+    color:#0e5ed7;
+}
+.mileageContent  ul .current{
+	background-color: #1478b4;
+}
+.mileageContent  ul .current a{
+	color:#fff;
+}
+/*****************************************************************/
+.mileageContent .left_zys {
+    width: 978px;
+    border: 1px solid #bfd6e6;
+}
+.mileageContent .left_zys #form {
+    position: relative;
+    height: 73px;
+    background: url(http://www.csair.com/cn/search/images_search_zys/form.gif) repeat-x;
+}
+.mileageContent .left_zys #form .text_zys {
+    position: absolute;
+    left: 27px;
+    top: 19px;
+    padding: 3px 5px 4px;
+    width: 376px;
+    height: 21px;
+    background: #fff;
+    border: 1px solid #a3cbeb;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: \5B8B\4F53;
+    color: #949494;
+}
+.mileageContent .left_zys #form .submit_zys {
+    position: absolute;
+    left: 420px;
+    top: 19px;
+    width: 77px;
+    height: 30px;
+    background: url(http://www.csair.com/cn/search/images_search_zys/submit.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.mileageContent .left_zys .main_zys {
+    padding: 0 25px;
+}
+
+.mileageContent .left_zys .num_zys {
+    padding-top: 10px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: \5B8B\4F53;
+    color: #a4a4a4;
+    text-align: left;
+}
+#search_zys .left_zys .num_zys span {
+    color: #008ad0;
+}
+.mileageContent .left_zys .list_zys {
+    overflow: hidden;
+}
+.mileageContent .left_zys .list_zys ul {
+    margin: -1px 0 0;
+    padding: 0;
+}
+.mileageContent .left_zys .list_zys ul li {
+    margin-top: -1px;
+    padding-left: 16px;
+    background: url(http://www.csair.com/cn/search/images_search_zys/list.gif) no-repeat 2px 16px;
+    border-top: 1px solid #dce9f2;
+    list-style: none;
+}
+.mileageContent .left_zys .list_zys ul li .title_zys {
+    padding-top: 13px;
+    text-align: left;
+}
+.mileageContent .left_zys .list_zys ul li .title_zys a {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: \5B8B\4F53;
+    color: #008ad0;
+    text-decoration: none;
+}
+em {
+    font-style: normal;
+    color: red;
+}
+.mileageContent .left_zys .list_zys ul li .link_zys{
+	text-align: left;
+}
+.mileageContent .left_zys .list_zys ul li .link_zys a {
+    padding-top: 6px;
+    font-size: 11px;
+    line-height: 18px;
+    font-family: Arial;
+    color: #919191;
+}
+.mileageContent .left_zys .list_zys ul li .info_zys {
+    padding: 2px 0 26px;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: \5B8B\4F53;
+    color: #5f5f5f;
+    text-align: left;
+}
+.mileageContent .left_zys .page_zys .pageR_zys span {
+    color: #008ad0;
+    text-decoration: underline;
+}
+.mileageContent .left_zys .page_zys a {
+    font-size: 12px;
+    line-height: 34px;
+    font-family: \5B8B\4F53;
+    color: #5f5f5f;
+    text-decoration: none;
+}
+.mileageContent .left_zys .page_zys {
+    padding: 0 25px;
+    height: 34px;
+    background: #dce9f2;
+    font-size: 12px;
+    line-height: 34px;
+    font-family: \5B8B\4F53;
+    color: #5f5f5f;
+}
+.mileageContent .left_zys .page_zys .pageL_zys {
+    float: left;
+}
+.mileageContent .left_zys .page_zys .pageR_zys {
+    float: right;
+}

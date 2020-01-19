@@ -1,0 +1,1771 @@
+{
+   // First 头等舱 Business 公务舱  PremiumEconomy  明珠经济舱 Economy 经济舱 
+  "data": {
+      "pullBlack": "1",  //拉黑
+      "ticket": {
+          "cachetime": "1579145157306",
+          "createtime": "1579145157306",
+          "codeshareflag": "false",
+          "flag": "false",
+          //根据code找城市
+          "cities": [
+              {
+                  "code": "ISB",
+                  "zhName": "伊斯兰堡",
+                  "enName": "ISLAMABAD"
+              },
+              {
+                  "code": "URC",
+                  "zhName": "乌鲁木齐",
+                  "enName": "Urumqi"
+              },
+              {
+                  "code": "CAN",
+                  "zhName": "广州",
+                  "enName": "Guangzhou"
+              }
+          ],
+          "segment": [
+              {
+                  "dateflight": [   //航班信息
+                      {
+                          "flight": [ //航班详情  
+                              {
+                                  "plane": "738", //飞机类型
+                                  "arrtime": "2020-01-17T13:30", //到达时间
+                                  "bookingclassavails": "Q:9", //？？
+                                  "duration": "PT24H",  //历时
+                                  "meal": "Y", //是否提供餐食 y是 n不提供
+                                  "depterm": "2",
+                                  "flightNo": "CZ6886",   //航班号
+                                  "codeshare": "false",//共享航班？
+                                  "deptime": "2020-01-17T08:10", //起飞时间
+                                  "depport": "CAN",  //起始城市  根据CAN获取城市
+                                  "arrport": "URC", //结束城市
+                                  "arrTerm": "3",
+                                  "stopnumber": "0"  //停止编号
+                              },
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-18T08:20", //到达时间
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT3H10M",
+                                  "meal": "Y",
+                                  "depterm": "3",
+                                  "flightNo": "CZ6007",   //航班号
+                                  "codeshare": "false",  //共享航班？
+                                  "deptime": "2020-01-18T08:10",//起飞时间
+                                  "depport": "URC",
+                                  "arrport": "ISB",
+                                  "arrTerm": "--",
+                                  "stopnumber": "0"
+                              }
+                          ],
+                          "flightnum": "2",
+                          "sortprice": "",
+                          "freightflag": "N",
+                          "totalduration": "PT27H10M",
+                          "prices": [   //两张票？？
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  // 票价 adultcn + adultprice + adultxt + adultyq
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "1yO0VZQLCkInoB36mBxGzgold|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0WRNpjmvZOOGQzAWSJ30L8S/140KNRGTMi8SKzNybukNK4005",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              },
+                              {
+                                //childcabins
+                                  "adultcabins": [     //成年人
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",  //行李
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "11z0VZQLAbwHzt0Pg3Zjv1sqW|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0AnEPy94ZkWOTFAKRWZWulR/RGrfCB8Bpi6R6DTXCDdafD005",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              }
+                          ]
+                      },
+                      {
+                          "flight": [
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-17T17:05",
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT20H35M",
+                                  "meal": "Y",
+                                  "depterm": "2",
+                                  "flightNo": "CZ6958",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-17T11:35",
+                                  "depport": "CAN",
+                                  "arrport": "URC",
+                                  "arrTerm": "3",
+                                  "stopnumber": "0"
+                              },
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-18T08:20",
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT3H10M",
+                                  "meal": "Y",
+                                  "depterm": "3",
+                                  "flightNo": "CZ6007",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-18T08:10",
+                                  "depport": "URC",
+                                  "arrport": "ISB",
+                                  "arrTerm": "--",
+                                  "stopnumber": "0"
+                              }
+                          ],
+                          "flightnum": "2",
+                          "sortprice": "",
+                          "freightflag": "N",
+                          "totalduration": "PT23H45M",
+                          "prices": [
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "1yO0VZQLCkInoB36mBxGzgold|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0WRNpjmvZOOGQzAWSJ30L8S/140KNRGTMi8SKzNybukNK4004",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              },
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "11z0VZQLAbwHzt0Pg3Zjv1sqW|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0AnEPy94ZkWOTFAKRWZWulR/RGrfCB8Bpi6R6DTXCDdafD004",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              }
+                          ]
+                      },
+                      {
+                          "flight": [
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-17T20:45",
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT16H55M",
+                                  "meal": "Y",
+                                  "depterm": "2",
+                                  "flightNo": "CZ6888",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-17T15:15",
+                                  "depport": "CAN",
+                                  "arrport": "URC",
+                                  "arrTerm": "3",
+                                  "stopnumber": "0"
+                              },
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-18T08:20",
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT3H10M",
+                                  "meal": "Y",
+                                  "depterm": "3",
+                                  "flightNo": "CZ6007",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-18T08:10",
+                                  "depport": "URC",
+                                  "arrport": "ISB",
+                                  "arrTerm": "--",
+                                  "stopnumber": "0"
+                              }
+                          ],
+                          "flightnum": "2",
+                          "sortprice": "",
+                          "freightflag": "N",
+                          "totalduration": "PT20H5M",
+                          "prices": [
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "1yO0VZQLCkInoB36mBxGzgold|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0WRNpjmvZOOGQzAWSJ30L8S/140KNRGTMi8SKzNybukNK4003",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              },
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "11z0VZQLAbwHzt0Pg3Zjv1sqW|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0AnEPy94ZkWOTFAKRWZWulR/RGrfCB8Bpi6R6DTXCDdafD003",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              }
+                          ]
+                      },
+                      {
+                          "flight": [
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-17T22:05",
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT15H35M",
+                                  "meal": "Y",
+                                  "depterm": "2",
+                                  "flightNo": "CZ6013",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-17T16:35",
+                                  "depport": "CAN",
+                                  "arrport": "URC",
+                                  "arrTerm": "3",
+                                  "stopnumber": "0"
+                              },
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-18T08:20",
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT3H10M",
+                                  "meal": "Y",
+                                  "depterm": "3",
+                                  "flightNo": "CZ6007",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-18T08:10",
+                                  "depport": "URC",
+                                  "arrport": "ISB",
+                                  "arrTerm": "--",
+                                  "stopnumber": "0"
+                              }
+                          ],
+                          "flightnum": "2",
+                          "sortprice": "",
+                          "freightflag": "N",
+                          "totalduration": "PT18H45M",
+                          "prices": [
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "1yO0VZQLCkInoB36mBxGzgold|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0WRNpjmvZOOGQzAWSJ30L8S/140KNRGTMi8SKzNybukNK4002",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              },
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "11z0VZQLAbwHzt0Pg3Zjv1sqW|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0AnEPy94ZkWOTFAKRWZWulR/RGrfCB8Bpi6R6DTXCDdafD002",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              }
+                          ]
+                      },
+                      {
+                          "flight": [
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-18T00:20",
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT13H20M",
+                                  "meal": "Y",
+                                  "depterm": "2",
+                                  "flightNo": "CZ6884",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-17T18:50",
+                                  "depport": "CAN",
+                                  "arrport": "URC",
+                                  "arrTerm": "3",
+                                  "stopnumber": "0"
+                              },
+                              {
+                                  "plane": "738",
+                                  "arrtime": "2020-01-18T08:20",
+                                  "bookingclassavails": "Q:9",
+                                  "duration": "PT3H10M",
+                                  "meal": "Y",
+                                  "depterm": "3",
+                                  "flightNo": "CZ6007",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-18T08:10",
+                                  "depport": "URC",
+                                  "arrport": "ISB",
+                                  "arrTerm": "--",
+                                  "stopnumber": "0"
+                              }
+                          ],
+                          "flightnum": "2",
+                          "sortprice": "",
+                          "freightflag": "N",
+                          "totalduration": "PT16H30M",
+                          "prices": [
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "1yO0VZQLCkInoB36mBxGzgold|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0WRNpjmvZOOGQzAWSJ30L8S/140KNRGTMi8SKzNybukNK4001",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              },
+                              {
+                                  "adultcabins": [
+                                      {
+                                          "arr": "URC",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      },
+                                      {
+                                          "arr": "ISB",
+                                          "name": "Q",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "URC"
+                                      }
+                                  ],
+                                  "adultcn": "140",
+                                  "passengertype": "ADT",
+                                  "adultprice": "3450",
+                                  "filingairline": "CZ",
+                                  "deplocation": "CAN",
+                                  "adultruleference1": "11z0VZQLAbwHzt0Pg3Zjv1sqW|rkey=ATz6pgXrH9gvOB60ZLvi0OrHmxoOGSBkKOedO0C2P1YQ",
+                                  "adultruleference2": "0AnEPy94ZkWOTFAKRWZWulR/RGrfCB8Bpi6R6DTXCDdafD001",
+                                  "adultxtdetail": "YQ:29.0",
+                                  "adultcurrency": "CNY",
+                                  "adultxt": "29",
+                                  "arrlocation": "ISB",
+                                  "adultyq": "300",
+                                  "adultfarbasis": "Q2RCWQW",
+                                  "cabintype": "ECONOMY"
+                              }
+                          ]
+                      }
+                  ],
+                  "minprice": "3450",   //最低机票
+                  "arrcity": "ISB",
+                  "depcity": "CAN"
+              }
+          ],
+          "flightnumflag": "false",
+          //根据planetype 找 飞机型号
+          "planes": [
+              {
+                  "planetype": "738",
+                  "enplanename": "B737",
+                  "zhplanename": "波音737"
+              }
+          ],
+          "id": "IetQuery:CANISB20200117CZBTOC",
+          //里程
+          "mileAge": [  
+              {
+                  "mileAgeListGo": [
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2682,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3301,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4745,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5364,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 8252,
+                          "upNumber": 2,
+                          "upCount": 8252,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 8252,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 8871,
+                          "upNumber": 2,
+                          "upCount": 8252,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 9490,
+                          "upNumber": 2,
+                          "upCount": 8252,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 10315,
+                          "upNumber": 2,
+                          "upCount": 8252,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 2,
+                          "upCount": 6189,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6808,
+                          "upNumber": 2,
+                          "upCount": 6189,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 7427,
+                          "upNumber": 2,
+                          "upCount": 6189,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 8252,
+                          "upNumber": 2,
+                          "upCount": 6189,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2682,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3301,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 12378,
+                          "upNumber": 2,
+                          "upCount": 12378,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 12378,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 12997,
+                          "upNumber": 2,
+                          "upCount": 12378,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 13616,
+                          "upNumber": 2,
+                          "upCount": 12378,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 14441,
+                          "upNumber": 2,
+                          "upCount": 12378,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 619,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1238,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4745,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5364,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 2,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4745,
+                          "upNumber": 2,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5364,
+                          "upNumber": 2,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 2,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 10315,
+                          "upNumber": 2,
+                          "upCount": 10315,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 10315,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 10934,
+                          "upNumber": 2,
+                          "upCount": 10315,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 11553,
+                          "upNumber": 2,
+                          "upCount": 10315,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 12378,
+                          "upNumber": 2,
+                          "upCount": 10315,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4745,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5364,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2682,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3301,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4745,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5364,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1651,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2270,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3095,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 619,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1238,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4745,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5364,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 1,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2682,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3301,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1651,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2270,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3095,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3095,
+                          "upNumber": 1,
+                          "upCount": 3095,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3095,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3714,
+                          "upNumber": 1,
+                          "upCount": 3095,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4333,
+                          "upNumber": 1,
+                          "upCount": 3095,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5158,
+                          "upNumber": 1,
+                          "upCount": 3095,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1651,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2270,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3095,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2682,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3301,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 2063,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1651,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2270,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3095,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4539,
+                          "upNumber": 1.5,
+                          "upCount": 4539,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4539,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5158,
+                          "upNumber": 1.5,
+                          "upCount": 4539,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5777,
+                          "upNumber": 1.5,
+                          "upCount": 4539,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6602,
+                          "upNumber": 1.5,
+                          "upCount": 4539,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 619,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1238,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2063,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 1.5,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4126,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4745,
+                          "upNumber": 1.5,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5364,
+                          "upNumber": 1.5,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6189,
+                          "upNumber": 1.5,
+                          "upCount": 4126,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1032,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1651,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2270,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "ISB"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3095,
+                          "upNumber": 0,
+                          "upCount": 1032,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "ISB"
+                      }
+                  ],
+                  "mileAgeListBack": []
+              }
+          ],
+          //根据code找航班到达名
+          "airports": [    
+              {
+                  "code": "ISB",
+                  "zhName": "伊斯兰堡国际机场",
+                  "city": "ISB",
+                  "enName": "NewIslamabadInternationalAirport"
+              },
+              {
+                  "code": "URC",
+                  "zhName": "乌鲁木齐",
+                  "city": "URC",
+                  "enName": "Diwopu Airport"
+              },
+              {
+                  "code": "CAN",
+                  "zhName": "广州",
+                  "city": "CAN",
+                  "enName": "Guangzhou Baiyun Airport"
+              }
+          ]
+      }
+  },
+  "status": "0"
+}

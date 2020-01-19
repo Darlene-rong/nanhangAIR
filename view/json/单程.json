@@ -1,0 +1,291 @@
+{
+  "slice": {
+      "ext": {
+          "warnings": {
+              "overnight": true,
+              "longLayover": true
+          }
+      },
+      "duration": 750, //间隔时间
+      "stopCount": 1,
+      "segment": [    //起飞到达
+          {
+              "flight": {
+                  "number": 6302,
+                  "carrier": "CZ"
+              },
+              "origin": "CAN",
+              "destination": "SHE", //中转地方
+              "connection": {    
+                  "ext": {
+                      "warnings": {
+                          "longLayover": true
+                      }
+                  },
+                  "duration": 420   //中转时间
+              },
+              "leg": [
+                  {
+                      "duration": 220,
+                      "scheduledServices": [
+                          {
+                              "meal": [
+                                  {
+                                      "code": "C",
+                                      "value": ""
+                                  }
+                              ],
+                              "cabin": "BUSINESS"
+                          },
+                          {
+                              "meal": [
+                                  {
+                                      "code": "C",
+                                      "value": ""
+                                  }
+                              ],
+                              "cabin": "PREMIUM-COACH"
+                          },
+                          {
+                              "meal": [
+                                  {
+                                      "code": "C",
+                                      "value": ""
+                                  }
+                              ],
+                              "cabin": "COACH"
+                          }
+                      ],
+                      "distance": {
+                          "units": "MI",
+                          "value": 1390
+                      },
+                      "arrival": "2020-01-17T00:30+08:00",//到达时间
+                      "aircraft": {
+                          "code": "321",
+                          "name": "Airbus A321"
+                      },
+                      "origin": "CAN",
+                      "destination": "SHE",
+                      "departure": "2020-01-16T20:50+08:00", //起飞时间
+                      "originTerminal": "2"
+                  }
+              ]
+          },
+          {
+              "flight": {
+                  "number": 665,
+                  "carrier": "CZ"
+              },
+              "origin": "SHE",
+              "destination": "PUS",
+              "leg": [
+                  {
+                      "duration": 110,
+                      "scheduledServices": [
+                          {
+                              "meal": [
+                                  {
+                                      "code": "C",
+                                      "value": ""
+                                  }
+                              ],
+                              "cabin": "BUSINESS"
+                          },
+                          {
+                              "meal": [
+                                  {
+                                      "code": "C",
+                                      "value": ""
+                                  }
+                              ],
+                              "cabin": "COACH"
+                          }
+                      ],
+                      "distance": {
+                          "units": "MI",
+                          "value": 535
+                      },
+                      "arrival": "2020-01-17T10:20+09:00",
+                      "aircraft": {
+                          "code": "320",
+                          "name": "Airbus A320-100/200"
+                      },
+                      "origin": "SHE",
+                      "destination": "PUS",
+                      "destinationTerminal": "I",
+                      "departure": "2020-01-17T07:30+08:00"
+                  }
+              ]
+          }
+      ]
+  },
+  "cell": [
+      {
+          "solution": {
+              "saleFareTotal": {
+                  "amount": 5890,
+                  "currency": "CNY"
+              },
+              "saleTotal": {
+                  "amount": 6418,
+                  "currency": "CNY"
+              },
+              "slice": {
+                  "ext": {
+                      "sliceSaleFareTotal": {
+                          "amount": 5890,
+                          "currency": "CNY"
+                      },
+                      "sliceSaleTaxTotal": {
+                          "amount": 528,
+                          "currency": "CNY"
+                      },
+                      "sliceDisplayTaxTotal": {
+                          "amount": 528,
+                          "currency": "CNY"
+                      },
+                      "sliceDisplayTotal": {
+                          "amount": 6418,
+                          "currency": "CNY"
+                      },
+                      "sliceSaleTotal": {
+                          "amount": 6418,
+                          "currency": "CNY"
+                      },
+                      "sliceDisplayFareTotal": {
+                          "amount": 5890,
+                          "currency": "CNY"
+                      }
+                  },
+                  "segment": [
+                      {
+                          "bookingInfo": [
+                              {
+                                  "availabilityType": "LOCAL",
+                                  "bookingCodeCount": "9",
+                                  "marriedSegmentIndex": 0,
+                                  "cabin": "COACH",
+                                  "bookingCode": "Y"
+                              }
+                          ]
+                      },
+                      {
+                          "bookingInfo": [
+                              {
+                                  "availabilityType": "LOCAL",
+                                  "bookingCodeCount": "5",
+                                  "marriedSegmentIndex": 1,
+                                  "cabin": "COACH",
+                                  "bookingCode": "Y"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              "saleTaxTotal": {
+                  "amount": 528,
+                  "currency": "CNY"
+              },
+              "displayTaxTotal": {
+                  "amount": 528,
+                  "currency": "CNY"
+              },
+              "displayTotal": {
+                  "amount": 6418,  //票价
+                  "currency": "CNY"
+              },
+              "id": "MeXkb2RTX4ITQqMRO1Z5p8002",
+              "displayFareTotal": {
+                  "amount": 5890,
+                  "currency": "CNY"
+              },
+              "pricing": [
+                  {
+                      "ext": {
+                          "pax": {
+                              "adults": 1
+                          }
+                      },
+                      "fare": [
+                          {
+                              "extendedFareCode": "Y",
+                              "ptc": [
+                                  "ADT"
+                              ]
+                          },
+                          {
+                              "extendedFareCode": "Y2RPWQK",
+                              "ptc": [
+                                  "ADT"
+                              ]
+                          }
+                      ],
+                      "saleFareTotal": {
+                          "amount": 5890,
+                          "currency": "CNY"
+                      },
+                      "displayPrice": {
+                          "amount": 6418,
+                          "currency": "CNY"
+                      },
+                      "passenger": [
+                          {
+                              "id": "0",
+                              "ptc": [
+                                  "ADT"
+                              ]
+                          }
+                      ],
+                      "salePrice": {
+                          "amount": 6418,
+                          "currency": "CNY"
+                      },
+                      "slice": [
+                          {
+                              "ext": {
+                                  "perPassengerSliceDisplayTotal": {
+                                      "amount": 6418,
+                                      "currency": "CNY"
+                                  },
+                                  "perPassengerSliceDisplayFareTotal": {
+                                      "amount": 5890,
+                                      "currency": "CNY"
+                                  },
+                                  "perPassengerSliceSaleTaxTotal": {
+                                      "amount": 528,
+                                      "currency": "CNY"
+                                  },
+                                  "perPassengerSliceSaleTotal": {
+                                      "amount": 6418,
+                                      "currency": "CNY"
+                                  },
+                                  "perPassengerSliceDisplayTaxTotal": {
+                                      "amount": 528,
+                                      "currency": "CNY"
+                                  },
+                                  "perPassengerSliceSaleFareTotal": {
+                                      "amount": 5890,
+                                      "currency": "CNY"
+                                  }
+                              }
+                          }
+                      ],
+                      "saleTaxTotal": {
+                          "amount": 528,
+                          "currency": "CNY"
+                      },
+                      "displayTaxTotal": {
+                          "amount": 528,
+                          "currency": "CNY"
+                      },
+                      "displayFareTotal": {
+                          "amount": 5890,
+                          "currency": "CNY"
+                      }
+                  }
+              ]
+          }
+      }
+  ]
+},

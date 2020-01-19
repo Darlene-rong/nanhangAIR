@@ -1,0 +1,21 @@
+
+.check_ticket_body table tr .first{
+	height:120px;
+	width:100px;
+}
+.check_ticket_body table tr .second{
+	height:120px;
+	width:400px;
+}
+.check_ticket_body table tr .third{
+	height:120px;
+	width:100px;
+}
+.check_ticket_body table tr td .btn{
+	display:inline-block;
+	width:75px;
+}
+
+.tempOverFlowDiv{
+	background-color: #ccc;
+}

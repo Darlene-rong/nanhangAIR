@@ -1,0 +1,182 @@
+<script type="text/javascript" src="../../view/jquery.js"></script>
+<script type="text/javascript" src="../../csair/js/js3/rechargeCardManage.js"></script>
+<script type="text/javascript" src="./csair/js/js3/jquery.sPage.js"> </script>
+<script type="text/javascript" src="./csair/js/page/tz-page.js"></script>
+<script type="text/javascript" src="./csair/js/js3/data-time.js"> </script>
+<div class="container text-l">
+  <div class="order_infos_wrap select_wrap">
+    <div class="page_title">
+      <h2>充值卡</h2>
+    </div>
+    <div class="bank_contanit">
+      <div class="text_warp">
+        <h2>充值卡信息</h2>
+        <div class="rc_cell">
+          <ul class="cs_tab_cell js_tab_cell">
+            <li class="item js_rc_cell active" data-item='0'><a href="javascript:;">充值卡订购</a></li>
+            <li class="item js_rc_cell" data-item='1'><a href="javascript:;">订单及卡管理</a></li>
+            <li class="item js_rc_cell" data-item='2'><a href="javascript:;">充值卡介绍</a></li>
+          </ul>
+          <div class="cs_tab_content js_tab_content">
+            <!-- 充值卡订购 -->
+            <div class="tab_con tab_content_one show">
+              <h3>充值卡信息</h3>
+              <div class="text-c">
+                <div class="rc_form rc_form_top">
+                  <label class="form_left_label" for="cType">类型</label>
+                  <select name="cType" id="cType" title="请选择充值卡面值">
+                    <option value="1">虚拟卡</option>
+                  </select>
+                </div>
+                <div class="rc_form rc_form_top">
+                  <label class="form_left_label" for="cPrice">面值</label>
+                  <select name="cPrice" id="cPrice" title="请选择充值卡面值">
+                    <option value="10">10</option>
+                    <option value="1000">1000</option>
+                    <option value="2000">2000</option>
+                    <option value="5000">5000</option>
+                  </select>
+                </div>
+                <div class="rc_form rc_form_top">
+                  <label class="form_left_label" for="cCount">张数</label>
+                  <input type="number" name="cCount" id="cCount" min='0'
+                    onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" />
+                </div>
+                <div class="rc_form rc_form_top">
+                  <a href="javascript:;" title="添加充值卡信息" class="js_item_add">添加</a>
+                </div>
+              </div>
+              <div id="js_item"></div>
+              <div class="rc_total">
+                <div class="inline-block">订单总金额： <span id="moneyTotal">0</span></div>
+                <div class="inline-block">充值卡总张数： <span id="numberTotal">0</span></div>
+              </div>
+              <h3 class="block">联系人信息</h3>
+              <form action="" id="rechargeForm">
+                <div class="rc_form_bottom">
+                  <label for="contact"><span class="redColor">*</span>订单联系人</label>
+                  <input type="text" name="contact" id="contact" title="请输入订单联系人">
+                  <span id="js_contactTip" class="redColor m-l"></span>
+                </div>
+                <div class="rc_form_bottom">
+                  <label for="phone"><span class="redColor">*</span>联系人手机号码</label>
+                  <input type="text" name="phone" id="phone" title="请输入联系人手机号码">
+                  <span id="js_phoneTip" class=" redColor m-l"></span>
+                </div>
+                <div class="rc_form_btn">
+                  <input type="button" href="#" id="js_submitForm" class="btn" value="提交" title="提交充值卡">
+                  <a class="btn js_rc_reset" title="重置表单">重置</a>
+                </div>
+              </form>
+            </div>
+            <!-- 订单及卡管理 -->
+            <div class="tab_con tab_content_two">
+              <div id="js_rc_table">
+                <h3>订单查询</h3>
+                <div class="bm_five_top tab_content_one">
+                  <div class="bm_five_form">
+                    <div class="inline-block">
+                      <label class="m-r">订购时间</label>
+                      <select name="" id="orderYear"></select>
+                      <select name="" id="orderMonth"></select>
+                      <select name="s" id="orderDay"></select>
+                    </div>
+                    <div class="inline-block ">
+                      <label class="m-r">至</label>
+                      <select name="" id="ordertoYear"></select>
+                      <select name="" id="ordertoMonth"></select>
+                      <select name="" id="ordertoDay"></select>
+                    </div>
+                  </div>
+                  <div class="bm_five_form">
+                    <div class="inline-block">
+                      <label for="" class="m-r">订单状态</label>
+                      <select name="status" id="orderstatus">
+                        <option value="">全部</option>
+                        <option value="C">待支付</option>
+                        <!-- <option value="03">待收货</option> -->
+                        <option value="B,T">已支付待发卡</option>
+                        <option value="E">已发卡</option>
+                        <option value="D">已取消</option>
+                      </select>
+                    </div>
+                    <div class="inline-block">
+                      <a href="#" title="查询" class="btn_red">查询</a>
+                      <a href="#" title="查询" class="btn_grren">重置</a>
+                    </div>
+                  </div>
+                </div>
+                <h3>查询结果</h3>
+                <div class="nh-table">
+                  <table class="nh-table-content">
+                    <thead>
+                      <tr>
+                        <th>订单号</th>
+                        <th>订单日期</th>
+                        <th>订单金额</th>
+                        <th>卡类型</th>
+                        <th>订单状态</th>
+                        <th>订单详情</th>
+                      </tr>
+                    </thead>
+                    <tbody class="js_five_tab">
+                    </tbody>
+                  </table>
+                  <div id="myPage" class="text-r m-t-md"></div>
+                </div>
+              </div>
+              <div id="js_rc_look" class="rc_two_all" style="display: none;">
+                <div>
+                  <div class="rc_title">充值卡详情</div>
+                  <div class="rc_content">
+                    <div id="js_rccell"></div>
+                    <div class=" tab_content_one rc_input text-c js_rc_getkm">
+                      <span><span class="redColor">*</span>输入支付密码获取卡号及密码：</span>
+                      <input type="text">
+                      <a href="javascript:;" class="blueColor m-l">忘记密码？</a>
+                    </div>
+                    <div class="rc_form_top rc_btn text-c m-t">
+                      <a href="javascript:;" class="js_rc_getkm" style="display: none;">获取卡密</a>
+                      <a href="javascript:;" class="js_rc_ljzf" style="display: none;">立即支付</a>
+                      <a href="javascript:;" class="js_rc_qxdd" style="display: none;">取消订单</a>
+                      <a href="javascript:;" class="js_rc_back">返回</a>
+                    </div>
+                    <div class="rc_xq_table js_rc_ljzf" style="display: none;">
+                      <h3 class="xtitle">已经购卡信息</h3>
+                      <div>
+                        <table class="nh-table-content">
+                          <thead>
+                            <tr>
+                              <th>卡号</th>
+                              <th>密码</th>
+                              <th>面值（元）</th>
+                              <th>有效期</th>
+                              <th>操作</th>
+                            </tr>
+                          </thead>
+                          <tbody class="">
+                            <tr>
+                              <td>690000000493940000</td>
+                              <td>789282</td>
+                              <td>10</td>
+                              <td>2021-10-31</td>
+                              <td><a href="" class="blueColor">充值至金额</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- 充值卡介绍 -->
+            <div class="tab_con tab_content_three">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

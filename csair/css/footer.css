@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+.footer {
+	text-align:center;
+	margin:0px;
+	width: 100%;
+	background: #ECECEC;
+	padding: 25px 0;
+	color: #666;
+	font-size: 12px;
+	color: #666;
+}
+
+.footer a {
+	color: #666;
+}
+
+.footerL {
+	margin:0px;
+	font-size:10px;
+	width: 100%;
+	float: left;
+}
+.footerL a{
+	font-size:10px;
+}
+
+
+.footer .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+.footer .clearfix {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+body .W{
+	text-align:center;
+	width:100%;
+    max-width: 1024px;
+	margin:0px 1px;
+}
+
+.hidden {
+	display: none;
+}
+/*\*/
+* html .clearfix {
+	height: 1%
+}
+
+.footer .clearfix {
+	display: inline;
+}

@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+.container  .online_identify_wrap .online_identify table{
+	width: 100%;
+	border: 1px solid #bbd2e3;
+	border-top: 0;
+}
+
+.container  .online_identify_wrap .online_identify table tr{
+	border-bottom: 1px solid #bbd2e3;
+	background: #e8f1ff;
+	height: 50px;
+	line-height: 50px;
+}
+
+.container  .online_identify_wrap .online_identify table tr td{
+	color: #111;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+}

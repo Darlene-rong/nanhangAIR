@@ -1,0 +1,138 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    font:12px "微软雅黑","宋体";
+}
+.middle-content{
+	margin:0px;
+	width: 100%;
+	background: url("../img/dabeijing.jpg") no-repeat center 0;
+	position: relative;
+	overflow: hidden;
+}
+#loginbgshow{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width:1920px;
+	height: 100%;
+	z-index: 0;
+	margin-left: -960px;
+}
+#loginbgshow img{
+	text-align:center;
+	width:1920px;
+	height:660px;
+}
+.block{
+	text-align:center;
+	margin:0px;
+	min-height: 50px;
+}
+.first{
+	position: relative;
+	margin: 0 auto;
+	width:100%;
+    max-width: 960px ;
+    height: 660px;
+    z-index: 200;
+}
+.second{
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 368px;
+	padding: 0px 20px;
+	background: #FAFBFC;
+	min-height:370px;
+}
+
+h4{
+	font-weight:bold;
+	font-family:"黑体";
+	color:#1E90FF;
+	height:40px;
+	font-size:25px;
+	text-align:center;
+}
+#registertitle{
+	margin:20px;
+	height:74px;
+	padding-top:10px;
+	border-bottom:#1E90FF 4px solid;
+}
+#usernamediv{
+	min-height:45px;
+	font-size: 14px;
+}
+#usernamediv input{
+	width:280px;
+	height:30px;
+	font-size: 14px;
+	/**/line-height:30px;/**/
+}
+#passworddiv{
+	min-height:45px;
+	font-size: 14px;
+}
+#passwordagaindiv input{
+	width:280px;
+	height:30px;
+	font-size: 14px;
+	/**/line-height:30px;/**/
+}
+#passwordagaindiv{
+	min-height:45px;
+	font-size: 14px;
+}
+#passworddiv input{
+	width:280px;
+	height:30px;
+	font-size: 14px;
+	/**/line-height:30px;/**/
+}
+#vcodeRegdiv{
+	min-height:45px;
+	font-size: 14px;
+}
+input{
+	height:28px;
+	width:146px;
+	/**/line-height:28px;/**/
+}
+div{
+	margin:10px;
+}
+
+a{
+	font-size: 14px;
+	color:#1E90FF;
+}
+#tk{
+	color:#888888;
+	height:45px;
+	font-size: 14px;
+}
+#tk input{
+	height: 15px;
+	width: 15px;
+}
+#tk button{
+	background-color:#1E90FF;
+	padding: 0px;
+	font-size: 14px;
+}
+#yyzh span{
+	width:328px;
+	margin:0px;
+	font-size:14px;
+	color:#888888;
+	margin-top: 50px;
+}
+#yyzh{
+	padding-top:10px;
+	width:368px;
+	height:50px;
+	margin:0px  0px 0px -20px;
+	background-color: #DDDDDD;
+}

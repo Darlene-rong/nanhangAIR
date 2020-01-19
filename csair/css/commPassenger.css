@@ -1,0 +1,57 @@
+.page_div{
+	margin:10px 0px;
+	text-align: center;
+}
+
+.page_div a{
+	text-decoration: underline;
+	display: inline-block;
+	padding:0px 10px;
+	color:#0093d0;
+}
+
+.page_div p{
+	display: inline-block;
+	color:#0093d0;
+}
+
+.page_div a.current {
+    text-decoration: none;
+    color: red;
+}
+
+.page_div a.hide {
+    display: none;
+}
+
+.passengerAddOrCheck{
+	height:50px;
+	line-height:50px;
+	border:#bbd2e3 solid 1px;
+}
+
+
+#addCommPassenger{
+	display:inline-block;
+	float:left;
+	color:#0066FF;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration: underline;
+	margin-left: 200px;
+}
+
+.passengerAddOrCheck  .passenger_nameCheck{
+	display:inline-block;
+	float:right;
+	margin-right: 150px;
+}
+.passengerAddOrCheck  .passenger_nameCheck .search_btn{
+	width: 60px;
+    background-color: #3399FF;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    height: 20px;
+    border-radius: 5%;
+}

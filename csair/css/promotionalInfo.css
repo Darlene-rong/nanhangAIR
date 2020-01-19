@@ -1,0 +1,114 @@
+.mileageContent{
+	padding:25px 5px;
+	border:#97b5e9 1px solid;
+}
+.mileageContent  ul .syqk{
+	display:inline-block;
+	float: left;
+	border-bottom: #ccc solid 1px;
+	width:120px;
+}
+.mileageContent  ul .current{
+	background-color: #1478b4;
+}
+.mileageContent  ul .current a{
+	color:#fff;
+}
+.mknr{
+	text-align: left;
+	margin: 65px 0px;
+}
+
+.mknr .nntable table{
+    border-top: 1px solid #cacaca;
+    margin: 10px 0px;
+   
+}
+.mknr .nntable table th{
+	background: #f1f1f1;
+	padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+.mknr .nntable table td{
+	padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+.mknr  table{
+    border-top: 1px solid #cacaca;
+    margin: 10px 0px;
+   
+}
+.mknr  table th{
+	background: #f1f1f1;
+	padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+.mknr  table td{
+	padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.mknr .title {
+    color: #9a6738;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 5px;
+}
+.mknr h3 {
+    color: #9a6738;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 5px;
+}
+
+.mknr p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.dataTable {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.dataTable th, .dataTable td {
+    border: 1px solid #000;
+    text-align: center;
+}
+.newsklinul {
+    margin-bottom: 15px;
+}
+.newsklinul li {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    border-bottom: 1px solid #cacaca;
+}
+.mknr .newsklinul li a {
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #334b77;
+    text-decoration: none;
+}
+.newsklinul li span {
+    display: block;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+.pages {
+    height: 40px;
+    text-align: right;
+}
+.pinfo {
+    margin-right: 60px;
+}
+.bs_bs{
+	text-align: left;
+}

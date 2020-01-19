@@ -1,0 +1,34 @@
+.passengerMX_content .passengerMX{
+	border:#bbd2e3 solid 1px;
+}
+.passengerMX_content .passengerMX  .passengerTb{
+	padding-top: 25px;
+	width:100%;
+	text-align: left;
+}
+.passengerMX_content .passengerMX  .passengerTb .txt,.txt2{
+	width:50%;
+	height:60px;
+	padding-left: 60px;
+}
+
+
+.btn{
+	text-align: center;
+	height:70px;
+	padding-top: 30px;
+}
+
+.btn .bluebtn{
+	display:inline-block;
+	font-size:16px;
+	height: 35px;
+    line-height: 35px;
+    width: 140px;
+	border-radius: 5%;
+}
+
+
+
+
+
