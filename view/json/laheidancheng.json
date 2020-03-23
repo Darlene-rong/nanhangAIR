@@ -1769,3 +1769,1661 @@
   },
   "status": "0"
 }
+
+
+let test = {
+  "data": {
+      "pullBlack": "1",
+      "ticket": {
+          "cachetime": "1579570884301",
+          "createtime": "1579570884301",
+          "codeshareflag": "false",
+          "flag": "true",
+          "cities": [
+              {
+                  "code": "DPS",
+                  "zhName": "巴厘岛",
+                  "enName": "DENPASAR"
+              },
+              {
+                  "code": "CAN",
+                  "zhName": "广州",
+                  "enName": "Guangzhou"
+              }
+          ],
+          "segment": [
+              {
+                  "dateflight": [
+                      {
+                          "flight": [
+                              {
+                                  "plane": "330",
+                                  "arrtime": "2020-01-22T07:40",
+                                  "bookingclassavails": "M:9,D:5",
+                                  "duration": "PT5H25M",
+                                  "meal": "Y",
+                                  "depterm": "2",
+                                  "flightNo": "CZ8481",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-22T02:15",
+                                  "depport": "CAN",
+                                  "arrport": "DPS",
+                                  "arrTerm": "--",
+                                  "stopnumber": "0"
+                              }
+                          ],
+                          "flightnum": "0",
+                          "sortprice": "",
+                          "freightflag": "N",
+                          "totalduration": "PT5H25M",
+                          "prices": [
+                            {
+                                "deplocation": "CAN",  //起始地点
+                                "filingairline": "CZ", //备案航空公司
+                                "arrlocation": "DPS", //抵达地点
+                                "cabintype": "ECONOMY", //座舱类型
+                              //成人座舱
+                                "adultcabins": [  
+                                    {
+                                        "arr": "DPS",
+                                        "name": "M",
+                                        "freebaggage": "1PC", //行李限额
+                                        "type": "ECONOMY",
+                                        "dep": "CAN"
+                                    }
+                                ],
+                                "adultxtdetail": "YQ:28.0",  //成人？？详情
+                                "adultcurrency": "CNY",  //成人货币？
+                                "adultfarbasis": "M2HFFSIS",
+                                "adultcn": "90",
+                                "adultprice": "4670",
+                                "adultyq": "300",
+                                "adultxt": "28",
+                                "adultruleference2": "0Ht7wWItJpX3SsGZx9CwloS/TK1ozCN3uCNT5NzLY6CwcN001",
+                                "adultruleference1": "Cpn0WR1yEPePywNQ0kXU3fgAZ|rkey=AA9iJ59EpCISIZEEstikLhefylGb7YKilVmTJBO0DAxo",
+                                "passengertype": "ADT", //乘客类型
+                              //婴儿座舱
+                                "infantcabins": [ 
+                                    {
+                                        "arr": "DPS",
+                                        "name": "M",
+                                        "freebaggage": "1PC",
+                                        "type": "ECONOMY",
+                                        "dep": "CAN"
+                                    }
+                              ],
+                                "infantfarbasis": "M2HFFSISIN90",
+                                "infantcurrency": "CNY",
+                                "infantruleference2": "",
+                                "infantruleference1": "",
+                                "infantxt": "28",
+                                "infantprice": "470",   //婴儿价格
+                                "infantyq": "0",
+                                "infantcn": "0",
+                                "infantxtdetail": "YQ:28.0",
+                              //小孩座舱
+                                "childcabins": [  
+                                    {
+                                        "arr": "DPS",
+                                        "name": "M",
+                                        "freebaggage": "1PC", 
+                                        "type": "ECONOMY",
+                                        "dep": "CAN"
+                                    }
+                                ],
+                                "childfarbasis": "M2HFFSISCH25",
+                                "childcurrency": "CNY",
+                                "childruleference2": "0Ht7wWItJpX3SsGZx9CwloS/TK1ozCN3uCNT5NzLY6CwcN001",
+                                "childxtdetail": "YQ:28.0",
+                                "childruleference1": "Cpn0WR1yEPePywNQ0kXU3fgAZ|rkey=AA9iJ59EpCISIZEEstikLhefylGb7YKilVmTJBO0DAxo",
+                                "childyq": "300",
+                                "childprice": "3510",
+                                "childxt": "28",
+                                "childcn": "0",
+                              },
+                              {
+                                  "infantruleference1": "",
+                                  "adultcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "D",
+                                          "freebaggage": "2PC",
+                                          "type": "BUSINESS",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "passengertype": "ADT",
+                                  "infantruleference2": "",
+                                  "infantxt": "28",
+                                  "childfarbasis": "D2HSRSISCH25",
+                                  "childcurrency": "CNY",
+                                  "childruleference2": "0Ht7wWItJpX3SsGZx9CwloS/TK1ozCN3uCNT5NzLY6CwcN003",
+                                  "deplocation": "CAN",
+                                  "infantcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "D",
+                                          "freebaggage": "1PC",
+                                          "type": "BUSINESS",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "childxtdetail": "YQ:28.0",
+                                  "adultruleference1": "Cpn0WR1yEPePywNQ0kXU3fgAZ|rkey=A8uZjssyvUkdRW6U/Lv064B8zP3PNL0i/7IdCqBoOEC6",
+                                  "childruleference1": "Cpn0WR1yEPePywNQ0kXU3fgAZ|rkey=A8uZjssyvUkdRW6U/Lv064B8zP3PNL0i/7IdCqBoOEC6",
+                                  "adultruleference2": "0Ht7wWItJpX3SsGZx9CwloS/TK1ozCN3uCNT5NzLY6CwcN003",
+                                  "childyq": "300",
+                                  "adultxtdetail": "YQ:28.0",
+                                  "adultcurrency": "CNY",
+                                  "infantprice": "1060",
+                                  "adultyq": "300",
+                                  "childprice": "7910",
+                                  "adultfarbasis": "D2HSRSIS",
+                                  "infantyq": "0",
+                                  "adultcn": "90",
+                                  "childxt": "28",
+                                  "adultprice": "10540",
+                                  "infantcurrency": "CNY",
+                                  "filingairline": "CZ",
+                                  "infantcn": "0",
+                                  "adultxt": "28",
+                                  "arrlocation": "DPS",
+                                  "infantfarbasis": "D2HSRSISIN90",
+                                  "childcn": "0",
+                                  "childcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "D",
+                                          "freebaggage": "2PC",
+                                          "type": "BUSINESS",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "infantxtdetail": "YQ:28.0",
+                                  "cabintype": "BUSINESS"
+                              },
+                              {
+                                  "infantruleference1": "",
+                                  "adultcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "M",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "passengertype": "ADT",
+                                  "infantruleference2": "",
+                                  "infantxt": "28",
+                                  "childfarbasis": "M2HFFSISCH25",
+                                  "childcurrency": "CNY",
+                                  "childruleference2": "0Bo8EyZXtYZDRENv5DhfeWS/CAB1TgVZ491LdYY7ytmsUA001",
+                                  "deplocation": "CAN",
+                                  "infantcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "M",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "childxtdetail": "YQ:28.0",
+                                  "adultruleference1": "G5N0WRGo5SDN6AceDNXj7laIK|rkey=AA9iJ59EpCISIZEEstikLhefylGb7YKilVmTJBO0DAxo",
+                                  "childruleference1": "G5N0WRGo5SDN6AceDNXj7laIK|rkey=AA9iJ59EpCISIZEEstikLhefylGb7YKilVmTJBO0DAxo",
+                                  "adultruleference2": "0Bo8EyZXtYZDRENv5DhfeWS/CAB1TgVZ491LdYY7ytmsUA001",
+                                  "childyq": "300",
+                                  "adultxtdetail": "YQ:28.0",
+                                  "adultcurrency": "CNY",
+                                  "infantprice": "470",
+                                  "adultyq": "300",
+                                  "childprice": "3510",
+                                  "adultfarbasis": "M2HFFSIS",
+                                  "infantyq": "0",
+                                  "adultcn": "90",
+                                  "childxt": "28",
+                                  "adultprice": "4670",
+                                  "infantcurrency": "CNY",
+                                  "filingairline": "CZ",
+                                  "infantcn": "0",
+                                  "adultxt": "28",
+                                  "arrlocation": "DPS",
+                                  "infantfarbasis": "M2HFFSISIN90",
+                                  "childcn": "0",
+                                  "childcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "M",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "infantxtdetail": "YQ:28.0",
+                                  "cabintype": "ECONOMY"
+                              },
+                              {
+                                  "infantruleference1": "",
+                                  "adultcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "D",
+                                          "freebaggage": "2PC",
+                                          "type": "BUSINESS",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "passengertype": "ADT",
+                                  "infantruleference2": "",
+                                  "infantxt": "28",
+                                  "childfarbasis": "D2HSRSISCH25",
+                                  "childcurrency": "CNY",
+                                  "childruleference2": "0Bo8EyZXtYZDRENv5DhfeWS/CAB1TgVZ491LdYY7ytmsUA003",
+                                  "deplocation": "CAN",
+                                  "infantcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "D",
+                                          "freebaggage": "1PC",
+                                          "type": "BUSINESS",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "childxtdetail": "YQ:28.0",
+                                  "adultruleference1": "G5N0WRGo5SDN6AceDNXj7laIK|rkey=A8uZjssyvUkdRW6U/Lv064B8zP3PNL0i/7IdCqBoOEC6",
+                                  "childruleference1": "G5N0WRGo5SDN6AceDNXj7laIK|rkey=A8uZjssyvUkdRW6U/Lv064B8zP3PNL0i/7IdCqBoOEC6",
+                                  "adultruleference2": "0Bo8EyZXtYZDRENv5DhfeWS/CAB1TgVZ491LdYY7ytmsUA003",
+                                  "childyq": "300",
+                                  "adultxtdetail": "YQ:28.0",
+                                  "adultcurrency": "CNY",
+                                  "infantprice": "1060",
+                                  "adultyq": "300",
+                                  "childprice": "7910",
+                                  "adultfarbasis": "D2HSRSIS",
+                                  "infantyq": "0",
+                                  "adultcn": "90",
+                                  "childxt": "28",
+                                  "adultprice": "10540",
+                                  "infantcurrency": "CNY",
+                                  "filingairline": "CZ",
+                                  "infantcn": "0",
+                                  "adultxt": "28",
+                                  "arrlocation": "DPS",
+                                  "infantfarbasis": "D2HSRSISIN90",
+                                  "childcn": "0",
+                                  "childcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "D",
+                                          "freebaggage": "2PC",
+                                          "type": "BUSINESS",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "infantxtdetail": "YQ:28.0",
+                                  "cabintype": "BUSINESS"
+                              }
+                          ]
+                      },
+                      {
+                          "flight": [
+                              {
+                                  "plane": "32Q",
+                                  "arrtime": "2020-01-22T23:25",
+                                  "bookingclassavails": "B:6",
+                                  "duration": "PT5H10M",
+                                  "meal": "Y",
+                                  "depterm": "2",
+                                  "flightNo": "CZ625",
+                                  "codeshare": "false",
+                                  "deptime": "2020-01-22T18:15",
+                                  "depport": "CAN",
+                                  "arrport": "DPS",
+                                  "arrTerm": "--",
+                                  "stopnumber": "0"
+                              }
+                          ],
+                          "flightnum": "0",
+                          "sortprice": "",
+                          "freightflag": "N",
+                          "totalduration": "PT5H10M",
+                          "prices": [
+                              {
+                                  "infantruleference1": "",
+                                  "adultcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "B",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "passengertype": "ADT",
+                                  "infantruleference2": "",
+                                  "infantxt": "28",
+                                  "childfarbasis": "B2HFFSISCH25",
+                                  "childcurrency": "CNY",
+                                  "childruleference2": "0Ht7wWItJpX3SsGZx9CwloS/TK1ozCN3uCNT5NzLY6CwcN002",
+                                  "deplocation": "CAN",
+                                  "infantcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "B",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "childxtdetail": "YQ:28.0",
+                                  "adultruleference1": "Cpn0WR1yEPePywNQ0kXU3fgAZ|rkey=Agm1YnqO+eWljef7SZzb+0a7ca+WzfhVTIUFEmQibv/c",
+                                  "childruleference1": "Cpn0WR1yEPePywNQ0kXU3fgAZ|rkey=Agm1YnqO+eWljef7SZzb+0a7ca+WzfhVTIUFEmQibv/c",
+                                  "adultruleference2": "0Ht7wWItJpX3SsGZx9CwloS/TK1ozCN3uCNT5NzLY6CwcN002",
+                                  "childyq": "300",
+                                  "adultxtdetail": "YQ:28.0",
+                                  "adultcurrency": "CNY",
+                                  "infantprice": "560",
+                                  "adultyq": "300",
+                                  "childprice": "4170",
+                                  "adultfarbasis": "B2HFFSIS",
+                                  "infantyq": "0",
+                                  "adultcn": "90",
+                                  "childxt": "28",
+                                  "adultprice": "5560",
+                                  "infantcurrency": "CNY",
+                                  "filingairline": "CZ",
+                                  "infantcn": "0",
+                                  "adultxt": "28",
+                                  "arrlocation": "DPS",
+                                  "infantfarbasis": "B2HFFSISIN90",
+                                  "childcn": "0",
+                                  "childcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "B",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "infantxtdetail": "YQ:28.0",
+                                  "cabintype": "ECONOMY"
+                              },
+                              {
+                                  "infantruleference1": "",
+                                  "adultcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "B",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "passengertype": "ADT",
+                                  "infantruleference2": "",
+                                  "infantxt": "28",
+                                  "childfarbasis": "B2HFFSISCH25",
+                                  "childcurrency": "CNY",
+                                  "childruleference2": "0Bo8EyZXtYZDRENv5DhfeWS/CAB1TgVZ491LdYY7ytmsUA002",
+                                  "deplocation": "CAN",
+                                  "infantcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "B",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "childxtdetail": "YQ:28.0",
+                                  "adultruleference1": "G5N0WRGo5SDN6AceDNXj7laIK|rkey=Agm1YnqO+eWljef7SZzb+0a7ca+WzfhVTIUFEmQibv/c",
+                                  "childruleference1": "G5N0WRGo5SDN6AceDNXj7laIK|rkey=Agm1YnqO+eWljef7SZzb+0a7ca+WzfhVTIUFEmQibv/c",
+                                  "adultruleference2": "0Bo8EyZXtYZDRENv5DhfeWS/CAB1TgVZ491LdYY7ytmsUA002",
+                                  "childyq": "300",
+                                  "adultxtdetail": "YQ:28.0",
+                                  "adultcurrency": "CNY",
+                                  "infantprice": "560",
+                                  "adultyq": "300",
+                                  "childprice": "4170",
+                                  "adultfarbasis": "B2HFFSIS",
+                                  "infantyq": "0",
+                                  "adultcn": "90",
+                                  "childxt": "28",
+                                  "adultprice": "5560",
+                                  "infantcurrency": "CNY",
+                                  "filingairline": "CZ",
+                                  "infantcn": "0",
+                                  "adultxt": "28",
+                                  "arrlocation": "DPS",
+                                  "infantfarbasis": "B2HFFSISIN90",
+                                  "childcn": "0",
+                                  "childcabins": [
+                                      {
+                                          "arr": "DPS",
+                                          "name": "B",
+                                          "freebaggage": "1PC",
+                                          "type": "ECONOMY",
+                                          "dep": "CAN"
+                                      }
+                                  ],
+                                  "infantxtdetail": "YQ:28.0",
+                                  "cabintype": "ECONOMY"
+                              }
+                          ]
+                      }
+                  ],
+                  "minprice": "4670",
+                  "arrcity": "DPS",
+                  "depcity": "CAN"
+              }
+          ],
+          "flightnumflag": "true",
+          "planes": [
+              {
+                  "planetype": "32Q",
+                  "enplanename": "32Q",
+                  "zhplanename": "32Q"
+              },
+              {
+                  "planetype": "330",
+                  "enplanename": "A330",
+                  "zhplanename": "空客330"
+              }
+          ],
+          "id": "IetQuery:CANDPS20200122CZBTOC",
+          "mileAge": [
+              {
+                  "mileAgeListGo": [
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2313,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2847,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "A",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4092,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4626,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "B",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 7116,
+                          "upNumber": 2,
+                          "upCount": 7116,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 7116,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 7650,
+                          "upNumber": 2,
+                          "upCount": 7116,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 8184,
+                          "upNumber": 2,
+                          "upCount": 7116,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 8895,
+                          "upNumber": 2,
+                          "upCount": 7116,
+                          "dest": "CAN",
+                          "clazz": "C",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 2,
+                          "upCount": 5337,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5871,
+                          "upNumber": 2,
+                          "upCount": 5337,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 6405,
+                          "upNumber": 2,
+                          "upCount": 5337,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 7116,
+                          "upNumber": 2,
+                          "upCount": 5337,
+                          "dest": "CAN",
+                          "clazz": "D",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2313,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2847,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "E",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 10674,
+                          "upNumber": 2,
+                          "upCount": 10674,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 10674,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 11208,
+                          "upNumber": 2,
+                          "upCount": 10674,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 11742,
+                          "upNumber": 2,
+                          "upCount": 10674,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 12453,
+                          "upNumber": 2,
+                          "upCount": 10674,
+                          "dest": "CAN",
+                          "clazz": "F",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 534,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1068,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "G",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4092,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4626,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "H",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 2,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4092,
+                          "upNumber": 2,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4626,
+                          "upNumber": 2,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 2,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "I",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 8895,
+                          "upNumber": 2,
+                          "upCount": 8895,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 8895,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 9429,
+                          "upNumber": 2,
+                          "upCount": 8895,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 9963,
+                          "upNumber": 2,
+                          "upCount": 8895,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 10674,
+                          "upNumber": 2,
+                          "upCount": 8895,
+                          "dest": "CAN",
+                          "clazz": "J",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4092,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4626,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "K",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2313,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2847,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "L",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4092,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4626,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "M",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1424,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1958,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2669,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "N",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 534,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1068,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "O",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4092,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4626,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 1,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "P",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2313,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2847,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "Q",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1424,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1958,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2669,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "R",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2669,
+                          "upNumber": 1,
+                          "upCount": 2669,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2669,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3203,
+                          "upNumber": 1,
+                          "upCount": 2669,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3737,
+                          "upNumber": 1,
+                          "upCount": 2669,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4448,
+                          "upNumber": 1,
+                          "upCount": 2669,
+                          "dest": "CAN",
+                          "clazz": "S",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1424,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1958,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2669,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "T",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2313,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2847,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 1779,
+                          "dest": "CAN",
+                          "clazz": "U",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1424,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1958,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2669,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "V",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3914,
+                          "upNumber": 1.5,
+                          "upCount": 3914,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3914,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4448,
+                          "upNumber": 1.5,
+                          "upCount": 3914,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4982,
+                          "upNumber": 1.5,
+                          "upCount": 3914,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5693,
+                          "upNumber": 1.5,
+                          "upCount": 3914,
+                          "dest": "CAN",
+                          "clazz": "W",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 0,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 534,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1068,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1779,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "X",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 1.5,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 3558,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4092,
+                          "upNumber": 1.5,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 4626,
+                          "upNumber": 1.5,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 5337,
+                          "upNumber": 1.5,
+                          "upCount": 3558,
+                          "dest": "CAN",
+                          "clazz": "Y",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 890,
+                          "upNumber": 0,
+                          "upCount": 0,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1424,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 1958,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "DPS"
+                      },
+                      {
+                          "loyaltyId": 0,
+                          "basicCount": 2669,
+                          "upNumber": 0,
+                          "upCount": 890,
+                          "dest": "CAN",
+                          "clazz": "Z",
+                          "dep": "DPS"
+                      }
+                  ],
+                  "mileAgeListBack": []
+              }
+          ],
+          "airports": [
+              {
+                  "code": "DPS",
+                  "zhName": "巴厘岛登巴萨努拉莱伊国际机场",
+                  "city": "DPS",
+                  "enName": "DENPASARAirport"
+              },
+              {
+                  "code": "CAN",
+                  "zhName": "广州",
+                  "city": "CAN",
+                  "enName": "Guangzhou Baiyun Airport"
+              }
+          ]
+      }
+  }
+}

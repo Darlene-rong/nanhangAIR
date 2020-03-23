@@ -1,29 +1,34 @@
-
-.blueC{
+.blueC {
   color: #008bce !important;
 }
+
 .font28 {
   font-size: 28px;
 }
+
 .la_border {
   border-bottom: 1px solid #eee;
 }
 
-.lahem_con .lahem_con-title{
+.lahem_con .lahem_con-title {
   height: 50px;
   line-height: 50px !important;
   font-size: 18px !important;
 }
-.lahem_con .lahem_con-title .flight_choosen_passengers,.flight_choosen_date{
-font-size: 16px !important;
+
+.lahem_con .lahem_con-title .flight_choosen_passengers,
+.flight_choosen_date {
+  font-size: 16px !important;
 }
 
 .lahem_result {
   margin-top: 10px;
 }
+
 .lahem_result-title {
   float: right;
 }
+
 .lahem_li {
   display: inline-block;
   height: 50px;
@@ -31,79 +36,94 @@ font-size: 16px !important;
   width: 120px;
   font-size: 16px;
 }
-.lahem_result-title li a{
+
+.lahem_result-title li a {
   display: inline-block;
   width: 120px;
 }
+
 .lahem_bao {
   float: left;
   width: 150px;
 }
+
 .lahem_bao a {
   color: #08c;
   /* background: url('/csair/css/img/flight_choosen_destination.png') no-repeat 15px center; */
 }
+
 .lahem_ul {
   width: 100%;
   margin-bottom: 10px;
   text-align: left;
-  border:  1px solid #EEE;
-
 }
+
 /* 航班列表 */
-.lahem_ul-con{
+.lahem_ul-con {
   width: 100%;
   background-color: #FAFAFA;
   color: #676767;
   height: 120px;
-  border-bottom: 1px solid #EEE;
-} 
-.lahem_ul-con .lahem_li-left{
+}
+
+.lahem_ul-con .lahem_li-left {
   width: 50%;
   height: 100%;
   color: #676767;
   position: relative;
 }
+
 .lahem_li-left .conimg {
   position: absolute;
   top: 48px;
   left: 10px;
 }
-.lahem_li-left .lahem_li-left-con{
+
+.lahem_li-left .lahem_li-left-con {
   margin: auto 0px;
   height: 120px;
   box-sizing: border-box;
   padding-top: 21px;
   padding-left: 31px;
 }
+
 .lahem_li-left .lahem_li-left-con .con {
   text-align: center;
   float: left;
 
 }
-.lahem_li-left .lahem_li-left-con .con1,.con3{
+
+.lahem_li-left .lahem_li-left-con .con1,
+.con3 {
   padding-top: 15px;
+  width: 120px;
+
 }
+
 .lahem_li-left .lahem_li-left-con .con2 {
   box-sizing: border-box;
   margin: 0px 13px;
 }
-.lahem_li-left .lahem_li-left-con .num{
+
+.lahem_li-left .lahem_li-left-con .num {
   display: block;
   width: 100%;
   font-size: 24px;
   color: #008bce;
 }
-.lahem_li-left .lahem_li-left-con .city{
-  word-break:break-all;
+
+.lahem_li-left .lahem_li-left-con .city {
+  word-break: break-all;
   max-width: 124px;
   padding-top: 2px;
   font-size: 14px;
 }
+
 .lahem_li-left .lahem_li-left-con .caption {
   position: relative;
   top: 2px;
 }
+
 /* 价钱 */
 .lahem_li-right {
   width: 50%;
@@ -112,31 +132,36 @@ font-size: 16px !important;
   height: 120px;
   overflow: hidden;
 }
+
 .lahem_li-right li {
   display: inline-block;
-  border-left:  1px solid #EEE;
+  border-left: 1px solid #EEE;
   height: 120px;
   text-align: center;
   font-size: 16px;
 }
-.lahem_li-right li a{
+
+.lahem_li-right li a {
   display: block;
   box-sizing: border-box;
   height: 100%;
   float: left;
 }
-.lahem_li-right li a .price{
+
+.lahem_li-right li a .price {
   font-size: 24px;
   line-height: 30px;
   color: red;
 }
-.lahem_li-right li a .addimg{
+
+.lahem_li-right li a .addimg {
   height: 20px;
   width: 20px;
   background: url('/csair/img/展开.png');
   background-size: 20px 20px;
   margin: 0 auto;
 }
+
 .lahem_li-right li a .lahem_li-right-a {
   position: relative;
   top: 24%;
@@ -144,55 +169,75 @@ font-size: 16px !important;
   font-size: 14px;
   color: #999;
 }
+
 .lahem_li-right li a .price-null {
   line-height: 120px;
   font-size: 24px;
   color: #999;
 }
+
 /* 选中价格 */
-.lahem_li-right .active{
+.lahem_li-right .active {
   background-color: #008ACB;
-  
+
 }
-.lahem_li-right .active a{
+
+.lahem_li-right .active a {
   color: #fff;
 }
-.lahem_li-right .active a{
+
+.lahem_li-right .active a {
   color: #fff;
 }
-.lahem_li-right .active .addimg{
+
+.lahem_li-right .active .addimg {
   height: 20px;
   width: 20px;
   background: url('/csair/img/shouqi.png');
   background-size: 20px 20px;
   margin: 0 auto;
 }
-.lahem_li-right .active a .price{
+
+.lahem_li-right .active .price {
   color: #fff;
 }
+
 .lahem_li-right .active .lahem_li-right-a {
   color: #fff;
 }
+
 /* 航班详情 */
+.lahem_ul-li {
+  margin-bottom: 20px;
+  /* border: 1px solid #eee; */
+}
+
 .lahem_ul-li .lahem_li-detail {
   padding: 10px;
   background: #cce2f540;
-  margin-top: -6px;
+  width: 98%;
+  border: 1px solid #40b5e0;
 }
-.lahem_ul-li .lahem_li-detail .lehem-dep{
+
+.lahem_ul-li .lahem_li-detail .lehem-dep {
   padding: 10px;
- }
-.lahem_ul-li .lahem_li-detail .lehem-dep li{
- height: 35px;
- line-height: 35px;
 }
+
+.lahem_ul-li .lahem_li-detail .lehem-dep li {
+  height: 35px;
+  line-height: 35px;
+}
+
 .lahem_ul-li .lahem_li-detail .lehem-dep .hem-part {
-float: right;
+  position: relative;
+  float: right;
 }
-.lahem_ul-li .lahem_li-detail .lehem-dep .hem-part img{
+
+.lahem_ul-li .lahem_li-detail .lehem-dep .hem-part img {
   position: relative;
   top: 5px;
 }
+
 .lahem_ul-li .lahem_li-detail .transfer {
   height: 42px;
   line-height: 42px;
@@ -201,24 +246,29 @@ float: right;
   border-bottom: 1px solid #ebebeb;
   padding-left: 10px;
 }
-.lahem_ul-li .lahem_li-detail .sh-notice{
-  padding: 10px 0;
+
+.sh-notice {
+  padding: 10px;
   line-height: 40px;
   border-top: 1px solid #ebebeb;
   color: #676767;
-  height: 40px;
+  background: #cce2f540;
+  border: 1px solid #40b5e0;
 }
-.lahem_ul-li .lahem_li-detail button {
+
+.sh-notice button {
   background: red;
   color: #fff;
-  height: 40px;
-  width: 120px;
+  height: auto;
+  width: auto;
   font-size: 19px;
-  padding: 5px;
+  padding: 10px;
   margin-right: 40px;
+  position: relative;
 }
+
 /*  */
-.lahem_wf-li .goto{
+.lahem_wf-li .goto {
   height: 20px;
   width: 20px;
   position: absolute;
@@ -228,27 +278,89 @@ float: right;
   line-height: 20px;
   color: #fff;
 }
-.lahem_wf-li .back{
+
+.lahem_wf-li .back {
   background-color: rgba(71, 181, 234, 0.7803921568627451);
 }
+
 /* 往返 */
-.lahem_wf-li .lehem-dep{
+.lahem_wf-li .lehem-dep {
   padding-top: 20px !important;
 }
-.lahem_wf-li .wfgoto{
+
+.lahem_wf-li .wfgoto {
   margin-left: -10px;
   margin-top: -10px;
 }
+
 .lahem_wf-li .wfback {
   background-color: rgba(71, 181, 234, 0.7803921568627451);
   margin-top: -6px;
 }
+
 .wflahem_ul li:nth-of-type(odd) .wflahem_list {
-background: #FAFAFA;
+  background: #FAFAFA;
 }
+
 .wflahem_ul li:nth-of-type(even) .wflahem_list {
   background: #fff;
 }
+
 .wflahem_ul li .lahem_ul-con {
   border-bottom: none;
+}
+
+.c-tip {
+  z-index: 100;
+  position: absolute;
+  max-width: 300px;
+  top: 32px;
+}
+
+.c-tip .c_tip_con {
+  position: relative;
+  float: left;
+  border: 3px solid #5DC9F7;
+  background-color: #fff;
+  z-index: 2;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.lhtip {
+  height: 50px;
+  display: inline-block;
+}
+
+.saml {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #008ACB;
+  border-right: 50px solid transparent;
+  position: absolute;
+}
+
+.saml span {
+  position: absolute;
+  top: -44px;
+  left: 4px;
+  color: #fff;
+}
+
+.black {
+  border-top: 50px solid rgba(71, 181, 234, 0.7803921568627451);
+}
+
+.lh_form-tip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.lh_form-tip .lhtip_img {
+  position: absolute;
+  background: #fff;
+  z-index: 999;
+  top: -160px;
+  left: 25px;
 }

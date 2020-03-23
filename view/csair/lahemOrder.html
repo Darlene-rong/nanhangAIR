@@ -1,0 +1,311 @@
+<script src="../../view/jquery.js"></script>
+<script src="../../csair/js/soundmanager2.js"></script>
+<script src="../../csair/js/jquery.blockUI.min.js"></script>
+<script src="../../csair/js/public.js"></script>
+<script src="../../csair/js/citiesData.js"></script>
+<script src="../../csair/js/ticketFrom.js"></script>
+<script src="../../csair/js/navBlock.js"></script>
+<script src="../../csair/js/jquery.cookie.js"></script>
+<script src="../../csair/js/cookie.js"></script>
+<script src="../../csair/js/pinyin/pinyin.js"></script>
+<script src="../../csair/js/js3/country.js"></script>
+<script src="../../csair/js/js3/data-time copy.js"></script>
+<script src="../../csair/js/js3/lahemOrder.js"></script>
+<script src="../../csair/js/js3/validateInput.js"></script>
+
+
+<link rel="stylesheet" href="../../csair/css/jsp3/lahemOrder.css">
+<link rel="stylesheet" href="../../csair/css/toaddpassenger2.css">
+<div class="container">
+  <div class="add_passenger_wrap select_wrap">
+    <!--订单信息 start-->
+    <div id="flightInfo" class="m-b">
+      <div class="page_title">
+        <h2>航程信息</h2>
+        <div class="page_title_more">
+          <a href="requestJsp?pagePath=csair/jsp3/flightQuery" style="color:#0e5ed7" title="修改航班">修改航班</a>
+        </div>
+        <div class="clearboth"></div>
+      </div>
+      <div class="lhorder_flight ap_flight_info navBlock">
+        <div class="js_lh_list">
+          <!-- <div class="lhorder_flight-info">
+            <div class="saml"><span>去</span></div>
+            <ul class="lh_f-info-list">
+              <li>
+                <div class="li_info inline-block">
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>长沙</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="con con2 inline-block">
+                    <img src="/csair/img/split_destination.png" alt="">
+                    <div> CZ3061</div>
+                  </div>
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>广州</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="li_info-jc inline-block">Q舱</div>
+                  <div class="clearboth"></div>
+                </div>
+              </li>
+              <li>
+                <div class="li_info inline-block">
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>长沙</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="con con2 inline-block">
+                    <img src="/csair/img/split_destination.png" alt="">
+                    <div> CZ3061</div>
+                  </div>
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>广州</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="li_info-jc inline-block">Q舱</div>
+                  <div class="clearboth"></div>
+                </div>
+              </li>
+              <li>
+                <div class="li_info inline-block">
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>长沙</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="con con2 inline-block">
+                    <img src="/csair/img/split_destination.png" alt="">
+                    <div> CZ3061</div>
+                  </div>
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>广州</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="li_info-jc inline-block">Q舱</div>
+                  <div class="clearboth"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="lhorder_flight-info">
+            <div class="saml"><span>回</span></div>
+            <ul class="lh_f-info-list">
+              <li>
+                <div class="li_info inline-block">
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>长沙</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="con con2 inline-block">
+                    <img src="/csair/img/split_destination.png" alt="">
+                    <div> CZ3061</div>
+                  </div>
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>广州</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="li_info-jc inline-block">Q舱</div>
+                  <div class="clearboth"></div>
+                </div>
+              </li>
+              <li>
+                <div class="li_info inline-block">
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>长沙</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="con con2 inline-block">
+                    <img src="/csair/img/split_destination.png" alt="">
+                    <div> CZ3061</div>
+                  </div>
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>广州</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="li_info-jc inline-block">Q舱</div>
+                  <div class="clearboth"></div>
+                </div>
+              </li>
+              <li>
+                <div class="li_info inline-block">
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>长沙</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="con con2 inline-block">
+                    <img src="/csair/img/split_destination.png" alt="">
+                    <div> CZ3061</div>
+                  </div>
+                  <div class="li_info-msg con">
+                    <div class="city"><strong>广州</strong> </div>
+                    <div class="num">2020-02-22 13:30分</div>
+                  </div>
+                  <div class="li_info-jc inline-block">Q舱</div>
+                  <div class="clearboth"></div>
+                </div>
+              </li>
+            </ul>
+          </div>           -->
+        </div>
+        <div class="detail-price">
+          <table class="sh-sm-table">
+            <thead>
+              <tr style=" height: 38px;">
+                <th>旅客</th>
+                <th>票价</th>
+                <th>税项/附加税</th>
+              </tr>
+            </thead>
+            <tbody class="js_t_price">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="ap_all_price" style="text-align: right;border-bottom: 1px solid rgb(187, 210, 227);">
+        总价：<span id="total"
+          class="flight_price orangefont js_f_total">0</span></div>
+    </div>
+
+    <!--乘机人信息 start-->
+    <div>
+      <div class="page_title">
+        <h2 class="passenger_h2" title="乘机人信息">乘机人信息</h2>
+        <div class="clearboth"></div>
+      </div>
+      <div class="lhorder_person ap_flight_info navBlock">
+        <div class="js_lhoform">
+          <!-- <form class="lho_form" action="javascript:(void)">
+            <div class="lhform_title">
+              旅客1：<span >成人(≥12岁)</span>
+            </div>
+            <ul class="lform_ul">
+              <li>
+                <div class="lform_li">
+                  <label for=""><span class="orangefont">*</span>旅客姓名 </label>
+                  <input type="text" name="_username1" autocomplete="off" maxlength="28" placeholder="姓（拼音或者英文）"
+                    title="姓（拼音或者英文）" style="width: 130px;"/>
+                  <input type="text" name="_username2"   autocomplete="off" maxlength="28" placeholder="名（拼音或者英文）"
+                    title="名（拼音或者英文）" style="width: 130px;"/>
+                  <div class="lh_form-tip">
+                    <img src="/csair/img/question.png" class="js_tipimg" alt="">
+                    <div class="lhtip_img js_lhtip_img" style="display: none;">
+                      <img src="https://b2c.csair.com/B2C40/static/inter/images/card.jpg" width="450" height="324" alt="passport" />
+                    </div>
+                  </div>
+                </div>
+                <div class="lform_li">
+                  <label for=""><span class="orangefont">*</span>性别</label>
+                  <label class="input_r"> <input name="p-sex" value="M" id="js_lhsex_1" type="radio" checked="checked"/>男</label>
+                  <label class="input_r"> <input name="p-sex" value="F" id="js_lhsex_2" type="radio"/>女</label>
+                </div>              
+              </li>
+              <li>
+                <div class="lform_li js_date_one">
+                  <label for=""><span class="orangefont">*</span>出生日期</label>
+                  <select type="text" name="p-birthday-y" class="lminwidth js_lh_y_0" autocomplete="off" title="年"></select>
+                  <select type="text" name="p-birthday-m" class="lminwidth js_lh_m_0" autocomplete="off" title="月"></select>
+                  <select type="text" name="p-birthday-d" class="lminwidth js_lh_d_0" autocomplete="off" title="日"></select>
+                </div >
+                <div class="lform_li">
+                  <label for=""><span class="orangefont">*</span>国家/地区</label>
+                  <select name="p-city1" class="lmaxwidth js_country"></select>
+                </div>              
+              </li>
+              <li>
+                <div class="lform_li">
+                  <label for=""><span class="orangefont">*</span>证件号码</label>
+                  <select type="text" name="p-hz" class="lminwidth">
+                    <option value="P" selected>护照</option>
+                    <option value="P">港澳通行证</option>
+                    <option value="P">回乡证</option>
+                    <option value="P">台胞证</option>
+                    <option value="P">台湾通行证</option>
+                  </select>
+                  <input  type="text" name="p-doc" autocomplete="off" maxlength="15" />
+                </div>
+                <div class="lform_li  js_date_two">
+                  <label for=""><span class="orangefont">*</span>证件有效期</label>
+                  <select type="text" name="p-zj-y" class="js_lh_zj_y_0 lminwidth" autocomplete="off" title="年"></select>
+                  <select type="text" name="p-zj-m" class="js_lh_zj_m_0 lminwidth" autocomplete="off" title="月"></select>
+                  <select type="text" name="p-zj-d" class="js_lh_zj_d_0 lminwidth " autocomplete="off" title="日"></select>
+                </div>              
+              </li>
+              <li>
+                <div class="lform_li">
+                  <label for=""><span class="orangefont">*</span>签发地</label>
+                  <select class="lmaxwidth js_country" name="p-qfd"></select>
+                </div>
+                <div class="lform_li js_lhbabyinp" style="display: none;">
+                  <label for=""><span class="orangefont">*</span>婴儿携带人</label>
+                  <select name="p-yexdz" id="" class="lminwidth"></select>
+                </div>
+              </li>
+              
+            </ul>
+          </form> -->
+        </div>
+      </div>
+    </div>
+
+    <!--联系人信息 start-->
+    <div class="m-t">
+      <form action="" class="js_lah_f">
+        <div class="page_title">
+          <h2 class="passenger_h2" title="联系人信息">联系人信息</h2>
+          <div class="clearboth"></div>
+        </div>
+        <div class="ap_contacts_info navBlock" style="border-bottom: 1px solid #bbd2e3;">
+          <a href="##" class="question" style="float: left;" title="按tab键进行联系人信息的填写，请按正确格式填写">
+            <img src="../../csair/img/question.png" />
+          </a>
+          <div class="ap_contacts_inputs">
+            <span class="orangefont">*</span>
+            <label for="contact_name">姓&nbsp;名</label>
+            <input placeholder="" type="text" name="contact_name" title="联系人信息，姓名" />
+            <span class="orangefont">*</span>
+            <label class="" for="contact_moblie">手机号</label>
+            <input placeholder="" type="text" name="contact_moblie" maxlength="11" />
+            <span class="bluefont">用于接收航班信息、管理订单</span>
+          </div>
+          <div class="ap_contacts_inputs">
+            <span class="orangefont">*</span>
+            <label for="e_mail">邮&nbsp;箱</label>
+            <input placeholder="" type="text" name="e_mail" title="电子邮箱号" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <!--end 联系人信息 -->
+
+    <div class="ad_pas_agreement">
+      <label>
+        <input type="checkbox" id="js_lhf_check"
+          title="已阅读并理解,请点击该复选框" />已阅读并理解
+        <a class="" href="cxbz_clickA?href=http://www.csair.com/cn/tourguide/booking/orders/order/lvkexuzhi/guonei/"
+          target="_blank">《旅客购票须知》</a>
+        <a class="" href="cxbz_clickA?href=http://www.csair.com/cn/tourguide/booking/orders/order/lkxlzldcdyxgd/"
+          target="_blank">《锂电池运输规定》</a>
+        <a class=""
+          href="cxbz_clickA?href=http://www.csair.com/cn/tourguide/luggage_service/accompanied_luggage/notice/"
+          target="_blank">《客票行李规定》</a>
+        <a class="" href="cxbz_clickA?href=http://www.csair.com/cn/tourguide/booking/orders/order/gnysztj/"
+          target="_blank">《国内运输总条件》</a>
+        <a class="" href="cxbz_clickA?href=http://www.csair.com/cn/tourguide/booking/orders/order/gjysztj/"
+          target="_blank">《国际运输总条件》</a>
+        <a class="" href="cxbz_clickA?href=http://www.csair.com/cn/tourguide/booking/orders/static/yinsitiaokuan/"
+          target="_blank">《隐私政策》</a>
+      </label>
+    </div>
+    <div class="text-err js_er_bttom"></div>
+    <div class="ad_pas_page_btn">
+      <button class="orangebtn" type="button" onClick="window.lahemOrder.lhformValite()">下一步</button>
+    </div>
+  </div>
+</div>
+
+<!-- <span id="checkloadtime" onclick="loadtime()">查看加载时间</span>
+  <div id="loadtime" style="display:none;">${Time}</div> -->
+ 

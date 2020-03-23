@@ -1,225 +1,727 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
-#psg00000000 .pType , #psg00000000 .close_ap{
-	display: none;
+#psg00000000 .pType,
+#psg00000000 .close_ap {
+  display: none;
 }
-.shade_page_title{
-	border: 1px solid #bbd2e3;
-	border-top: 4px solid #97b5e9;
-	height: 38px;
-	line-height: 38px;
-	background: url(../img/title_bg.jpg) repeat-x;
-}
-
-.shade_page_title h2{
-	float: left;
-	padding-left: 60px;
-	color: #0e5ed7;
-	font-size: 16px;
+.shade_page_title {
+  border: 1px solid #bbd2e3;
+  border-top: 4px solid #97b5e9;
+  height: 38px;
+  line-height: 38px;
+  background: url(../img/title_bg.jpg) repeat-x;
 }
 
-.add_passenger_wrap .shade_page_title h2{
-	background: url(../img/flight_choosen_destination.png) 20px center no-repeat;
-	float: left;
-	padding-left: 60px;
-	color: #0e5ed7;
-	font-size: 16px;
+.shade_page_title h2 {
+  float: left;
+  padding-left: 60px;
+  color: #0e5ed7;
+  font-size: 16px;
 }
-.add_passenger_wrap .shade_page_title h2.shade_passenger_h2{
-	background: url(../img/contact_infos_title.PNG) 20px center no-repeat;
-	float: left;
-	padding-left: 60px;
-	color: #0e5ed7;
-	font-size: 16px;
+
+.add_passenger_wrap .shade_page_title h2 {
+  background: url(../img/flight_choosen_destination.png) 20px center no-repeat;
+  float: left;
+  padding-left: 60px;
+  color: #0e5ed7;
+  font-size: 16px;
 }
-.add_passenger_wrap .shade_page_title .shade_page_title_more a{
-	color: #0f5ed5;
+.add_passenger_wrap .shade_page_title h2.shade_passenger_h2 {
+  background: url(../img/contact_infos_title.PNG) 20px center no-repeat;
+  float: left;
+  padding-left: 60px;
+  color: #0e5ed7;
+  font-size: 16px;
 }
-.add_passenger_wrap .shade_ap_flight_info,.add_passenger_wrap .shade_ap_all_price,.add_passenger_wrap .shade_add_pas{
-	/*border: 1px solid #bbd2e3;*/
-	/*border-top: none;*/
-	border-left: 1px solid #bbd2e3;
-    border-right: 1px solid #bbd2e3;
+.add_passenger_wrap .shade_page_title .shade_page_title_more a {
+  color: #0f5ed5;
 }
-.shade_ap_flight_info{
-	/*height: 155px;*/
-	background-color: #fafafa;
+.add_passenger_wrap .shade_ap_flight_info,
+.add_passenger_wrap .shade_ap_all_price,
+.add_passenger_wrap .shade_add_pas {
+  /*border: 1px solid #bbd2e3;*/
+  /*border-top: none;*/
+  border-left: 1px solid #bbd2e3;
+  border-right: 1px solid #bbd2e3;
 }
-.shade_ap_flight_info div.shade_ap_flight_info_flight,.shade_ap_flight_info div.shade_ap_price_con{
-	float: left;
-	background: #fafafa;
+.shade_ap_flight_info {
+  /*height: 155px;*/
+  background-color: #fafafa;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight{
-	width: 570px;
-	border-right: 1px solid #bbd2e3;
-	padding: 35px 0 22px;
+.shade_ap_flight_info div.shade_ap_flight_info_flight,
+.shade_ap_flight_info div.shade_ap_price_con {
+  float: left;
+  background: #fafafa;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul{
-	height: 98px;
+.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight {
+  width: 570px;
+  border-right: 1px solid #bbd2e3;
+  padding: 35px 0 22px;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li{
-	float: left;
-	margin-left: 14px;
+.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul {
+  height: 98px;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li.shade_ap_flight_travel{
-	padding: 12px 10px 0 10px;
+.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li {
+  float: left;
+  margin-left: 14px;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li.shade_ap_flight_travel div{
-	height: 60px;
-	width: 25px;
-	color: #fff;
-	background: #ff5a00;
-	line-height: 27px;
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li.shade_ap_flight_travel {
+  padding: 12px 10px 0 10px;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li div.shade_place{
-	/*width:70px;*/
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li.shade_ap_flight_travel
+  div {
+  height: 60px;
+  width: 25px;
+  color: #fff;
+  background: #ff5a00;
+  line-height: 27px;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li div.shade_place,.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li div.shade_ap_datetime{
-	float: left;
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li
+  div.shade_place {
+  /*width:70px;*/
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li.shade_ap_flight_dep div.shade_ap_datetime{
-	background: url(../img/split_destination_short.png) 100px center no-repeat;
-	padding-right:60px;
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li
+  div.shade_place,
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li
+  div.shade_ap_datetime {
+  float: left;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li div.shade_ap_datetime{
-	padding: 0 0px 0 0px;
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li.shade_ap_flight_dep
+  div.shade_ap_datetime {
+  background: url(../img/split_destination_short.png) 100px center no-repeat;
+  padding-right: 60px;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li div.shade_place,.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li.shade_ap_flight_class div{
-	height: 85px;
-	line-height: 85px;
-	font-size: 14px;
-	color: #111111;
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li
+  div.shade_ap_datetime {
+  padding: 0 0px 0 0px;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li div.shade_ap_time{
-	padding-top: 26px;
-	background: url(../img/order_infos_time.png) top center no-repeat;
-	font-size: 14px;
-	color: #111111;
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li
+  div.shade_place,
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li.shade_ap_flight_class
+  div {
+  height: 85px;
+  line-height: 85px;
+  font-size: 14px;
+  color: #111111;
 }
-.add_passenger_wrap .shade_ap_flight_info .shade_ap_flight_info_flight ul li div.shade_ap_date{
-	font-size: 14px;
-	color: #908f8f;
-	height:24px;
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li
+  div.shade_ap_time {
+  padding-top: 26px;
+  background: url(../img/order_infos_time.png) top center no-repeat;
+  font-size: 14px;
+  color: #111111;
 }
-.add_passenger_wrap .shade_ap_price_con{
-    /*height: 155px;*/
-    width: 386px;
-    padding: 0 10px;
+.add_passenger_wrap
+  .shade_ap_flight_info
+  .shade_ap_flight_info_flight
+  ul
+  li
+  div.shade_ap_date {
+  font-size: 14px;
+  color: #908f8f;
+  height: 24px;
 }
-.add_passenger_wrap .shade_ap_price_con table{
-	width: 100%;
-	border-collapse: collapse;
+.add_passenger_wrap .shade_ap_price_con {
+  /*height: 155px;*/
+  width: 386px;
+  padding: 0 10px;
 }
-.add_passenger_wrap .shade_ap_price_con table tr{
-	line-height: 34px;
-	/*border-bottom: 1px dashed #C1C1C1;*/
+.add_passenger_wrap .shade_ap_price_con table {
+  width: 100%;
+  border-collapse: collapse;
 }
-.add_passenger_wrap .shade_ap_price_con table th{
-	color: #0e5ed7;
+.add_passenger_wrap .shade_ap_price_con table tr {
+  line-height: 34px;
+  /*border-bottom: 1px dashed #C1C1C1;*/
 }
-.add_passenger_wrap .shade_ap_all_price{
-	/*border: 1px solid #bbd2e3;*/
-	padding: 20px;
-	border-top: 1px solid #bbd2e3;
-	font-size: 18px;
-    text-align: right;
+.add_passenger_wrap .shade_ap_price_con table th {
+  color: #0e5ed7;
 }
-.add_passenger_wrap .shade_ap_all_price .flight_price{
-	font-size: 26px;
+.add_passenger_wrap .shade_ap_all_price {
+  /*border: 1px solid #bbd2e3;*/
+  padding: 20px;
+  border-top: 1px solid #bbd2e3;
+  font-size: 18px;
+  text-align: right;
 }
-.add_passenger_wrap .shade_ap_top_contact{
-	height: 68px;
-	line-height: 68px;
+.add_passenger_wrap .shade_ap_all_price .flight_price {
+  font-size: 26px;
 }
-.add_passenger_wrap .shade_ap_top_contact h6{
-	float: left;
+.add_passenger_wrap .shade_ap_top_contact {
+  height: 68px;
+  line-height: 68px;
 }
-.add_passenger_wrap .shade_ap_top_contact li{
-	float: left;
-	padding: 0 10px;
+.add_passenger_wrap .shade_ap_top_contact h6 {
+  float: left;
 }
-.add_passenger_wrap .shade_ap_top_contact li label{
-	padding: 0 5px;
+.add_passenger_wrap .shade_ap_top_contact li {
+  float: left;
+  padding: 0 10px;
 }
-.add_passenger_wrap .shade_add_pas{
-	margin-bottom: 20px;
+.add_passenger_wrap .shade_ap_top_contact li label {
+  padding: 0 5px;
 }
-.add_passenger_wrap .shade_add_pas .shade_add_pas_div{
-	height: 150px;
-	background: #fafafa;
-	padding: 0 25px;
-	border-bottom: 1px solid #bbd2e3;
-	position: relative;
+.add_passenger_wrap .shade_add_pas {
+  margin-bottom: 20px;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos{
-	height: 35px;
-	padding: 20px 0;
+.add_passenger_wrap .shade_add_pas .shade_add_pas_div {
+  height: 150px;
+  background: #fafafa;
+  padding: 0 25px;
+  border-bottom: 1px solid #bbd2e3;
+  position: relative;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li{
-	float: left;
-	padding: 5px 25px 5px 5px;
+.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos {
+  height: 35px;
+  padding: 20px 0;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance ul{
-	height: 30px;
-	line-height: 30px;
+.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li {
+  float: left;
+  padding: 5px 25px 5px 5px;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance ul li{
-	float: left;
+.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance ul {
+  height: 30px;
+  line-height: 30px;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li select,.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li input{
-	/*height: 28px;*/
-	line-height: 28px;
-	padding: 0 10px;
-	border: 1px solid #c1c1c1;
+.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance ul li {
+  float: left;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li select{
-	/*width: 100px;*/
+.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li select,
+.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li input {
+  /*height: 28px;*/
+  line-height: 28px;
+  padding: 0 10px;
+  border: 1px solid #c1c1c1;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li input.shade_ap_infos_name{
-	width: 70px;
+.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li select {
+  /*width: 100px;*/
 }
-.add_passenger_wrap .shade_add_pas_div .shade_ap_passenger_infos li input.shade_ap_infos_human_card_num{
-	width: 150px;
+.add_passenger_wrap
+  .shade_add_pas_div
+  .shade_ap_passenger_infos
+  li
+  input.shade_ap_infos_name {
+  width: 70px;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance{
-	padding-left: 122px;
+.add_passenger_wrap
+  .shade_add_pas_div
+  .shade_ap_passenger_infos
+  li
+  input.shade_ap_infos_human_card_num {
+  width: 150px;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance li{
-	padding: 0 10px;
+.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance {
+  padding-left: 122px;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance ul.shade_flight_insurance2{
-	padding-left: 48px;
+.add_passenger_wrap .shade_add_pas_div .shade_flight_insurance li {
+  padding: 0 10px;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_close_ap{
-	position: absolute;
-	right: 0;
-	top: 0;
+.add_passenger_wrap
+  .shade_add_pas_div
+  .shade_flight_insurance
+  ul.shade_flight_insurance2 {
+  padding-left: 48px;
 }
-.add_passenger_wrap .shade_add_pas_div .shade_close_ap .shade_close_ap_btn{
-	display: block;
-	height: 46px;
-	width: 46px;
-	background: url(../img/close_ap.jpg);
+.add_passenger_wrap .shade_add_pas_div .shade_close_ap {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-.add_passenger_wrap .shade_add_pas .shade_add_pas_btn{
-	padding: 20px 0;
+.add_passenger_wrap .shade_add_pas_div .shade_close_ap .shade_close_ap_btn {
+  display: block;
+  height: 46px;
+  width: 46px;
+  background: url(../img/close_ap.jpg);
 }
-.add_passenger_wrap .shade_add_pas .shade_add_pas_btn button{
-	height: 39px;
-	width: 180px;
-	background: url(../img/add_pas_btn.JPG) no-repeat;
-	color: #fff;
+.add_passenger_wrap .shade_add_pas .shade_add_pas_btn {
+  padding: 20px 0;
+}
+.add_passenger_wrap .shade_add_pas .shade_add_pas_btn button {
+  height: 39px;
+  width: 180px;
+  background: url(../img/add_pas_btn.JPG) no-repeat;
+  color: #fff;
 }
 .add_pas .commonPassengerUl {
-	text-align: left;
-	margin-left: 70px;
+  text-align: left;
+  margin-left: 70px;
 }
-.add_pas ul .commonPassengerLi{
-	display: inline-block;
-    text-align: left;
-    width: 150px;
-    height: 30px;
-    line-height: 20px;
-    margin: 20px 10px 0px;
-    font-size: 14px;
+.add_pas ul .commonPassengerLi {
+  display: inline-block;
+  text-align: left;
+  width: 150px;
+  height: 30px;
+  line-height: 20px;
+  margin: 20px 10px 0px;
+  font-size: 14px;
 }
+
+.add_passenger_wrap .add_pas_div .ap_passenger_infos li {
+  padding: 5px 5px 5px 5px;
+}
+
+#flightInfo2 {
+  float: left;
+  width: 980px;
+  min-height: 550px;
+  position: relative;
+  margin: 0px auto;
+  border: 0px solid #000;
+}
+
+#shade {
+  width: 980px;
+  height: 540px;
+  background-color: #aaaaaa;
+  position: absolute;
+  color: #fff;
+  line-height: 550px;
+  z-index: 999;
+  left: 0px;
+  top: 0px;
+  -moz-opacity: 0.5;
+  /*Firefox*/
+  opacity: 0.5;
+  /*Opera*/
+  filter: alpha(opacity=50);
+  /*IE*/
+}
+
+/*乘机人信息 start*/
+.passenger-block.form-block {
+  border: 1px solid #ccc;
+  border-top: none;
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.pg-block-body {
+  font-size: 0;
+}
+
+.pg-form {
+  padding: 25px 10px;
+  position: relative;
+  background: #fafafa;
+  overflow: visible;
+  margin: 0 0 10px;
+}
+
+.pg-block-head {
+  font-size: 21px;
+  padding: 10px 0;
+}
+
+.pg-psg-type {
+  display: inline;
+  font-size: 18px;
+}
+
+.pg-cell-half {
+  width: 50%;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+.ctrl-cell {
+  font-size: 14px;
+  font-size: 0.875rem;
+  position: relative;
+  margin-bottom: 1em;
+  padding-left: 120px;
+}
+
+.ctrl-cell .ctrl-lbl {
+  font-size: 13px;
+  line-height: 29px;
+  width: 8em;
+  text-align: right;
+  margin-right: 4px;
+  color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+.ctrl-cell .ctrl-lbl .required {
+  color: red;
+}
+
+.ctrl-cell .ipt-cell {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+.ctrl-cell .ipt-half {
+  width: 140px;
+}
+
+.ipt {
+  border: 1px solid #ccc;
+  height: 22px;
+  padding: 3px 5px !important;
+  width: 138px;
+  color: #666;
+  background-color: #fff;
+  box-sizing: content-box;
+}
+
+.ipt-cell + .ipt-cell {
+  margin-left: 5px;
+}
+
+.ipt-cell .ico-tips {
+  vertical-align: top;
+  margin-top: 6px;
+}
+
+.ico-tips {
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  background-color: #0e99d0;
+  border-radius: 10px;
+  _background-position: -1px -15px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.pg-form .pg-cell-full {
+  display: block;
+  width: auto;
+}
+
+.ins-unit {
+  margin-right: 180px;
+}
+
+.ins-unit {
+  position: relative;
+  overflow: visible;
+}
+
+.ctrl-cell .ctrl-lbl {
+  line-height: 30px;
+  color: #666;
+  width: 115px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ctrl-cell .ctrl-lbl {
+  font-size: 13px;
+  line-height: 29px;
+  float: left;
+  width: 8em;
+  text-align: right;
+  margin-right: 4px;
+  color: #000;
+}
+
+.ins-unit .ctrl-lbl {
+  font-weight: 700;
+  line-height: 16px;
+  padding-top: 5px;
+}
+
+.ins-item {
+  line-height: 16px;
+  overflow: hidden;
+  font-size: 14px;
+  display: block;
+  padding: 5px 0;
+  cursor: pointer;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.ins-item input {
+  margin-right: 5px;
+}
+
+.ins-name,
+.ins-prc,
+.ins-text {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.ins-cost {
+  color: orange;
+  font-weight: 700;
+}
+
+.zh .ins-text {
+  max-width: 490px;
+  word-break: break-all;
+}
+
+.ins-text {
+  font-size: 14px;
+  color: #0093d0;
+  line-height: normal;
+}
+
+.ctrl-lbl,
+.form-inline .ctrl-cell,
+.form-inline .form-actions,
+.ipt-cell {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+.cm-radio-unit {
+  float: left;
+  padding: 0;
+  line-height: 28px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  color: #555;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.pg-form .cm-radio-unit {
+  padding: 0;
+  float: left;
+}
+
+.p-sex-unit .cm-radio-unit {
+  width: 80px;
+  text-align: center;
+}
+
+.radio-checked,
+.radio-checked:hover {
+  cursor: default;
+  background-color: #40b5e2;
+  border-color: #40b5e2;
+  color: #fff;
+}
+
+.cm-radio-unit input {
+  float: left;
+  margin-top: 7px;
+  margin-left: 3px;
+}
+
+.select {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 14px;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  width: 130px;
+  overflow: hidden;
+  color: #ccc;
+  cursor: pointer;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.select-trigger {
+  margin-right: 25px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 5px;
+  color: #666;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.ctrl-cell .id-sel {
+  width: 105px;
+}
+
+.ctrl-cell .select {
+  margin-right: 5px;
+}
+
+.ctrl-cell .sel-full {
+  width: 307px;
+}
+
+.ctrl-cell .ipt-full {
+  width: 297px;
+}
+
+.ctrl-cell .p-doc {
+  width: 185px;
+}
+
+.cm-radio-unit + .cm-radio-unit {
+  margin-left: 5px;
+}
+
+.ipt-cell .ico-tips {
+  vertical-align: top;
+  margin-top: 6px;
+}
+
+.ctrl-cell .ipt-cell {
+  position: relative;
+  z-index: 0;
+}
+
+.ico-tips {
+  display: inline-block;
+  font-style: normal;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  background-color: #0e99d0;
+  border-radius: 10px;
+  color: #fff !important;
+  font-size: 14px;
+}
+
+.auto_write {
+  margin-left: 15px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.auto_write label {
+  margin-left: 8px;
+}
+
+.auto_write input {
+  vertical-align: middle;
+}
+
+.ipt-y {
+  width: 100px;
+}
+
+.ipt-m {
+  width: 80px;
+}
+
+.ipt-d {
+  width: 80px;
+}
+.ins-item:hover {
+  background-color: #eee;
+}
+.ins-name,
+.ins-prc {
+  margin-right: 10px;
+}
+/* end 乘机人信息*/
+
+/*弹框 start*/
+.cm-tip-dir-3,
+.cm-tip-dir-4,
+.cm-tip-dir-5 {
+  padding-left: 10px;
+}
+
+.cm-tip-box {
+  position: absolute;
+  overflow: hidden;
+}
+
+.cm-tip-box > .content {
+  float: left;
+  position: relative;
+  border: 2px solid #40b5e0;
+  padding: 0.5em;
+  background-color: #fff;
+  min-height: auto;
+}
+
+.tip-passport {
+  font-size: 14px;
+  color: #40b5e0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.tip-passport img {
+  display: block;
+}
+
+img {
+  border: none;
+}
+
+.cm-tip-box > i {
+  position: absolute;
+  z-index: 901;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent;
+}
+
+.cm-tip-dir-3 > i,
+.cm-tip-dir-4 > i,
+.cm-tip-dir-5 > i {
+  border-left-width: 0 !important;
+  border-right-color: #40b5e0;
+}
+/*弹框 end*/

@@ -1,0 +1,270 @@
+.saml {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #008ACB;
+  border-right: 50px solid transparent;
+  position: absolute;
+}
+.text-err {
+  color: red;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.saml span {
+  position: absolute;
+  top: -44px;
+  left: 4px;
+  color: #fff;
+}
+
+.lmaxwidth {
+  width: 280px;
+}
+
+.lminwidth {
+  width: 85px;
+}
+
+.lhorder_flight {
+  position: relative;
+  background: rgba(250, 250, 250, 0.5607843137254902);
+}
+
+.lhorder_flight .lhorder_flight-info {
+  position: relative;
+  width: 75%;
+}
+
+.detail-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0 0 5px;
+  width: 240px;
+  z-index: 0;
+}
+
+.sh-sm-table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: center;
+  line-height: 14px;
+}
+
+.sh-sm-table th {
+  border-bottom: 1px dashed #ccc;
+  color: #0093d0;
+  padding: 4px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.sh-sm-table td {
+  padding: 4px 0;
+  color: #666;
+  font-size: 13px;
+}
+
+.lh_f-info-list {
+  border-bottom: 1px dashed #ccc;
+}
+
+.lh_f-info-list li {
+  height: 77px;
+}
+
+.li_info {
+  height: 100%;
+  width: 100%;
+  border-right: 1px dashed #ccc;
+  color: #666;
+  font-size: 14px;
+}
+
+.li_info .con {
+  float: left;
+  margin-top: 17px;
+}
+
+.li_info .li_info-msg {
+  display: inline-block;
+  width: 32%;
+  margin-top: 16px;
+}
+
+.li_info .li_info-msg .city {
+  color: #666;
+  font-size: 18px;
+}
+
+.li_info .li_info-msg .num {
+  display: block;
+  color: #ccc;
+  text-align: center;
+  line-height: 25px;
+}
+
+.li_info-jc {
+  position: relative;
+  height: 100px;
+  width: 50px;
+  line-height: 100px;
+}
+
+.lhorder_person {
+  border-bottom: 1px solid #bbd2e3;
+}
+
+.lhorder_person .lho_form {
+  background-color: #eaf8fe;
+  padding: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.lhform_title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #0093D0;
+  text-align: left;
+  padding-left: 21px;
+
+}
+
+.lform_title {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+
+}
+
+.lform_title-left {
+  float: left;
+}
+
+.lform_title-right {
+  float: right;
+}
+
+.lform_title select {
+  height: 29px;
+  line-height: 27px;
+  padding: 0px 0px 0px 6px;
+  border: 1px solid #ccc
+}
+
+.lform_title .tip {
+  width: 30px;
+  height: 30px;
+  background: #A8E1FC;
+  border-radius: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: -7px;
+}
+
+.lform_title-right a {
+  width: 50px;
+  height: 23px;
+  line-height: 23px;
+  background-color: #0093d0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.lform_li {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  width: 44%;
+  display: inline-block;
+  text-align: left;
+  float: left;
+  margin-left: 33px;
+}
+
+.lform_ul {
+  height: 180px;
+}
+
+.lform_ul li {
+  width: 100%;
+  height: 40px;
+}
+
+.lform_ul li input {
+  display: inline-block;
+  padding-top: 2px;
+  height: 25px;
+  padding-left: 10px;
+  border: 1px solid #ccc
+}
+
+.lform_ul li label {
+  width: 120px;
+  text-align: right;
+  display: inline-block;
+  width: 86px;
+  text-align: right;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.lform_ul li select {
+  height: 29px;
+  line-height: 27px;
+  padding: 0px 0px 0px 6px;
+  margin-right: 10px;
+  border: 1px solid #ccc
+}
+
+.lform_ul li .lform_li:last-child {
+  margin-left: 20px;
+}
+
+.a-center {
+  height: 98px;
+  line-height: 98px;
+  border-bottom: 1px solid #bbd2e3;
+}
+
+.a-center button {
+  padding: 6px 30px;
+  height: 36px;
+  background-color: #0093D0;
+  border-color: #d2ecf7;
+  color: #FFFFFF;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.input_r {
+  width: 50px !important;
+  cursor: pointer;
+}
+
+.input_r input {
+  position: relative;
+  top: 7px;
+  right: 6px;
+}
+
+.lhtip_img {
+  height: 330px;
+  width: 460px;
+  padding: 5px;
+  border: 3px solid #17b5ff;
+
+}

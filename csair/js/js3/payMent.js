@@ -12,7 +12,7 @@ $(function () {
       this.handle();
       this.setSelMonth();
       this.orderNo = 'Gd23-3-3-3-322323';
-      this.orderTime= '2020-1-9 15:00:00'
+      this.orderTime= '2020-3-5 23:00:00'
       $("#js_pay_num").html('90');
       $("#js_pay_nid").html(this.orderNo);
       // if (this.orderNo) {

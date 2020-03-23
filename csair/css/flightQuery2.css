@@ -216,21 +216,7 @@ li.arrive:hover {
 .sm-trip .info {
   padding-left: 15px;
 }
-.sm-trip-prefix {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 40px;
-  height: 70px;
-  color: #fff;
-  background: #008acd;
-  margin: auto;
-  bottom: 0;
-  z-index: 1;
-  padding: 13px;
-  box-sizing: border-box;
-  font-size: 16px;
-}
+
 .sm-trip.trip-idx-0 {
   border-top: 0 none;
   position: relative;

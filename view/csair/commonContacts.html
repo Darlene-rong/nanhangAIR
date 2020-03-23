@@ -1,0 +1,90 @@
+<!-- 常用联系人 -->
+<script type="text/javascript" src="./csair/js/page/tz-page.js"></script>
+<script type="text/javascript" src="../../csair/js/public.js"></script>
+<script type="text/javascript" src="../../csair/js/js3/commoncontacts.js"></script>
+<link rel="stylesheet" href="../../csair/css/jsp3/balanceManage.css">
+<script src="../../csair/js/js3/data-time copy.js"></script>
+<div class="container text-l">
+  <div class="order_infos_wrap select_wrap">
+    <div class="page_title">
+      <h2>修改常用联系人</h2>
+      <div class="clearboth"></div>
+    </div>
+    <div class="cs_tab_content js_contact_table">
+      <div class="tab_con" style="display: block;">
+        <h3>管理常用联系人</h3>
+        <div class="m-l m-t ">
+          <div class="z_input inline-block">
+            <label class="form_left_label" for="contectname">按姓名查询：</label>
+            <input type="contectname" name="searname" id="searname" />
+          </div>
+          <div class="inline-block con_search m-l">
+            <a href="javascript:;" title="查询常用联系人" class="js_contect_search">查询</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab_con" style="display: block; position: relative;">
+        <h3>常用联系人信息</h3>
+        <div class="con_add_a"><a href="javascript:;" title="新增常用联系人" onclick="window.contactTravel.contactEdit('add','')">新增常用联系人</a></div>
+        <div class="nh-table">
+          <table class="nh-table-content">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>联系人姓名</th>
+                <th>手机号码</th>
+                <th>E-mail</th>
+                <th>明珠卡号</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody class="js_common_tab">
+            </tbody>
+          </table>
+          <div id="js_common_Page" class="text-r m-t-md">11</div>
+        </div>
+      </div>
+    </div>
+    <!-- 修改和新增 -->
+    <div class="cs_tab_content js_contact_dailog" style="display: none;">
+      <div class="tab_con tab_content_one" style="display: block; position: relative;">
+        <h3>新增常用联系人</h3>
+        <form class="bm_three_content" id="commonForm">
+          <div class="bmt_item">
+            <label class="bm_three_title"><span class="redColor">*</span>联系人姓名：</label>
+            <input type="text" value="" name="contactName" id="contactName" onblur="window.contactTravel.commonBlur('contactName')" class="com-input w197" title="请输入联系人姓名">
+          </div>
+          <div class="bmt_item">
+            <label class="bm_three_title"><span class="redColor">*</span>手机号：</label>
+            <input type="text" value="" name="mobilePhone" id="mobilePhone" onblur="window.contactTravel.commonBlur('mobilePhone')" class="com-input w197" title="请输入联系人手机号">
+          </div>
+          <div class="bmt_item">
+            <label class="bm_three_title">明珠卡号：</label>
+            <input type="text" value="" name="fpCardNo" id="fpCardNo" onblur="window.contactTravel.commonBlur('fpCardNo')" class="com-input w197" title="请输入联系人明珠卡号">
+          </div>
+          <div class="bmt_item">
+            <label class="bm_three_title"><span class="redColor">*</span>E-mail：</label>
+            <input type="text" value="" name="email" id="email" onblur="window.contactTravel.commonBlur('email')" class="com-input w197" title="请输入联系人邮箱号">
+          </div>
+          <div class="bmt_check">
+            <label for="">
+              <input type="checkbox" name="check" id="check" class="js_common_check" title="已阅读并理解,请点击该复选框"/>
+              <span>已阅读并理解
+                <a href="cxbz_clickA?href=http://www.csair.com/cn/tourguide/booking/orders/order/lvkexuzhi/guonei/"
+                  target="_blank" title="点击阅读隐私通知">《隐私通知》</a></span>
+            </label>
+          </div>
+          <div class="js_common_tip tip"></div>
+          <div class="rc_form_btn">
+            <a href="javascript:;" class="btn js_contact_back" title="返回到常用联系人页面" id="" >返回</a>
+            <a href="javascript:;" class="btn bluebtn js_contact_save"  title="保存常用联系人">保存</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+window.userName = '二蛋'
+</script>
